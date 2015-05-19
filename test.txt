@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 windows > mac > linux
+=======
+windows > mac > linux > ubuntu bart stinkt
+>>>>>>> FETCH_HEAD
