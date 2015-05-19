@@ -1,0 +1,53 @@
+*{
+margin: 0;
+padding: 0;
+}
+
+body {
+  
+}
+
+.hoofdNav {
+  background-color: rgb(209,55,47);
+  height: 200px;
+}
+
+.nav {
+  background-color: rgb(105,103,101);
+  height: 150px;
+}
+
+.nav a {
+  color: white;
+  font-size: 50px;
+  
+}
+
+.nav li {
+  display: inline-block;
+  padding: 50px 0 0 100px;
+  list-style-type: none;
+}
+
+.bever {
+  width: 100%;
+}
+
+.welkom {
+  font-size: 60px;
+  text-align: center;
+  color: rgb(209,55,47);
+  border-top: dashed 6px;
+  border-bottom: dashed 6px;
+  width: 90%;
+  margin: auto;
+}
+
+.welkomTekst {
+  padding-top: 30px;
+  width: 90%;
+  margin: auto;
+  text-align: center;
+}
+
+
