@@ -1,12 +1,19 @@
-getEvents();
+getEvents(4);
+getNews(4);
 
-function getEvents() {
+function getEvents(amount) {
     $.post("http://dtprojecten.ehb.be/~stuvo/public_html/api/agenda.php", function (data) {
-        $('.events ul').html(generateEventsHtml(data,4));
+        $('.events ul').html(generateEventsHtml(data, amount));
     });
 }
 
-function generateEventsHtml(data,amount) {
+function getNews() {
+    $.post("http://dtprojecten.ehb.be/~stuvo/public_html/api/nieuws.php", function (data) {
+        $('.events ul').html(generateEventsHtml(data, amount));
+    });
+}
+
+function generateEventsHtml(data, amount) {
     var events = JSON.parse(data).events;
     var htmlString = "";
     var counter = 0;
@@ -15,18 +22,20 @@ function generateEventsHtml(data,amount) {
         for (var event in maand) {
             event = maand[event];
             htmlString += generateEventHtml(event);
-            counter ++;
-            if(counter >= amount){
-                return htmlString;
+            counter++;
+            if (counter >= amount) {
+                if (amount != 0) {
+                    return htmlString;
+                }
             }
         }
     }
-    
+
     return htmlString;
 }
 
 function generateEventHtml(event) {
-    
+
     var htmlString = "";
     var dag = event.date.startday
     var maand = maandToString(event.date.startmonth);
@@ -41,7 +50,7 @@ function generateEventHtml(event) {
     htmlString += "<img class='icoon' src='img/maps_grey.png'/><p>" + locatie + "</p><br>"
     htmlString += "<img class='icoon' src='img/kalender_grey.png'/><p>" + dag + " " + maand + " " + jaar + "</p><br>"
     htmlString += "<img class='icoon' src='img/klok_grey.png'/><p>" + tijd + "</p></div><div class='clearfix'></div></li>";
-    
+
     return htmlString;
 }
 
