@@ -2,20 +2,23 @@ getEvents();
 
 function getEvents() {
     $.post("http://dtprojecten.ehb.be/~stuvo/public_html/api/agenda.php", function (data) {
-        $('.events ul').html(generateEventsHtml(data));
-        console.log('done');
+        $('.events ul').html(generateEventsHtml(data,3));
     });
 }
 
-function generateEventsHtml(data) {
+function generateEventsHtml(data,amount) {
     var events = JSON.parse(data).events;
     var htmlString = "";
-    
+    var counter = 0;
     for (var maand in events) {
         maand = events[maand];
         for (var event in maand) {
             event = maand[event];
             htmlString += generateEventHtml(event);
+            counter ++;
+            if(counter >= amount){
+                return htmlString;
+            }
         }
     }
     
