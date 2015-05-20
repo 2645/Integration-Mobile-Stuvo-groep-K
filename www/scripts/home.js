@@ -3,23 +3,24 @@ getNews();
 addEvents();
 
 function addEvents() {
-    console.log("added event");
-
-    $('.homepageSlider').on("swipe", function (event) {
-        var pos = this.position().left;
+    $('.homepageSlider').on("swipeleft", function (event) {
+        console.log("swiping left");
+        var pos = $(this).position().left;
         var width = $(window).width();
         if (pos > -width * 2) {
-            slider.animate({
+            $(this).animate({
                 left: '-=' + width + 'px'
             }, 1000);
         }
     });
 
     $('.homepageSlider').on("swiperight", function (event) {
-        var pos = this.position().left;
+        var pos = $(this).position().left;
         var width = $(window).width();
-        if (pos > 0) {
-            slider.animate({
+        
+        if (pos < 0) {
+            console.log('swiping right');
+            $(this).animate({
                 left: '+=' + width + 'px'
             }, 1000);
         }
