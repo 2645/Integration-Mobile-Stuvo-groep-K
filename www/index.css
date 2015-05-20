@@ -44,6 +44,7 @@
     display: block;
     margin: 0 auto;
     max-height: 45vh;
+    max-width: 90vw;
     position: relative;
 }
 
@@ -67,10 +68,11 @@
 .inlogForm-input {
     display: block;
     margin-bottom: 8px;
-    width: 86%;
+    width: 88%;
     height: 30px;
     color: #999999;
     padding-left: 30px;
+    border: none;
 }
 
 .inlogForm-login {
