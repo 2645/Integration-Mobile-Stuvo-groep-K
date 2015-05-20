@@ -5,12 +5,12 @@
 
 @font-face {
     font-family: 'KlinicSlabLight';
-    src: url('../KlinicSlab_Personal_License_Titel/KlinicSlabLight.otf');
+    src: url('Fonts/KlinicSlab_Personal_License_Titel/KlinicSlabLight.otf');
 }
 
 @font-face {
     font-family: 'KlinicSlabMedium';
-    src: url('../KlinicSlab_Personal_License_Titel/KlinicSlabMedium.otf');
+    src: url('Fonts/KlinicSlab_Personal_License_Titel/KlinicSlabMedium.otf');
 }
 
 .login-grey-background {
