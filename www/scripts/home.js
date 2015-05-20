@@ -1,19 +1,45 @@
-getEvents(4);
-getNews(4);
+getEvents();
+getNews();
+addEvents();
+
+function addEvents() {
+    $('.homepageSlider').on("swipeleft", function (event) {
+        console.log("swiping left");
+        var pos = $(this).position().left;
+        var width = $(window).width();
+        if (pos > -width * 2) {
+            $(this).animate({
+                left: '-=' + width + 'px'
+            }, 100);
+        }
+    });
+
+    $('.homepageSlider').on("swiperight", function (event) {
+        var pos = $(this).position().left;
+        var width = $(window).width();
+        
+        if (pos < 0) {
+            console.log('swiping right');
+            $(this).animate({
+                left: '+=' + width + 'px'
+            }, 100);
+        }
+    });
+}
 
 function getEvents(amount) {
     $.post("http://dtprojecten.ehb.be/~stuvo/public_html/api/agenda.php", function (data) {
-        $('.events ul').html(generateEventsHtml(data, amount));
+        $('.events ul').html(generateEventsHtml(data));
     });
 }
 
 function getNews() {
     $.post("http://dtprojecten.ehb.be/~stuvo/public_html/api/nieuws.php", function (data) {
-        $('.events ul').html(generateEventsHtml(data, amount));
+        //console.log(data);
     });
 }
 
-function generateEventsHtml(data, amount) {
+function generateEventsHtml(data) {
     var events = JSON.parse(data).events;
     var htmlString = "";
     var counter = 0;
@@ -23,10 +49,8 @@ function generateEventsHtml(data, amount) {
             event = maand[event];
             htmlString += generateEventHtml(event);
             counter++;
-            if (counter >= amount) {
-                if (amount != 0) {
-                    return htmlString;
-                }
+            if (counter >= 4) {
+                return htmlString;
             }
         }
     }
