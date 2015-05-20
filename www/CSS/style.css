@@ -21,7 +21,7 @@ body {
 
 .hoofdNav {
   background-color: #a33534;
-  height: 200px;
+  height: 15vw;
 }
 
 /**********HOME**********/
@@ -99,8 +99,11 @@ body {
 }
 
 .events p {
+  width: 30px;
+  height: 300px;;
   color: rgb(105,103,101);
   display: inline;
+  
 }
 
 .info {
