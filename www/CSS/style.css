@@ -65,7 +65,7 @@ body {
   width: 70vw;
   margin: auto;
   font-family: Tekst;
-  font-size: 2.5vw;
+  font-size: 5vw;
 }
 
 /*****EVENTS*****/
@@ -95,15 +95,13 @@ body {
   color: rgb(105,103,101);
 }
 .events img {
-  width: 5%
+  width: 3vw;
 }
 
 .events p {
-  width: 30px;
-  height: 300px;;
   color: rgb(105,103,101);
   display: inline;
-  
+  line-height: 0;
 }
 
 .info {
