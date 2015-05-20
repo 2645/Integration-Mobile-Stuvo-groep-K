@@ -28,14 +28,24 @@ body {
 }
 
 .hoofdNav #hamburger {
-padding: 15px 15px;
+padding: 17px 17px;
+    width: 36px;
+    height: 26px;
+}
+.hoofdNav #hamburgerClick {
+padding: 17px 17px;
+    margin-top: -60px;
+    margin-left: -70px;
+    background-color: #6f2421;
+    width: 36px;
+    height: 26px;
 }
 
 /**********NAViGATIE**********/
 
 #navigatie {
     display: block;
-    margin: auto 0;
+    margin-left: -260px;
     width: 260px;
     height: 580px;
     background-color: #6f2421;  
@@ -48,6 +58,8 @@ padding: 15px 15px;
     padding: 7px;
     width: 140px;
     margin: 30px 48px;
+    font-family: Tekst;
+    color: #838081;
 }
 
 #navigatie .searchButton{
@@ -60,11 +72,16 @@ padding: 15px 15px;
     margin-left: -85px;
 }
 
+#navigatie .navigatieNav {
+    
+    margin-top: -5px;
+}
+
 #navigatie .navigatieNav ul li  {
     
     display: block;
     width: 160px;
-    padding: 10px 0 10px 100px;
+    padding: 8px 0 10px 100px;
     background-color: #a33534;
     margin-bottom: 10px;    
 }

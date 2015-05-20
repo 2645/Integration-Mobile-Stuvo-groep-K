@@ -32,10 +32,5 @@ $("#hamburger").click(function() {
     }
 });
     
-    
-    $('#navigatieNav ul li a[href*="#"]').each(function() {
-    
-        $("#navigatieNav ul li").css
-});
       
 }
