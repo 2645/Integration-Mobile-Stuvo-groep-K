@@ -40,7 +40,7 @@ function generateEventHtml(event) {
     htmlString += "<div class='info'><h3>" + naam + "</h3>";
     htmlString += "<img class='icoon' src='img/maps_grey.png'/><p>" + locatie + "</p><br>"
     htmlString += "<img class='icoon' src='img/kalender_grey.png'/><p>" + dag + " " + maand + " " + jaar + "</p><br>"
-    htmlString += "<img class='icoon' src='img/klok_grey.png'/><p>" + tijd + "</p></div></li>";
+    htmlString += "<img class='icoon' src='img/klok_grey.png'/><p>" + tijd + "</p></div><div class='clearfix'></div></li>";
     
     return htmlString;
 }

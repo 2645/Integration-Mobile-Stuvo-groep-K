@@ -2,190 +2,170 @@
     font-family: Title;
     src: url(../Fonts/KlinicSlab_Personal_License_Titel/KlinicSlabBold.otf);
 }
+
 @font-face {
     font-family: Tekst;
     src: url(../Fonts/MissionGothic_Personal_License_Tekst/Mission%20Gothic%20Regular.otf);
 }
 
-*{
-margin: 0;
-padding: 0;
+* {
+    margin: 0;
+    padding: 0;
 }
 
 .clearfix {
-  content: " "; /* Older browser do not support empty content */
-   visibility: hidden;
-   display: block;
-   height: 0;
-   clear: both;
+    clear: both;
 }
 
 body {
-  font-family: Arial;
-  width: 100%;
-
+    font-family: Arial;
+    width: 100%;
 }
 
 p {
-  color: #696765;
+    color: #696765;
 }
 
 .hoofdNav {
-  background-color: #a33534;
-  height: 60px;
+    background-color: #a33534;
+    height: 60px;
 }
-
 /**********HOME**********/
 
 .nav {
-  background-color: rgb(105,103,101);
-  height: 50px;
+    background-color: rgb(105, 103, 101);
+    height: 50px;
 }
 
 .nav a {
-  color: white;
-  font-size: 5.2vw;  
+    color: white;
+    font-size: 5.2vw;
 }
 
 .nav ul li {
-  display: inline-block;
-  padding: 15px 0 0 40px;
-  list-style-type: none;
-  font-family: Title;
+    display: inline-block;
+    padding: 15px 0 0 40px;
+    list-style-type: none;
+    font-family: Title;
 }
 
 .titelHome {
-  font-size: 7vw;
-  text-align: center;
-  color: #a33534;
-  border-top: dashed 0.5vw;
-  border-bottom: dashed 0.5vw;
-  padding: 5px 0 2.5px 0;
-  width: 80%;
-  margin: 3vw auto;
-  font-family: Title;
+    font-size: 7vw;
+    text-align: center;
+    color: #a33534;
+    border-top: dashed 0.5vw;
+    border-bottom: dashed 0.5vw;
+    padding: 5px 0 2.5px 0;
+    width: 80%;
+    margin: 3vw auto;
+    font-family: Title;
 }
-
-
-
 /*****OVER*ONS*****/
+
 .bever {
-  width: 100vw;
+    width: 100vw;
 }
 
 .overOns p {
-  width: 80%;
-  margin: auto;
-  font-family: Tekst;
-  font-size: 0.85em;
+    width: 80%;
+    margin: auto;
+    font-family: Tekst;
+    font-size: 0.85em;
 }
-
 /*****EVENTS*****/
 
 .events ul {
-  margin: auto;
-  width: 80%;
-  list-style-type: none;
-  margin-top: 30px;
+    margin: auto;
+    width: 80%;
+    list-style-type: none;
+    margin-top: 30px;
 }
 
-
 .events .datum {
-  font-family: Title;
-  color: #a33534;
-  font-size: 1em;
-  line-height: 0.8em;
-  float: left;
-  padding-top: 5%;
+    font-family: Title;
+    color: #a33534;
+    font-size: 1em;
+    line-height: 0.8em;
+    float: left;
+    padding-top: 5%;
 }
 
 .datum span {
-  color: #a33534;
-  font-size: 9.5vw;
-  line-height: 0;
+    color: #a33534;
+    font-size: 9.5vw;
+    line-height: 0;
 }
 
 .events .icoon {
-  width: 3vw;
-  margin-top: 1.5vw;
+    width: 3vw;
+    margin-top: 1.5vw;
 }
 
 .events h3 {
-  color: rgb(105,103,101);
-  font-size: 0.8em;
+    color: rgb(105, 103, 101);
+    font-size: 0.8em;
 }
 
 .events p {
-  line-height: 1.5vw;
-  color: rgb(105,103,101);
-  display: inline;
-  font-size: 0.6em;
-  margin-left: 5px;
-}
-.events ul li p:first-child {
-  background-color: red;
+    line-height: 1.5vw;
+    color: rgb(105, 103, 101);
+    display: inline;
+    font-size: 0.6em;
+    margin-left: 5px;
 }
 
 .events .info {
-  margin-top: -18px;
-  float: right;
-  width: 75%;
-  border-left: dashed 1px;
-  padding-left: 20px;
+    float: right;
+    width: 75%;
+    border-left: dashed 1px;
+    padding-left: 20px;
+    margin-bottom: 30px;
 }
-
 /*****ACTUEEL*****/
 
 .actueel {
-  margin-top: 100px;
+    margin-top: 100px;
 }
 
 .actueel .info {
- margin-left: 100px;
+    margin-left: 100px;
 }
 
 .actueel ul {
-  width: 80%;
-  margin: auto;
-  list-style-type: none;
+    width: 80%;
+    margin: auto;
+    list-style-type: none;
 }
 
-
 .actueel img {
-  width: 30%;
-  float: left;
+    width: 30%;
+    float: left;
 }
 
 .actueel .icoon {
-  width: 5%;
-  margin-top: 3px;
+    width: 5%;
+    margin-top: 3px;
 }
 
 .actueel h3 {
-  color: rgb(105,103,101);
-  font-size: 0.8em;
+    color: rgb(105, 103, 101);
+    font-size: 0.8em;
 }
 
 .actueel p {
-  font-size: 0.6em;
-  margin-top: 5px;
+    font-size: 0.6em;
+    margin-top: 5px;
 }
 
 .actueel .datum {
-  font-weight: bold;
-  margin-top: -1px;
+    font-weight: bold;
+    margin-top: -1px;
 }
 
 footer {
-  width: 100%;
-  height: 30px;
-  background-color: red;
-  position: absolute;
-  top: 3000px;
+    width: 100%;
+    height: 30px;
+    background-color: red;
+    position: absolute;
+    top: 3000px;
 }
-
-
-
-
-
-
