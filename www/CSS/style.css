@@ -14,7 +14,6 @@ padding: 0;
 
 body {
   font-family: Arial;
-  font-size: 30px;
   width: 100vw;
 
 }
@@ -38,7 +37,7 @@ body {
 
 .nav ul li {
   display: inline-block;
-  padding: 3vw 0 0 11.5vw;
+  padding: 1vw 0 0 11.5vw;
   list-style-type: none;
   font-family: Title;
 }
@@ -50,8 +49,8 @@ body {
   border-top: dashed 0.5vw;
   border-bottom: dashed 0.5vw;
   padding: 1.5vw;
-  width: 70%;
-  margin: 40px auto;
+  width: 70vw;
+  margin: 3vw auto;
   font-family: Title;
 }
 
@@ -59,37 +58,37 @@ body {
 
 /*****OVER*ONS*****/
 .bever {
-  width: 100%;
+  width: 100vw;
 }
 
 .overOns p {
-  padding-top: 20px;
-  width: 77%;
+  width: 70vw;
   margin: auto;
   font-family: Tekst;
+  font-size: 1.8vw;
 }
 
 /*****EVENTS*****/
 
 .events ul {
-  width: 75%;
+  width: 70vw;
   margin: auto;
-  margin-top: 80px;
+  margin-top: 5vw;
   list-style-type: none;
 }
 
 .datum {
   font-family: Title;
   color: #a33534;
-  font-size: 2em;
-  line-height:0.8em;
+  font-size: 5vw;
+  line-height: 4vw;
   float: left;
-  padding-top: 43px;
+  padding-top: 2vw;
 }
 
 .datum span {
   color: #a33534;
-  font-size: 1.8em;
+  font-size: 9.5vw;
   line-height: 0;
 }
 .events h3 {
