@@ -5,7 +5,7 @@ addEvents();
 function addEvents() {
     console.log("added event");
 
-    $('.homepageSlider').on("swipeleft", function (event) {
+    $('.homepageSlider').on("swipe", function (event) {
         var pos = this.position().left;
         var width = $(window).width();
         if (pos > -width * 2) {
