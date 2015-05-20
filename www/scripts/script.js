@@ -9,5 +9,9 @@ function getEvents() {
 
 function generateEventHtml(data){
     var data = JSON.parse(data);
-    return "testing";
+    var htmlString = "";
+    for each(var item in data){
+        htmlString +=item
+    }
+    return htmlString;
 }
