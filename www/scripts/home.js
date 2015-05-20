@@ -10,7 +10,7 @@ function addEvents() {
         if (pos > -width * 2) {
             $(this).animate({
                 left: '-=' + width + 'px'
-            }, 1000);
+            }, 100);
         }
     });
 
@@ -22,7 +22,7 @@ function addEvents() {
             console.log('swiping right');
             $(this).animate({
                 left: '+=' + width + 'px'
-            }, 1000);
+            }, 100);
         }
     });
 }
