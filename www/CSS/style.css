@@ -12,10 +12,22 @@ margin: 0;
 padding: 0;
 }
 
+.clearfix {
+  content: " "; /* Older browser do not support empty content */
+   visibility: hidden;
+   display: block;
+   height: 0;
+   clear: both;
+}
+
 body {
   font-family: Arial;
   width: 100%;
 
+}
+
+p {
+  color: #696765;
 }
 
 .hoofdNav {
@@ -48,8 +60,8 @@ body {
   color: #a33534;
   border-top: dashed 0.5vw;
   border-bottom: dashed 0.5vw;
-  padding: 1.5vw;
-  width: 70vw;
+  padding: 5px 0 2.5px 0;
+  width: 80%;
   margin: 3vw auto;
   font-family: Title;
 }
@@ -62,7 +74,7 @@ body {
 }
 
 .overOns p {
-  width: 70vw;
+  width: 80%;
   margin: auto;
   font-family: Tekst;
   font-size: 0.85em;
@@ -72,13 +84,13 @@ body {
 
 .events ul {
   margin: auto;
-  width: 70%;
+  width: 80%;
   list-style-type: none;
   margin-top: 30px;
 }
 
 
-.datum {
+.events .datum {
   font-family: Title;
   color: #a33534;
   font-size: 1em;
@@ -93,7 +105,7 @@ body {
   line-height: 0;
 }
 
-.events img {
+.events .icoon {
   width: 3vw;
   margin-top: 1.5vw;
 }
@@ -114,7 +126,7 @@ body {
   background-color: red;
 }
 
-.info {
+.events .info {
   margin-top: -18px;
   float: right;
   width: 75%;
@@ -122,6 +134,47 @@ body {
   padding-left: 20px;
 }
 
+/*****ACTUEEL*****/
+
+.actueel {
+  margin-top: 100px;
+}
+
+.actueel .info {
+ margin-left: 100px;
+}
+
+.actueel ul {
+  width: 80%;
+  margin: auto;
+  list-style-type: none;
+}
+
+
+.actueel img {
+  width: 30%;
+  float: left;
+}
+
+.actueel .icoon {
+  width: 5%;
+  margin-top: 3px;
+}
+
+.actueel h3 {
+  color: rgb(105,103,101);
+  font-size: 0.8em;
+}
+
+.actueel p {
+  font-size: 0.6em;
+  margin-top: 5px;
+}
+
+.actueel .datum {
+  font-weight: bold;
+  margin-top: -1px;
+}
 
 footer {
   width: 100%;
@@ -130,6 +183,8 @@ footer {
   position: absolute;
   top: 3000px;
 }
+
+
 
 
 
