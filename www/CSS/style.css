@@ -14,7 +14,7 @@ padding: 0;
 
 body {
   font-family: Arial;
-  width: 100vw;
+  width: 100%;
 
 }
 
@@ -65,25 +65,26 @@ body {
   width: 70vw;
   margin: auto;
   font-family: Tekst;
-  font-size: 2.5vw;
+  font-size: 0.85em;
 }
 
 /*****EVENTS*****/
 
 .events ul {
-  width: 70vw;
   margin: auto;
-  margin-top: 5vw;
+  width: 70%;
   list-style-type: none;
+  margin-top: 30px;
 }
+
 
 .datum {
   font-family: Title;
   color: #a33534;
-  font-size: 5vw;
-  line-height: 4vw;
+  font-size: 1em;
+  line-height: 0.8em;
   float: left;
-  padding-top: 2vw;
+  padding-top: 5%;
 }
 
 .datum span {
@@ -99,15 +100,15 @@ body {
 
 .events h3 {
   color: rgb(105,103,101);
-  font-size: 3vw;
+  font-size: 0.8em;
 }
 
 .events p {
   line-height: 1.5vw;
   color: rgb(105,103,101);
   display: inline;
-  font-size: 2vw;
-  margin-left: 2vw;
+  font-size: 0.6em;
+  margin-left: 5px;
 }
 .events ul li p:first-child {
   background-color: red;
@@ -117,8 +118,8 @@ body {
   margin-top: -18px;
   float: right;
   width: 75%;
-  border-left: dashed 2px;
-  padding-left: 40px;
+  border-left: dashed 1px;
+  padding-left: 20px;
 }
 
 
