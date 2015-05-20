@@ -2,7 +2,7 @@ getEvents();
 
 function getEvents() {
     $.post("http://dtprojecten.ehb.be/~stuvo/public_html/api/agenda.php", function (data) {
-        $('.events ul').html(generateEventsHtml(data,3));
+        $('.events ul').html(generateEventsHtml(data,4));
     });
 }
 
