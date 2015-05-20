@@ -1,0 +1,84 @@
+@font-face {
+    font-family: Title;
+    src: url(../Fonts/KlinicSlab_Personal_License_Titel/KlinicSlabBold.otf);
+}
+@font-face {
+    font-family: Title Regular;
+    src: url(../Fonts/KlinicSlab_Personal_License_Titel/KlinicSlabMedium.otf);
+}
+@font-face {
+    font-family: Tekst;
+    src: url(../Fonts/MissionGothic_Personal_License_Tekst/Mission%20Gothic%20Regular.otf);
+}
+
+*{
+margin: 0;
+padding: 0;
+}
+
+body {
+  font-family: Arial;
+  width: 100%;
+  background-color: rgba(143,141,140,0.75);
+}
+
+.hoofdNav {
+  background-color: #a33534;
+  height: 60px;
+}
+
+.hoofdNav #hamburger {
+padding: 15px 15px;
+}
+
+/**********NAViGATIE**********/
+
+#navigatie {
+    display: block;
+    margin: auto 0;
+    width: 260px;
+    height: 580px;
+    background-color: #6f2421;  
+}
+
+#navigatie input[type=text] {
+    background-color: rgba(255,255,255,0.75);
+    border: 0;
+    height: 20px;
+    padding: 7px;
+    width: 140px;
+    margin: 30px 48px;
+}
+
+#navigatie .searchButton{
+    float:none;
+    background:url(../img/search_red.png) no-repeat;
+    border: 0;
+    padding: 11px;
+    width: 30px;
+    height: 30px;
+    margin-left: -85px;
+}
+
+#navigatie .navigatieNav ul li  {
+    
+    display: block;
+    width: 160px;
+    padding: 10px 0 10px 100px;
+    background-color: #a33534;
+    margin-bottom: 10px;    
+}
+
+.navigatieNav ul li img  {
+    
+    display: inline-block;
+    margin-left: -80px;
+    
+}
+
+#navigatie .navigatieNav ul li a {
+    font-family: Title Regular;
+    font-size: 24px;
+    text-decoration: none;
+    color: #fff;
+}
