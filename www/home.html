@@ -17,69 +17,70 @@
     <header>
 
         <nav class="hoofdNav">
-                <div id="hamburger"><img src="img/hamburger.png">
-                </div>
-                <div id="logo"><img src="img/logo.png">
-                </div>
-                <div id="tandwiel"><img src="img/settings.png">
+            <div id="hamburger"><img src="img/hamburger.png">
+            </div>
+            <div id="logo"><img src="img/logo.png">
+            </div>
+            <div id="tandwiel"><img src="img/settings.png">
             </div>
         </nav>
 
     </header>
+    <div class="navWrapper">
+        <div id="navigatie">
+            <input type="text" name="search">
+            <input type="submit" class="searchButton" value="">
+            <nav class="navigatieNav">
+                <ul>
+                    <li class="current"><img src="img/home_red.png"><a href="home.html">Home</a>
+                    </li>
+                    <li><img src="img/diensten_red.png"><a href="#">Diensten</a>
+                    </li>
+                    <li><img src="img/agenda_red.png"><a href="agenda.html">Agenda</a>
+                    </li>
+                    <li><img src="img/nieuws_red.png"><a href="nieuws.html">Nieuws</a>
+                    </li>
+                    <li><img src="img/resto_red.png"><a href="resto.html">Resto</a>
+                    </li>
+                    <li><img src="img/contact_red.png"><a href="contact.html">Contact</a>
+                    </li>
+                    <li><img src="img/sponsors_red.png"><a href="sponsers.html">Sponsors</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
 
-    <div id="navigatie">
-        <input type="text" name="search">
-        <input type="submit" class="searchButton" value="">
-        <nav class="navigatieNav">
-            <ul>
-                <li class="current"><img src="img/home_red.png"><a href="home.html">Home</a>
-                </li>
-                <li><img src="img/diensten_red.png"><a href="#">Diensten</a>
-                </li>
-                <li><img src="img/agenda_red.png"><a href="agenda.html">Agenda</a>
-                </li>
-                <li><img src="img/nieuws_red.png"><a href="nieuws.html">Nieuws</a>
-                </li>
-                <li><img src="img/resto_red.png"><a href="resto.html">Resto</a>
-                </li>
-                <li><img src="img/contact_red.png"><a href="contact.html">Contact</a>
-                </li>
-                <li><img src="img/sponsors_red.png"><a href="sponsers.html">Sponsors</a>
-                </li>
-            </ul>
-        </nav>
-    </div>
+        <div id="settings">
 
-    <div id="settings">
+            <nav class="settingsNav">
+                <ul>
+                    <li>
+                        <p>Pushberichten toestaan?</p>
 
-        <nav class="settingsNav">
-            <ul>
-                <li>
-                    <p>Pushberichten toestaan?</p>
+                        <div class="switch">
+                            <input id="cmn-toggle-7" class="cmn-toggle cmn-toggle-yes-no" type="checkbox">
+                            <label for="cmn-toggle-7" data-on="Ja" data-off="Nee"></label>
+                        </div>
+                    </li>
 
-                    <div class="switch">
-                        <input id="cmn-toggle-7" class="cmn-toggle cmn-toggle-yes-no" type="checkbox">
-                        <label for="cmn-toggle-7" data-on="Ja" data-off="Nee"></label>
-                    </div>
-                </li>
-
-                <li>
-                    <p>Campusselectie:</p>
-                    <label class="label">
-                        <select name="campus">
-                            <option value="Dansaert">Dansaert</option>
-                            <option value="IWT">IWT</option>
-                            <option value="Jette">Jette</option>
-                            <option value="RITS">RITS</option>
-                            <option value="KCB">KCB</option>
-                            <option value="TTK">TTK</option>
-                        </select>
-                    </label>
-                </li>
+                    <li>
+                        <p>Campusselectie:</p>
+                        <label class="label">
+                            <select name="campus">
+                                <option value="Dansaert">Dansaert</option>
+                                <option value="IWT">IWT</option>
+                                <option value="Jette">Jette</option>
+                                <option value="RITS">RITS</option>
+                                <option value="KCB">KCB</option>
+                                <option value="TTK">TTK</option>
+                            </select>
+                        </label>
+                    </li>
 
 
-            </ul>
-        </nav>
+                </ul>
+            </nav>
+        </div>
     </div>
 
     <nav class="nav">

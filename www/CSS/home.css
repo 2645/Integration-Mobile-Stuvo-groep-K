@@ -17,15 +17,21 @@
     clear: both;
 }
 
+html,
 body {
     font-family: Arial;
-    width:100%;
+    max-width: 100%;
     overflow-x: hidden;
 }
 
-
 p {
     color: #696765;
+}
+
+#navWrapper {
+    width: 100%;
+    overflow-x: hidden;
+    position:fixed;
 }
 
 .hoofdNav {
@@ -37,29 +43,28 @@ p {
     position: absolute;
     top: 0;
     left: 44%;
-    
 }
-.homepageSliderWrapper{
-    width:100%;
-    overflow:hidden;
+
+.homepageSliderWrapper {
+    width: 100%;
+    overflow: hidden;
 }
-.homepageSlider{
-    width:300%;
-    position:relative;
-    left:-100%;
+
+.homepageSlider {
+    width: 300%;
+    position: relative;
+    left: -100%;
 }
+
 .homepageSlide {
-    float:left;
-    display:inline-block;
-    width:33.333333%;
+    float: left;
+    display: inline-block;
+    width: 33.333333%;
 }
 
-.events{
-    position:relative;
-    
+.events {
+    position: relative;
 }
-
-
 /**********HOME**********/
 
 .nav {
@@ -95,7 +100,6 @@ p {
     margin: 15px auto;
     font-family: Title;
 }
-
 /*****OVER*ONS*****/
 
 .bever {
@@ -159,9 +163,7 @@ p {
 }
 /*****ACTUEEL*****/
 
-.actueel {
-    
-}
+.actueel {}
 
 .actueel .info {
     margin-left: 100px;
@@ -172,9 +174,9 @@ p {
     margin: auto;
     list-style-type: none;
 }
-.actueel li{
+
+.actueel li {
     margin-bottom: 40px;
-    
 }
 
 .actueel img {
