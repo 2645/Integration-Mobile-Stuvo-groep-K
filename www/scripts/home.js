@@ -4,7 +4,6 @@ addEvents();
 
 function addEvents() {
     $('.homepageSlider').on("swipeleft", function (event) {
-        console.log("swiping left");
         var pos = $(this).position().left;
         var width = $(window).width();
         if (pos > -width * 2) {
@@ -16,10 +15,8 @@ function addEvents() {
 
     $('.homepageSlider').on("swiperight", function (event) {
         var pos = $(this).position().left;
-        var width = $(window).width();
-        
+        var width = $(window).width();        
         if (pos < 0) {
-            console.log('swiping right');
             $(this).animate({
                 left: '+=' + width + 'px'
             }, 100);
