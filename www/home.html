@@ -5,7 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="CSS/jquery.mobile-1.0.min.css" />
-    <link rel="stylesheet" href="CSS/home.css">
+    <link rel="stylesheet" href="CSS/home.css" />
+    <link rel="stylesheet" href="CSS/style_nav.css" />
     <script type="text/javascript" src="phonegap.js"></script>
     <script type="text/javascript" src="scripts/jquery-1.11.3.min.js"></script>
     <script type="text/javascript" src="scripts/jquery.mobile-1.4.5.js"></script>
@@ -16,85 +17,105 @@
     <header>
 
         <nav class="hoofdNav">
-
+            <div id="hamburger"><img src="img/hamburger.png">
+            </div>
+            <div id="hamburgerClick"></div>
         </nav>
 
     </header>
+    
+    <div id="navigatie">
+        <input type="text" name="search">
+        <input type="submit" class="searchButton" value="">
+        <nav class="navigatieNav">
+            <ul>
+                <li><img src="img/home_red.png"><a href="#">Home</a>
+                </li>
+                <li><img src="img/diensten_red.png"><a href="#">Diensten</a></li>
+        <li><img src="img/agenda_red.png"><a href="#">Agenda</a></li>
+        <li><img src="img/nieuws_red.png"><a href="#">Nieuws</a></li>
+        <li><img src="img/resto_red.png"><a href="#">Resto</a></li>
+        <li><img src="img/contact_red.png"><a href="#">Contact</a></li>
+        <li><img src="img/sponsors_red.png"><a href="#">Sponsors</a></li>
+    </ul>    
+    </nav>
+ </div>
 
     <nav class="nav">
         <ul>
             <li><a>Events</a>
-            </li>
-            <li><a>Over ons</a>
-            </li>
-            <li><a>Actueel</a>
-            </li>
-        </ul>
-    </nav>
-    <div class="homepageSliderWrapper">
-        <div class="homepageSlider">
-            <div class="events homepageSlide">
-                <h1 class="titelHome">Events</h1>
-                <ul>
-                    <li>
-                        <h2 class="datum"><span>21</span> <br> Mei</h2>
+                </li>
+                <li><a>Over ons</a>
+                </li>
+                <li><a>Actueel</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="homepageSliderWrapper">
+            <div class="homepageSlider">
+                <div class="events homepageSlide">
+                    <h1 class="titelHome">Events</h1>
+                    <ul>
+                        <li>
+                            <h2 class="datum"><span>21</span> <br> Mei</h2>
 
-                        <div class="info">
-                            <h3>Voetbaltoernooi Campus Kaai</h3>
+                            <div class="info">
+                                <h3>Voetbaltoernooi Campus Kaai</h3>
 
-                            <img class="icoon" src="img/maps_grey.png" />
-                            <p>Nijverheidskaai 170 1070 Anderlecht</p>
+                                <img class="icoon" src="img/maps_grey.png" />
+                                <p>Nijverheidskaai 170 1070 Anderlecht</p>
 
-                            <br>
+                                <br>
 
-                            <img class="icoon" src="img/kalender_grey.png" />
-                            <p>21 Januari donderdag 2015</p>
+                                <img class="icoon" src="img/kalender_grey.png" />
+                                <p>21 Januari donderdag 2015</p>
 
-                            <br>
+                                <br>
 
-                            <img class="icoon" src="img/klok_grey.png" />
-                            <p>12:45</p>
-                        </div>
-                        <div class="clearfix"></div>
-                    </li>
-                </ul>
+                                <img class="icoon" src="img/klok_grey.png" />
+                                <p>12:45</p>
+                            </div>
+                            <div class="clearfix"></div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="overOns homepageSlide">
+                    <img src="img/bever.jpg" alt="EhBever" class="bever">
+
+                    <h1 class="titelHome">Welkom bij Stuvo Ehb</h1>
+
+                    <p>Stuvo Ehb biedt een ruim pakket van studentenvoorzieningen opdat iedereen in optimale omstandigheden zou kunnen studeren en zich ontplooien
+                        <br>
+                        <br>De medewerkers staan garant voor info, advies en begeleiding omtrent alle mogelijke aspecten van het studentenleven: praktische informatie zoals huisvesting en vervoer, financiële vragen, emotionele en relationele problemen, uitleg rond het studentenstatuut, thema's met een sociaaljuridische inslag.
+                    </p>
+                </div>
+
+                <div class="actueel homepageSlide">
+                    <h1 class="titelHome">Actueel</h1>
+
+                    <ul>
+                        <li>
+                            <img src="img/Afbeeldingen.jpg">
+
+                            <div class="info">
+                                <h3>Nieuwe lestechnieken uitgetest</h3>
+                                <p>Op Campus Dansaert werd vorige week een aantal...</p>
+
+                                <img class="icoon" src="img/kalender_red.png">
+                                <p class="datum">17 mei 2015</p>
+                            </div>
+
+                        </li>
+                    </ul>
+                </div>
+                <div class="clearfix"></div>
             </div>
-            <div class="overOns homepageSlide">
-                <img src="img/bever.jpg" alt="EhBever" class="bever">
-
-                <h1 class="titelHome">Welkom bij Stuvo Ehb</h1>
-
-                <p>Stuvo Ehb biedt een ruim pakket van studentenvoorzieningen opdat iedereen in optimale omstandigheden zou kunnen studeren en zich ontplooien
-                    <br>
-                    <br>De medewerkers staan garant voor info, advies en begeleiding omtrent alle mogelijke aspecten van het studentenleven: praktische informatie zoals huisvesting en vervoer, financiële vragen, emotionele en relationele problemen, uitleg rond het studentenstatuut, thema's met een sociaaljuridische inslag.
-                </p>
-            </div>
-
-            <div class="actueel homepageSlide">
-                <h1 class="titelHome">Actueel</h1>
-
-                <ul>
-                    <li>
-                        <img src="img/Afbeeldingen.jpg">
-
-                        <div class="info">
-                            <h3>Nieuwe lestechnieken uitgetest</h3>
-                            <p>Op Campus Dansaert werd vorige week een aantal...</p>
-
-                            <img class="icoon" src="img/kalender_red.png">
-                            <p class="datum">17 mei 2015</p>
-                        </div>
-
-                    </li>
-                </ul>
-            </div>
-            <div class="clearfix"></div>
         </div>
-    </div>
-    <footer>
-    </footer>
+        <footer>
+        </footer>
 
 </body>
 <script type="text/javascript" src="scripts/home.js"></script>
+<script type="text/javascript" src="scripts/nav.js"></script>
 
 </html>

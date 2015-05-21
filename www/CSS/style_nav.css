@@ -16,12 +16,6 @@ margin: 0;
 padding: 0;
 }
 
-body {
-  font-family: Arial;
-  width: 100%;
-  background-color: rgba(143,141,140,0.75);
-}
-
 .hoofdNav {
   background-color: #a33534;
   height: 60px;
