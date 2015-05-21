@@ -8,28 +8,19 @@ $("#hamburger").click(function() {
     var isEven = function(someNumber) {
         return (someNumber % 2 === 0) ? true : false;
     };
-    var isEven2 = function(someNumber2) {
-        return (someNumber2 % 2 === 0) ? true : false;
-    };
     if (isEven(count) === false) {
         $("#navigatie").animate({
             marginLeft: "0"
         }, 400);
+        $("#settings").animate({
+            right: "-73%"
+        }, 400);
     } else if (isEven(count) === true) {
         $("#navigatie").animate({
-            marginLeft: "-260px"
+            marginLeft: "-73%"
         }, 400);
     }
     
-    if (isEven2(count) === false) {
-        $("#hamburgerClick").animate({
-            marginLeft: "0"
-        }, 400);
-    } else if (isEven2(count) === true) {
-        $("#hamburgerClick").animate({
-            marginLeft: "-70px"
-        }, 400);
-    }
 });
     
       
