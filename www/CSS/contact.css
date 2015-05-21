@@ -64,13 +64,12 @@
 /*****GOEDE-RAAD*****/
 
 .dienst {
-  width: 80%;
+  width: 90%;
   margin: auto;
 }
 .dienst .icoon {
   width: 12%;
   float: left;
-  padding: 35px 0;
 }
 
 .dienst .icoonEmail {
@@ -86,13 +85,6 @@
   list-style-type: none;
 }
 
-.dienst ul li {
-  line-height: 25px;
-}
-
-.dienst .contact2 {
-  margin-top: 15px;
-}
 .dienst ul p {
   float: left;
   font-family: Tekst;
@@ -109,10 +101,6 @@
   padding-left: 10px;
 }
 
-.dienst .campus {
-  font-family: thinTekst;
-  font-size: 0.8em;
-}
 
 .dienst .emailAdres {
   margin-top: 20px;
