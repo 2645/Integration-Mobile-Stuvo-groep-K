@@ -119,8 +119,8 @@ p {
 }
 
 .events .icoon {
-    width: 3vw;
-    margin-top: 1.5vw;
+    width: 3%;
+    margin-top: 1.5%;
 }
 
 .events h3 {
@@ -160,6 +160,7 @@ p {
 }
 .actueel li{
     margin-bottom: 40px;
+    
 }
 
 .actueel img {
