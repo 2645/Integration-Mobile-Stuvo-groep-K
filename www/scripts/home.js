@@ -15,7 +15,7 @@ function addEvents() {
 
     $('.homepageSlider').on("swiperight", function (event) {
         var pos = $(this).position().left;
-        var width = $(window).width();        
+        var width = $(window).width();
         if (pos < 0) {
             $(this).animate({
                 left: '+=' + width + 'px'
@@ -55,15 +55,14 @@ function generateEventsHtml(data) {
     return htmlString;
 }
 
-function generateActuasHtml(data){
+function generateActuasHtml(data) {
     var actuas = JSON.parse(data).data;
     var htmlString = "";
     var counter = 0;
-    for(var actua in actuas){
-        console.log(actuas[actua]);
-        htmlString+=generateActuaHtml(actuas[actua]);
-        counter ++;
-        if(counter >= 4){
+    for (var actua in actuas) {
+        htmlString += generateActuaHtml(actuas[actua]);
+        counter++;
+        if (counter >= 4) {
             return htmlString;
         }
     }
@@ -90,8 +89,23 @@ function generateEventHtml(event) {
     return htmlString;
 }
 
-function generateActuaHtml(){
-    return "";
+function generateActuaHtml(actua) {
+
+    var htmlString = "";
+    var naam = actua.name;
+    var descr = actua.description;
+    var tijd = actua.created_time;
+    var datum = tijd.split("T")[0].split("-");
+    var imgSource = actua.picture;
+    console.log(imgSource);
+    htmlString += "<li><img src='" + imgSource + "'>";
+    htmlString += "<div class='info'><h3>" + naam + "</h3>";
+    htmlString += "<p>" + descr + "</p>";
+    htmlString += "<img class='icoon' src='img/kalender_red.png'>";
+    htmlString += "<p class='datum'>" + datum[2] + "/" + datum[1] + "/" + datum[0] + "</p></div></li>";
+    htmlString += "<div class='clearfix'></div>";
+
+    return htmlString;
 }
 
 
