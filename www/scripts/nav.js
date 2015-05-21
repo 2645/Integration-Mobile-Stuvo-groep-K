@@ -1,27 +1,46 @@
-$(document).ready(init);
+init();
 
 function init() {
+    $("#hamburger").click(function () {        
+        toggleNavMenu(true);      
+    });
+    
+    $("#tandwiel").click(function () {        
+        toggleSettingsMenu(true);      
+    });
+}
 
-    var count = 0;
-$("#hamburger").click(function() {
-    count++;
-    var isEven = function(someNumber) {
-        return (someNumber % 2 === 0) ? true : false;
-    };
-    if (isEven(count) === false) {
+var activeNav = false;
+var activeSettings = false;
+
+function toggleNavMenu(buttonPressed){  
+    console.log("NAV : active:"+activeNav+"||button pressed:"+buttonPressed);
+    if(!activeNav && buttonPressed){
         $("#navigatie").animate({
-            marginLeft: "0"
-        }, 400);
+            left:"+=80%"
+        },100,false);
+        activeNav = !activeNav;
+        toggleSettingsMenu(false);
+    }else if(activeNav){
+        $("#navigatie").animate({
+            left:"-=80%"
+        },100,false);
+        activeNav = !activeNav;
+    }    
+}
+
+function toggleSettingsMenu(buttonPressed){  
+    console.log("SETTINGS : active:"+activeSettings+"||button pressed:"+buttonPressed);
+    if(!activeSettings && buttonPressed){
         $("#settings").animate({
-            right: "-73%"
-        }, 400);
-    } else if (isEven(count) === true) {
-        $("#navigatie").animate({
-            marginLeft: "-80%"
-        }, 400);
-    }
-    
-});
-    
-      
+            right:"+=80%"
+        },100,false);
+        toggleNavMenu(false);
+        activeSettings = !activeSettings;
+    }else if(activeSettings){
+        $("#settings").animate({
+            right:"-=80%"
+        },100,false);
+        activeSettings = !activeSettings;
+    }    
 }
