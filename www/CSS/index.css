@@ -5,12 +5,12 @@
 
 @font-face {
     font-family: 'KlinicSlabLight';
-    src: url('Fonts/KlinicSlab_Personal_License_Titel/KlinicSlabLight.otf');
+    src: url('../Fonts/KlinicSlab_Personal_License_Titel/KlinicSlabLight.otf');
 }
 
 @font-face {
     font-family: 'KlinicSlabMedium';
-    src: url('Fonts/KlinicSlab_Personal_License_Titel/KlinicSlabMedium.otf');
+    src: url('../Fonts/KlinicSlab_Personal_License_Titel/KlinicSlabMedium.otf');
 }
 
 .login-grey-background {
@@ -87,14 +87,14 @@
 }
 
 #email-login {
-    background-image: url(img/persoon.png);
+    background-image: url(../img/persoon.png);
     background-repeat: no-repeat;
     background-size: 15px 15px;
     background-position: 3% 50%;
 }
 
 #wachtwoord-login {
-    background-image: url(img/pass.png);
+    background-image: url(../img/pass.png);
     background-repeat: no-repeat;
     background-size: 12px 16px;
     background-position: 3% 50%;

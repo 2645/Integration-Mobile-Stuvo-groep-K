@@ -97,7 +97,6 @@ function generateActuaHtml(actua) {
     var tijd = actua.created_time;
     var datum = tijd.split("T")[0].split("-");
     var imgSource = actua.picture;
-    console.log(imgSource);
     htmlString += "<li><img src='" + imgSource + "'>";
     htmlString += "<div class='info'><h3>" + naam + "</h3>";
     htmlString += "<p>" + descr + "</p>";
