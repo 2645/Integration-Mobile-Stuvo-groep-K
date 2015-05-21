@@ -109,8 +109,9 @@
 /**********SETTINGS**********/
 
 #settings {
+    display:hidden;
     z-index: 2;
-    display: block;
+    display: none;
     position: absolute;
     right: -80%;
     width: 78%;

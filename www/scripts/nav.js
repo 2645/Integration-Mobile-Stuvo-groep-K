@@ -32,6 +32,7 @@ function toggleNavMenu(buttonPressed){
 function toggleSettingsMenu(buttonPressed){  
     console.log("SETTINGS : active:"+activeSettings+"||button pressed:"+buttonPressed);
     if(!activeSettings && buttonPressed){
+        $("#settings").show();
         $("#settings").animate({
             right:"+=80%"
         },100,false);
@@ -40,7 +41,9 @@ function toggleSettingsMenu(buttonPressed){
     }else if(activeSettings){
         $("#settings").animate({
             right:"-=80%"
-        },100,false);
+        },100,false,function(){
+            $("#settings").hide();
+        });
         activeSettings = !activeSettings;
     }    
 }
