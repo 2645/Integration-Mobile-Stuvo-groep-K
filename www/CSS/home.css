@@ -158,6 +158,9 @@ p {
     margin: auto;
     list-style-type: none;
 }
+.actueel li{
+    margin-bottom: 40px;
+}
 
 .actueel img {
     width: 30%;
