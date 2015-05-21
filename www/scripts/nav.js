@@ -17,6 +17,7 @@ $("#hamburger").click(function() {
         }, 400);
     } else if (isEven(count) === true) {
         $("#navigatie").animate({
+            marginLeft: "-80%"
         }, 400);
     }
     
