@@ -46,8 +46,8 @@
 
 #navigatie {
     display: block;
-    margin-left: -260px;
-    width: -73%;
+    margin-left: -73%;
+    width: -260px;
     height: 100%;
     background-color: #6f2421;
 }
@@ -79,11 +79,20 @@
 
 #navigatie .navigatieNav ul li {
     display: block;
-    width: 160px;
-    padding: 8px 0 10px 100px;
+    width: 150px;
+    padding: 8px 0 10px 110px;
     background-color: #a33534;
     margin-bottom: 10px;
 }
+
+#navigatie .navigatieNav ul .current {
+    display: block;
+    width: 160px;
+    padding: 8px 0 10px 110px;
+    background-color: #fff;
+    margin-bottom: 10px;
+}
+
 
 .navigatieNav ul li img {
     display: inline-block;
@@ -95,4 +104,11 @@
     font-size: 24px;
     text-decoration: none;
     color: #fff;
+}
+
+#navigatie .navigatieNav ul .current a {
+    font-family: Title Regular;
+    font-size: 24px;
+    text-decoration: none;
+    color: #a33534;
 }
