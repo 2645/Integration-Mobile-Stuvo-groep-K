@@ -2,39 +2,46 @@
     font-family: Title;
     src: url(../Fonts/KlinicSlab_Personal_License_Titel/KlinicSlabBold.otf);
 }
+
 @font-face {
     font-family: Title Regular;
     src: url(../Fonts/KlinicSlab_Personal_License_Titel/KlinicSlabMedium.otf);
 }
+
 @font-face {
     font-family: Tekst;
     src: url(../Fonts/MissionGothic_Personal_License_Tekst/Mission%20Gothic%20Regular.otf);
 }
 
-*{
-margin: 0;
-padding: 0;
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#navigatie {
+    position: absolute;
+    z-index:500;
 }
 
 .hoofdNav {
-  background-color: #a33534;
-  height: 60px;
+    background-color: #a33534;
+    height: 60px;
 }
 
 .hoofdNav #hamburger {
-padding: 17px 17px;
+    padding: 17px 17px;
     width: 36px;
     height: 26px;
 }
+
 .hoofdNav #hamburgerClick {
-padding: 17px 17px;
+    padding: 17px 17px;
     margin-top: -60px;
     margin-left: -70px;
     background-color: #6f2421;
     width: 36px;
     height: 26px;
 }
-
 /**********NAViGATIE**********/
 
 #navigatie {
@@ -42,11 +49,11 @@ padding: 17px 17px;
     margin-left: -260px;
     width: 260px;
     height: 580px;
-    background-color: #6f2421;  
+    background-color: #6f2421;
 }
 
 #navigatie input[type=text] {
-    background-color: rgba(255,255,255,0.75);
+    background-color: rgba(255, 255, 255, 0.75);
     border: 0;
     height: 20px;
     padding: 7px;
@@ -56,9 +63,9 @@ padding: 17px 17px;
     color: #838081;
 }
 
-#navigatie .searchButton{
-    float:none;
-    background:url(../img/search_red.png) no-repeat;
+#navigatie .searchButton {
+    float: none;
+    background: url(../img/search_red.png) no-repeat;
     border: 0;
     padding: 11px;
     width: 30px;
@@ -67,24 +74,20 @@ padding: 17px 17px;
 }
 
 #navigatie .navigatieNav {
-    
     margin-top: -5px;
 }
 
-#navigatie .navigatieNav ul li  {
-    
+#navigatie .navigatieNav ul li {
     display: block;
     width: 160px;
     padding: 8px 0 10px 100px;
     background-color: #a33534;
-    margin-bottom: 10px;    
+    margin-bottom: 10px;
 }
 
-.navigatieNav ul li img  {
-    
+.navigatieNav ul li img {
     display: inline-block;
     margin-left: -80px;
-    
 }
 
 #navigatie .navigatieNav ul li a {
