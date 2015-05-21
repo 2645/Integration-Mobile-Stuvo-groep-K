@@ -71,14 +71,14 @@ p {
 }
 
 .titelHome {
-    font-size: 7vw;
+    font-size: 1.6em;
     text-align: center;
     color: #a33534;
-    border-top: dashed 0.5vw;
-    border-bottom: dashed 0.5vw;
+    border-top: dashed 1px;
+    border-bottom: dashed 1px;
     padding: 5px 0 2.5px 0;
     width: 80%;
-    margin: 3vw auto;
+    margin: 15px auto;
     font-family: Title;
 }
 
