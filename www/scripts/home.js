@@ -32,7 +32,7 @@ function getEvents(amount) {
 
 function getNews() {
     $.post("http://dtprojecten.ehb.be/~stuvo/public_html/api/nieuws.php", function (data) {
-        //console.log(data);
+        $('.actueel ul').html(generateActuasHtml(data));
     });
 }
 
@@ -55,6 +55,21 @@ function generateEventsHtml(data) {
     return htmlString;
 }
 
+function generateActuasHtml(data){
+    var actuas = JSON.parse(data).data;
+    var htmlString = "";
+    var counter = 0;
+    for(var actua in actuas){
+        console.log(actuas[actua]);
+        htmlString+=generateActuaHtml(actuas[actua]);
+        counter ++;
+        if(counter >= 4){
+            return htmlString;
+        }
+    }
+    return htmlString;
+}
+
 function generateEventHtml(event) {
 
     var htmlString = "";
@@ -74,6 +89,12 @@ function generateEventHtml(event) {
 
     return htmlString;
 }
+
+function generateActuaHtml(){
+    return "";
+}
+
+
 
 function maandToString(maand) {
     switch (maand) {
