@@ -7,5 +7,9 @@ function getContacts() {
 }
 
 function generateContactsHtml(data){
-    
+    var contacts = JSON.parse(data).contact;
+    var htmlString ="";
+    for(var dep in contacts){
+        console.log(contacts[dep]);
+    }
 }
