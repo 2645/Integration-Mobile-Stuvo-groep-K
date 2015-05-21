@@ -1,0 +1,73 @@
+@font-face {
+    font-family: Title;
+    src: url(../Fonts/KlinicSlab_Personal_License_Titel/KlinicSlabBold.otf);
+}
+
+@font-face {
+    font-family: Title Regular;
+    src: url(../Fonts/KlinicSlab_Personal_License_Titel/KlinicSlabMedium.otf);
+}
+
+@font-face {
+    font-family: Tekst;
+    src: url(../Fonts/MissionGothic_Personal_License_Tekst/Mission%20Gothic%20Regular.otf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+
+.hoofdNav {
+    background-color: #a33534;
+    height: 60px;
+}
+
+.hoofdNav #tandwiel {
+    float:right;
+    
+    padding: 17px 17px;
+    width: 25px;
+    height: 29px;
+}
+
+.hoofdNav #tandwielClick {
+    float:right;
+    margin-top: 0;
+    margin-right: -50%;
+    background-color: #6f2421;
+}
+/**********NAViGATIE**********/
+
+#settings {
+    float:right;
+    display: block;
+    margin-right: -90%;
+    width: 260px;
+    height: 580px;
+    background-color: #6f2421;
+}
+
+
+#settings .settingsNav {
+    margin-top: -5px;
+}
+
+#settings .settingsNav ul li {
+    display: block;
+    width: 160px;
+    padding: 15px;
+}
+
+#settings .settingsNav ul li p {
+    font-family: Title Regular;
+    font-size: 14px;
+    text-decoration: none;
+    color: #fff;
+}
