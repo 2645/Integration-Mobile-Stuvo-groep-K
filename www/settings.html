@@ -14,7 +14,6 @@
 
         <nav class="hoofdNav">
             <div id="tandwiel"><img src="img/settings.png"></div>
-            <div id="tandwielClick"></div>
         </nav>
 
     </header>
@@ -24,7 +23,28 @@
     
     <nav class="settingsNav">
     <ul>
-        <li><p>Sta pushberichten toe</p></li>
+        <li><p>Pushberichten toestaan?</p>
+        
+        <div class="switch">
+  <input id="cmn-toggle-7" class="cmn-toggle cmn-toggle-yes-no" type="checkbox">
+  <label for="cmn-toggle-7" data-on="Ja" data-off="Nee"></label>
+</div>
+        </li>
+        
+        <li>
+            <p>Campusselectie:</p>
+<label class="label">
+        <select name="campus">
+<option value="Dansaert">Dansaert</option>
+<option value="IWT">IWT</option>
+<option value="Jette">Jette</option>
+<option value="RITS">RITS</option>
+<option value="KCB">KCB</option>
+<option value="TTK">TTK</option>
+</select>
+</label>
+        </li>
+        
 
     </ul>    
     </nav>

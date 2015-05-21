@@ -37,12 +37,6 @@ body {
     height: 29px;
 }
 
-.hoofdNav #tandwielClick {
-    float:right;
-    margin-top: 0;
-    margin-right: -50%;
-    background-color: #6f2421;
-}
 /**********NAViGATIE**********/
 
 #settings {
@@ -61,13 +55,127 @@ body {
 
 #settings .settingsNav ul li {
     display: block;
-    width: 160px;
-    padding: 15px;
+    width: 260px;
+    padding: 5px;
+    margin-left: -10px;
 }
 
 #settings .settingsNav ul li p {
     font-family: Title Regular;
-    font-size: 14px;
-    text-decoration: none;
+    font-size: 19px;
+    text-align: center;
     color: #fff;
+    padding: 20px;
+}
+
+.cmn-toggle {
+  position: absolute;
+  margin-left: -9999px;
+  visibility: hidden;
+}
+.cmn-toggle + label {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  user-select: none;
+}
+input.cmn-toggle-yes-no + label {
+  padding: 2px;
+  width: 50px;
+  height: 30px;
+margin-top:  15px;    
+margin-left: 105px;
+}
+input.cmn-toggle-yes-no + label:before {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  color: #a33534;
+  font-family: Title;
+  font-size: 16px;
+  text-align: center;
+  line-height: 35px;
+}
+input.cmn-toggle-yes-no + label:after {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  color: #fff;
+  font-family: Title;
+  font-size: 16px;
+  text-align: center;
+  line-height: 35px;
+}
+input.cmn-toggle-yes-no + label:before {
+  background-color: rgba(255, 255, 255, 0.75);
+  content: attr(data-off);
+  transition: transform 0.5s;
+  backface-visibility: hidden;
+}
+input.cmn-toggle-yes-no + label:after {
+  background-color: #a33534;
+  content: attr(data-on);
+  transition: transform 0.5s;
+  transform: rotateY(180deg);
+  backface-visibility: hidden;
+}
+input.cmn-toggle-yes-no:checked + label:before {
+  transform: rotateY(180deg);
+}
+input.cmn-toggle-yes-no:checked + label:after {
+  transform: rotateY(0);
+}
+
+select {
+    padding:10px;
+    margin: 0;
+    background: rgba(255, 255, 255, 0.75);
+    color:#a33534;
+    border:none;
+    outline:none;
+    display: inline-block;
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    appearance:none;
+    cursor:pointer;
+}
+
+select, option { width: 100px;
+    font-family: Title;
+    font-size: 14px;
+
+margin-left: 80px;
+margin-top: 15px}
+
+option {background:rgba(255, 255, 255, 0);}
+
+.label {position:relative}
+.label:after {
+    content:'<>';
+    font:11px "Consolas", monospace;
+    color:#a33534;
+    -webkit-transform:rotate(90deg);
+    -moz-transform:rotate(90deg);
+    -ms-transform:rotate(90deg);
+    transform:rotate(90deg);
+    right:8px; top:2px;
+    padding:0 0 2px;
+    position:absolute;
+    pointer-events:none;
+}
+.label:before {
+    content:'';
+    right:6px; top:0px;
+    width:20px; height:20px;
+    background:rgba(255, 255, 255, 0);
+    position:absolute;
+    pointer-events:none;
+    display:block;
 }
