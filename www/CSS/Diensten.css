@@ -1,0 +1,351 @@
+@font-face {
+    font-family: Title;
+    src: url(../Fonts/KlinicSlab_Personal_License_Titel/KlinicSlabBold.otf);
+}
+@font-face {
+    font-family: Tekst;
+    src: url(../Fonts/MissionGothic_Personal_License_Tekst/Mission%20Gothic%20Regular.otf);
+}
+
+/*  fel rood: #d03830  */
+
+*{
+margin: 0;
+padding: 0;
+}
+
+body {
+  font-family: Title;
+  width: 100%;
+}
+
+h1{
+    padding-top: 0px;
+}
+
+/*****DIENSTEN*****/
+
+.hoofdNav {
+    background-color: #a33534;
+    height: 60px;
+}
+
+.hoofdNav #logo {
+    position: absolute;
+    top: 0;
+    left: 44%;
+}
+
+#navWrapper {
+    width: 100%;
+    overflow-x: hidden;
+    position:fixed;
+}
+
+.Diensten{
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    height: 70px;
+    background-color: #9e2822;
+}
+
+.CheeseBurger{
+    width: 33px;
+    float: left;
+    margin-left: 20px;
+    margin-top: 21px;
+}
+
+.Settings{
+    height: 29px;
+    float: left;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+h2{
+    font-size: 30px;
+    margin-top: 18px;
+    float: left;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header nav h1{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.FotoGoedeRaad{
+    /*display: none;*/
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#IcoonGoedeRaad{
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.InfoTekst{
+    list-style-type: none;
+    width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 13px;
+    margin-bottom: 12px;
+}
+
+.dashedRedLine{
+    height: 0px;
+    border-bottom: 2px dashed #9e2822;
+    width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 12px;
+}
+
+#emailENpijl{
+    width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.emailRood{
+    font-size: 13px;
+    color: #9e2822;
+    font-size: 12px;
+    float: left;
+}
+
+.pijlUp img{
+    width: 20px;
+    height: 20px;
+    background-color: #9e2822;
+    float: right;
+}
+
+/*#SectionContent{
+    margin-bottom: 10px;
+}*/
+
+#ShowContent{
+    margin-bottom: 10px;
+}
+
+#ToggleContent{
+    display: none;
+    margin-bottom: 10px;
+}
+
+.DienstTitel1{
+    position: absolute;
+    display: table;
+    display: none;
+    width: 100%;
+    height: 70px;
+    background-color: #b74041;
+}
+
+.DienstTitel1 h1{
+    position: absolute;
+    width: 100%;
+    margin-top: -25px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.DienstTitel1 img{
+    height: 45px;
+    position: relative;
+    top: 12.5px;
+    bottom: 12.5px;
+    left: 157.5px; /* 360-45=315   /2=157.5*/
+    right: 157.5px;
+}
+
+/* background size: contain of em groottes */
+
+.DienstTitel2{
+    display: table;
+    width: 100%;
+    padding-left: auto;
+    padding-right: auto;
+    height: 70px;
+    background-color: #d07373;
+}
+
+.DienstTitel2 h1{
+    position: absolute;
+    width: 100%;
+    margin-top: -28px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.DienstTitel2 img{
+    height: 45px;
+    position: relative;
+    top: 12.5px;
+    bottom: 12.5px;
+    left: 157.5px; /* 360-45=315   /2=157.5*/
+    right: 157.5px;
+}
+
+.DienstTitel3{
+    display: table;
+    width: 100%;
+    padding-left: auto;
+    padding-right: auto;
+    height: 70px;
+    background-color: #e49090;
+}
+
+.DienstTitel3 h1{
+    width: 100%;
+    position: absolute;
+    margin-top: -28px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.DienstTitel3 img{
+    height: 45px;
+    position: relative;
+    top: 12.5px;
+    bottom: 12.5px;
+    left: 154.5px; /* 360-51=309   /2=154.5*/
+    right: 154.5px;
+}
+
+.DienstTitel4{
+    display: table;
+    width: 100%;
+    padding-left: auto;
+    padding-right: auto;
+    height: 70px;
+    background-color: #bcbcbc;
+}
+
+.DienstTitel4 h1{
+    position: absolute;
+    width: 100%;
+    margin-top: -28px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.DienstTitel4 img{
+    height: 45px;
+    position: relative;
+    top: 12.5px;
+    bottom: 12.5px;
+    left: 154px; /* 360-52=308   /2=154*/
+    right: 154px;
+}
+
+.DienstTitel5{
+    display: table;
+    width: 100%;
+    padding-left: auto;
+    padding-right: auto;
+    height: 70px;
+    background-color: #878786;
+}
+
+.DienstTitel5 h1{
+    position: absolute;
+    width: 100%;
+    margin-top: -28px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.DienstTitel5 img{
+    height: 45px;
+    position: relative;
+    top: 12.5px;
+    bottom: 12.5px;
+    left: 157px; /* 360-46=314   /2=157*/
+    right: 157px;
+}
+
+.DienstTitel6{
+    display: table;
+    width: 100%;
+    padding-left: auto;
+    padding-right: auto;
+    height: 70px;
+    background-color: #3c3c3b;
+}
+
+.DienstTitel6 h1{
+    position: absolute;
+    width: 100%;
+    margin-top: -28px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.DienstTitel6 img{
+    height: 45px;
+    position: relative;
+    top: 12.5px;
+    bottom: 12.5px;
+    left: 160px; /* 315/2 */ /* 360-38=322  /2=166 */
+    right: 160px;
+}
+
+.GoedeRaad{
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.Centen{
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.Diversiteit{
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.KotenVervoer{
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.LuisterendOor{
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.SportCultuur{
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
