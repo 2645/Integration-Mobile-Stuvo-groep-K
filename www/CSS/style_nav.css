@@ -35,6 +35,12 @@
     top: 0%;
     padding: 17px 17px;
 }
+
+.hoofdNav #logo {
+    position: absolute;
+    top: 0;
+    left: 44%;
+}
 /**********NAVIGATIE**********/
 
 #navigatie {
