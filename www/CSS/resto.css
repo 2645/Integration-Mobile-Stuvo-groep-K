@@ -37,16 +37,31 @@
     background-color: rgb(105, 103, 101);
     height: 50px;
 }
+.navResto ul{
+    display:table;
+    width:100%;
+}
 
 .navResto li {
-    display: inline-block;
-    width: 15.73%;
+    display: table-cell;
+    width: 15%;
     text-align: center;
     padding: 16px 0;
     color: white;
     font-family: titel;
 }
 /*****RESTO*****/
+
+.dagSelectieWrapper{
+    width:100%;
+    overflow-x:hidden;
+}
+
+.dagSelectieWrapperSlider{
+    width:500%;
+    position:relative;
+    
+}
 
 .dagSelectie {
     height: 60px;
@@ -55,22 +70,32 @@
 }
 
 .dagSelectie h1 {
+    width:15%;
+    margin: 0 2.5%;
+    text-align: center;
     font-family: Title;
+    font-size: 1.5em;
     color: rgb(105, 103, 101);
 }
 
 .dagSelectie .pijltjes {
     width: 5%;
+    padding:0 2.5%;
+}
+
+.dagSelectie{
+    text-align: center;
 }
 
 .dagSelectie h1 {
     text-align: center;
+    padding-top: 12px;
     display: inline-block;
-    padding: 11px 105px;
 }
 
 .dagSelectie .pijltjeRechts {
     position: absolute;
+    z-index:1;
     right: 10px;
     margin-top: 15px;
 }
@@ -78,6 +103,7 @@
 .dagSelectie .pijltjeLinks {
     position: absolute;
     margin-top: 15px;
+    z-index:1;
     left: 10px;
 }
 
