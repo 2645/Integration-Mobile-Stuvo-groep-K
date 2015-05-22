@@ -39,7 +39,7 @@
 .hoofdNav #logo {
     position: absolute;
     top: 0;
-    left: 44%;
+    left: 43%;
 }
 /**********NAVIGATIE**********/
 
@@ -140,13 +140,13 @@
 
 #black {
     position: absolute;
-    bottom: 0;
+    bottom: -60px;
     left: 0;
     z-index: 2;
     display: none;
     background-color: rgba(0, 0, 0, 0.5);
     width: 100%;
-    height: 90.8%;
+    height: 100%%;
     opacity: 0;
 }
 
