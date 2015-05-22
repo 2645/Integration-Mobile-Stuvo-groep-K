@@ -28,12 +28,6 @@ p {
     color: #696765;
 }
 
-#navWrapper {
-    width: 100%;
-    overflow-x: hidden;
-    position:fixed;
-}
-
 .hoofdNav {
     background-color: #a33534;
     height: 60px;

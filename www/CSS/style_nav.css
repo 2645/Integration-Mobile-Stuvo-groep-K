@@ -41,6 +41,13 @@
     top: 0;
     left: 43%;
 }
+
+#navWrapper {
+    width: 100%;
+    height:100%;
+    overflow-x: hidden;
+    position: fixed;
+}
 /**********NAVIGATIE**********/
 
 #navigatie {
@@ -49,7 +56,7 @@
     position: absolute;
     left: -80%;
     width: 80%;
-    height: 90.8%;
+    min-height: 100%;
     background-color: #6f2421;
 }
 
