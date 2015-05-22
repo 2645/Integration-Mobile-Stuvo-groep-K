@@ -13,12 +13,21 @@ $(document).ready(function(){
     
     $('.DienstTitel1').click(function(){
         $('#ToggleContent1').slideToggle('fast');
+        $('#ToggleContent2').slideUp('fast');
+        $('#ToggleContent3').slideUp('fast');
+        $('#ToggleContent4').slideUp('fast');
+        $('#ToggleContent5').slideUp('fast');
+        $('#ToggleContent6').slideUp('fast');
     });
     
     $('.DienstTitel2').click(function(){
         $('#ToggleContent2').slideToggle('fast');
         $('.DienstTitel1').slideDown('fast');
         $('#ToggleContent1').slideUp('fast');
+        $('#ToggleContent3').slideUp('fast');
+        $('#ToggleContent4').slideUp('fast');
+        $('#ToggleContent5').slideUp('fast');
+        $('#ToggleContent6').slideUp('fast');
     });
 
     $('#ToggleContent2 > #emailENpijl > .pijlUp').click(function(){
@@ -27,7 +36,11 @@ $(document).ready(function(){
     
     $('.DienstTitel3').click(function(){
         $('#ToggleContent3').slideToggle('fast');
+        $('#ToggleContent1').slideUp('fast');
         $('#ToggleContent2').slideUp('fast');
+        $('#ToggleContent4').slideUp('fast');
+        $('#ToggleContent5').slideUp('fast');
+        $('#ToggleContent6').slideUp('fast');
     });
     
     $('#ToggleContent3 > #emailENpijl > .pijlUp').click(function(){
@@ -36,7 +49,11 @@ $(document).ready(function(){
     
     $('.DienstTitel4').click(function(){
         $('#ToggleContent4').slideToggle('fast');
+        $('#ToggleContent1').slideUp('fast');
+        $('#ToggleContent2').slideUp('fast');
         $('#ToggleContent3').slideUp('fast');
+        $('#ToggleContent5').slideUp('fast');
+        $('#ToggleContent6').slideUp('fast');
     });
     
     $('#ToggleContent4 > #emailENpijl > .pijlUp').click(function(){
@@ -45,7 +62,11 @@ $(document).ready(function(){
     
     $('.DienstTitel5').click(function(){
         $('#ToggleContent5').slideToggle('fast');
+        $('#ToggleContent1').slideUp('fast');
+        $('#ToggleContent2').slideUp('fast');
+        $('#ToggleContent3').slideUp('fast');
         $('#ToggleContent4').slideUp('fast');
+        $('#ToggleContent6').slideUp('fast');
     });
     
     $('#ToggleContent5 > #emailENpijl > .pijlUp').click(function(){
@@ -54,6 +75,10 @@ $(document).ready(function(){
     
     $('.DienstTitel6').click(function(){
         $('#ToggleContent6').slideToggle('fast');
+        $('#ToggleContent1').slideUp('fast');
+        $('#ToggleContent2').slideUp('fast');
+        $('#ToggleContent3').slideUp('fast');
+        $('#ToggleContent4').slideUp('fast');
         $('#ToggleContent5').slideUp('fast');
     });
     
