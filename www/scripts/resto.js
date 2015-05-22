@@ -12,12 +12,18 @@ function addActions() {
 
     $('.pijltjeLinks').click(function (event) {
         slideRight($(".menuWrapperSlider"));
-    });    
-    
+    });
+
     $('.pijltjeRechts').click(function (event) {
         slideLeft($(".menuWrapperSlider"));
     });
-
+    $('.navResto li').click(function (event) {
+        getMenus(0);
+        var position = $(this).position().left;
+        $('#pointer').animate({
+            left: position + "px"
+        }, 100);
+    });
 
 }
 
@@ -53,8 +59,9 @@ function updateDaySlider(distance) {
 
 function getMenus(id) {
     $.post("http://dtprojecten.ehb.be/~stuvo/public_html/api/resto.php?campus=0", function (data) {
+        $(".dagSelectieWrapperSlider").html("");
         $(".menuWrapperSlider").html(generateMenusHtml(data));
-        var menu = JSON.parse(data).menu;
+
     });
 }
 
