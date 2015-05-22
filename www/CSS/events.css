@@ -126,21 +126,21 @@ body,html{
     color: white;
     font-size: 1.5em;
     text-align: center;
-    padding: 2% 0 1%;
+    padding: 2% 0 0.2%;
 }
 
 .eventPijl{
     z-index: 2;
-    position: absolute;
-    top: 36.7%;
-    height: 4.5%;
+    height: 19px;
 }
 
 .pijlLinks{
-    left: 5%;
+    float: left;
+    margin-left: 5%;
 }
 .pijlRechts{
-    left: 90.5%;
+    float: right;
+    margin-right: 5%;
 }
 
  
