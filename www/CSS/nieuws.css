@@ -81,28 +81,28 @@ body,html{
 
 }
 
-.datum ul {
+.alles ul {
     margin: auto;
     width: 80%;
     list-style-type: none;
     margin-top: 15px;
 }
 
-.datum li{
+.alles li{
     height: 100%;
 }
 
-.datum li:first{
+.alles li:first{
     height: 100%;
     border-bottom: 1px dashed #999;
     
 }
-.datum h3 {
+.alles h3 {
     font-family: Title;
     
 }
 
-.datum .info {
+.alles .info {
     width: 100%;
     margin-bottom: 15px;
 }
@@ -162,7 +162,7 @@ body,html{
     margin-right: 1%;
 }
 
-.datum td{
+.alles td{
     color: rgb(105, 103, 101);
     font-size: 0.8em;
     width: 40%;
@@ -172,12 +172,13 @@ body,html{
     
 }
 
-.datum table{
+.alles table{
     width: 100%;
 }
 
-.datum .infoSelected table{
+.alles .infoSelected table{
     border-bottom: 1px dashed #999;
+    margin-bottom: 15px;
 }
 
 .nieuwsPictureNotSelected{
@@ -191,15 +192,27 @@ body,html{
 
 .infoNotSelected p{
     display: inline;
+    font-size: 0.9em;
 }
 
+.infoNotSelected .leesMeer{
+    display: inline;
+    color: #6f2421;
+    font-size: 0.9em;
+}
 .notSelected{
     font-size: 1em;
     
 }
 
+.infoNotSelected table {
+    margin-left: 0;
+    width: 71%;
+}
+
 .infoNotSelected .icoon {
-    width: 4%;
+    width: 6%;
     display: inline;
     margin-right: 1%;
+    margin-top: 14px;
 }
