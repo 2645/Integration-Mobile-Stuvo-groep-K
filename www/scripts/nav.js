@@ -17,13 +17,13 @@ function toggleNavMenu(buttonPressed){
     if(!activeNav && buttonPressed){
         $("#navigatie").animate({
             left:"+=80%"
-        },100,false);
+        },300,false);
         activeNav = !activeNav;
         toggleSettingsMenu(false);
     }else if(activeNav){
         $("#navigatie").animate({
             left:"-=80%"
-        },100,false);
+        },300,false);
         activeNav = !activeNav;
     }    
 }
@@ -33,13 +33,13 @@ function toggleSettingsMenu(buttonPressed){
         $("#settings").show();
         $("#settings").animate({
             right:"+=80%"
-        },100,false);
+        },300,false);
         toggleNavMenu(false);
         activeSettings = !activeSettings;
     }else if(activeSettings){
         $("#settings").animate({
             right:"-=80%"
-        },100,false,function(){
+        },300,false,function(){
             $("#settings").hide();
         });
         activeSettings = !activeSettings;

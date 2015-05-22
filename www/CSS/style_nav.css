@@ -128,6 +128,10 @@
     padding: 20px;
 }
 
+#settings .settingsNav ul li p {
+    color: #fff;
+}
+
 .cmn-toggle {
     position: absolute;
     margin-left: -9999px;
@@ -178,7 +182,7 @@ input.cmn-toggle-yes-no + label:after {
 }
 
 input.cmn-toggle-yes-no + label:before {
-    background-color: rgba(255, 255, 255, 0.75);
+    background-color: rgb(255, 255, 255);
     content: attr(data-off);
     transition: transform 0.5s;
     backface-visibility: hidden;
@@ -203,7 +207,7 @@ input.cmn-toggle-yes-no:checked + label:after {
 select {
     margin-top: 15px;
     padding: 10px;
-    background: rgba(255, 255, 255, 0.75);
+    background: rgb(255, 255, 255);
     color: #a33534;
     border: none;
     outline: none;
