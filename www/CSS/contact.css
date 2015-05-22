@@ -56,11 +56,18 @@
 
 .navContact li {
     display: table-cell;
-    width: 15.73%;
+    width: 14.28%;
     text-align: center;
     padding: 16px 0;
     color: white;
     font-family: titel;
+}
+#pointer{
+    width:14.28%;
+    height:5px;
+    position:relative;
+    top:-5px;
+    background-color: #6f2421;
 }
 /**********CONTACT**********/
 

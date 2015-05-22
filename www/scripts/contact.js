@@ -6,6 +6,7 @@ function addActions() {
         var pos = $(this).position().left;
         var width = $(window).width();
         if (pos > -width * 6) {
+            updateSlider(width/7);
             $(this).animate({
                 left: '-=' + width + 'px'
             }, 100);
@@ -16,10 +17,20 @@ function addActions() {
         var pos = $(this).position().left;
         var width = $(window).width();
         if (pos < 0) {
+            updateSlider(-width/7);
+            updateSlider();
             $(this).animate({
                 left: '+=' + width + 'px'
             }, 100);
         }
+    });
+}
+
+function updateSlider(distance){
+    $("#pointer").animate({
+        left: '+='+distance +"px"
+    },100,function(){
+        
     });
 }
 
