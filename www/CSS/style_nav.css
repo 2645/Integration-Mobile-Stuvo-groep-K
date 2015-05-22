@@ -37,7 +37,9 @@
 }
 
 .hoofdNav #pageTitle{
-    width: 100%;
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
     text-align: center;
     position: absolute;
     top: 19px;
