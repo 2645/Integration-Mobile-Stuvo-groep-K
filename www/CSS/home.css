@@ -64,6 +64,8 @@ p {
 
 .nav a {
     color: white;
+    font-family: Title Regular;
+    text-decoration: none;
     font-size: 5.2vw;
 }
 
