@@ -10,13 +10,23 @@ function init() {
     $("#tandwiel").click(function () {
         toggleSettingsMenu(true);
     });
+    
     $("#black").click(function(){
         if(activeNav)toggleNavMenu(true);
         if(activeSettings)toggleSettingsMenu(true);
     });
+    
     $(".navigatieNav li").hover(function(){
       $(this).css("background-color","red");
     });
+    
+    $('.navWrapper').on("swipeleft",function(){
+        if(activeNav)toggleNavMenu(true);
+    })
+    $('.navWrapper').on("swiperight",function(){
+        if(activeSettings)toggleSettingsMenu(true);
+    })
+    
 }
 
 
