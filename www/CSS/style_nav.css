@@ -106,11 +106,10 @@
     text-decoration: none;
     color: #a33534;
 }
-
 /**********SETTINGS**********/
 
 #settings {
-    display:hidden;
+    display: hidden;
     z-index: 3;
     display: none;
     position: absolute;
@@ -131,6 +130,18 @@
 
 #settings .settingsNav ul li p {
     color: #fff;
+}
+
+#black {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 90.8%;
+    opacity: 0;
 }
 
 .cmn-toggle {
