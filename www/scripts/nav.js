@@ -14,7 +14,7 @@ function init() {
         if(activeNav)toggleNavMenu(true);
         if(activeSettings)toggleSettingsMenu(true);
     });
-  $('.navigatieNav a').click(function(){
+  $('.navigatieNav li').mousedown(function(){
     $(this).css("background-color","red");
 
   });
