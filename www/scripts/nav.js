@@ -14,6 +14,10 @@ function init() {
         if(activeNav)toggleNavMenu(true);
         if(activeSettings)toggleSettingsMenu(true);
     });
+  $('.navigatieNav a').click(function(){
+    $(this).css("background-color","red");
+
+  });
 }
 
 
