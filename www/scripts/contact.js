@@ -25,14 +25,14 @@ function generateContactHtml(dienst) {
     var tel = dienst.telefoonnummer;
     var email = dienst.email;
     htmlString += "<div class='dienst'><h1 class='titelContact'>" + dep + "</h1>";
-    htmlString += "<img class='icoon' src='Img/iconen_psd.png'>";
+    htmlString += "<img class='icoon' src='img/iconen_psd.png'>";
     htmlString += "<div class='info'><ul>";
 
     if (typeof voornaam === 'string') {
         htmlString += singleContact(voornaam, achternaam, tel);
         htmlString += "</ul></div>";
         htmlString += "<div class='clearfix'></div>";
-        htmlString += "<div class='emailAdres'><img class='icoonEmail' src='Img/enveloppe_grey.png'><p>" + email + "</p></div>";
+        htmlString += "<div class='emailAdres'><img class='icoonEmail' src='img/enveloppe_grey.png'><p>" + email + "</p></div>";
     } else if (typeof voornaam === 'undefined') {
         htmlString += "<li><p><span class='telefoonNummer'>" + tel + "</span></p></li><br></ul></div><div class='clearfix'></div>"
     } else {
@@ -44,7 +44,7 @@ function generateContactHtml(dienst) {
         htmlString += "<div class='clearfix'></div>";
 
         for (var i in email) {
-            htmlString += "<div class='emailAdres'><img class='icoonEmail' src='Img/enveloppe_grey.png'><p>" + email[i] + "</p></div>";
+            htmlString += "<div class='emailAdres'><img class='icoonEmail' src='img/enveloppe_grey.png'><p>" + email[i] + "</p></div>";
         }
     }
 
