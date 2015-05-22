@@ -10,20 +10,20 @@ $(document).ready(function(){
     $('#ToggleContent6').hide();
     
     $('#ToggleContent1 > #emailENpijl > .pijlUp').click(function(){
-        $('#ToggleContent1').hide('slow');
-        $('.DienstTitel1').show('slow');
+        $('#ToggleContent1').hide('fast');
+        $('.DienstTitel1').show('fast');
         
         /*$('.DienstTitel1').toggleClass('.DienstTitel1Show');*/
     });
     
-    $('DienstTitel1').click(function(){
-        $('#ToggleContent').show('slow');
+    $('.DienstTitel1').click(function(){
+        $('#ToggleContent1').show('fast');
     });
     
     $('.DienstTitel2').click(function(){
-        $('#ToggleContent2').show('slow');
-        $('.DienstTitel1').show('slow');
-        $('#ToggleContent1').hide('slow');
+        $('#ToggleContent2').show('fast');
+        $('.DienstTitel1').show('fast');
+        $('#ToggleContent1').hide('fast');
     });
 
     $('#ToggleContent2 > #emailENpijl > .pijlUp').click(function(){
