@@ -120,7 +120,7 @@ body,html{
     background-color: #838081;
     position: absolute;
     top: 36%;
-    opacity: 0.93;
+    opacity: 0.91;
     width: 100%;
     font-family: Title regular;
     color: white;
@@ -128,6 +128,22 @@ body,html{
     text-align: center;
     padding: 2% 0 1%;
 }
+
+.eventPijl{
+    z-index: 2;
+    position: absolute;
+    top: 36.7%;
+    height: 4.5%;
+}
+
+.pijlLinks{
+    left: 5%;
+}
+.pijlRechts{
+    left: 90.5%;
+}
+
+ 
 
 
 .events .info {
