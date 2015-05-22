@@ -9,8 +9,9 @@ jquery:true
 window.onload = initialize;
 var map;
 var marker;
+
+
 function initialize() {
-    
     var latLng = new google.maps.LatLng(50.8415587, 4.3237141);
     var options = {
         zoom: 15,
@@ -32,6 +33,26 @@ function initialize() {
     
     $('#anderEvent').click(function newEvent(){
         map.setCenter(new google.maps.LatLng(60.345334, 60.83332)); 
+    });
+        
+    $('.eventsSlider').on("swipeleft", function (event) {
+        var pos = $(this).position().left;
+        var width = $(window).width();
+        if (pos > -width * 2) {
+            $(this).animate({
+                left: '-=' + width + 'px'
+            }, 100);
+        }
+    });
+
+    $('.eventsSlider').on("swiperight", function (event) {
+        var pos = $(this).position().left;
+        var width = $(window).width();
+        if (pos < 0) {
+            $(this).animate({
+                left: '+=' + width + 'px'
+            }, 100);
+        }
     });
     
 }

@@ -33,6 +33,24 @@ body,html{
     z-index:0;
 }
 
+.eventsSliderWrapper {
+    width: 100%;
+    overflow: hidden;
+}
+
+.eventsSlider {
+    width: 1200%;
+    position: relative;
+    left: -100%;
+    height:100%;
+}
+
+.eventSlide {
+    
+    display: inline-block;
+    width: 8.333333%;
+}
+
 
 
 .clearfix{
@@ -118,7 +136,7 @@ body,html{
     font-size: 0.8em;
     margin-left: 5px;
     width: 64%;
-    font-family: Title regular;
+    font-family: Tekst;
     
 }
 
