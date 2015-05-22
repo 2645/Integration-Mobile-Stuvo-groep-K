@@ -1,12 +1,13 @@
 getEvents();
 getNews();
-addEvents();
+addActions();
 
-function addEvents() {
+function addActions() {
     $('.homepageSlider').on("swipeleft", function (event) {
         var pos = $(this).position().left;
         var width = $(window).width();
         if (pos > -width * 2) {
+            updatePointer(width/3);
             $(this).animate({
                 left: '-=' + width + 'px'
             }, 100);
@@ -17,10 +18,19 @@ function addEvents() {
         var pos = $(this).position().left;
         var width = $(window).width();
         if (pos < 0) {
+            updatePointer(-width/3);
             $(this).animate({
                 left: '+=' + width + 'px'
             }, 100);
         }
+    });
+}
+
+function updatePointer(distance){
+    $("#pointer").animate({
+        left: '+='+distance +"px"
+    },100,function(){
+        
     });
 }
 

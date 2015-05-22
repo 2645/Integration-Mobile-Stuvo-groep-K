@@ -79,14 +79,24 @@ p {
 
 .nav ul {
     width: 100%;
-    margin-left: 34px;
+    display:table;
 }
 
 .nav ul li {
-    display: inline-block;
-    padding: 15px 0 0 24px;
+    padding-top:15px;
+    display: table-cell;
+    text-align: center;
     list-style-type: none;
     font-family: Title;
+}
+
+#pointer{
+    width:33%;
+    height:5px;
+    left:33%;
+    background-color: red;
+    margin-top:-5px;
+    position:relative;
 }
 
 .titelHome {
