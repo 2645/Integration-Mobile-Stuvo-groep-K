@@ -12,7 +12,9 @@ $(document).ready(function(){
     });
     
     $('.DienstTitel1').click(function(){
-        $('#ToggleContent1').toggle('fast');
+        $('#ToggleContent1').slideDown(function(){
+            $('#ToggleCOntent').show('slow');
+        });
     });
     
     $('.DienstTitel2').click(function(){
