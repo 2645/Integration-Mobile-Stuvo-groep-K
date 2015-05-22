@@ -7,12 +7,20 @@
     font-family: Title;
     src: url(../Fonts/KlinicSlab_Personal_License_Titel/KlinicSlabBold.otf);
 }
+@font-face {
+    font-family: Title Light;
+    src: url(../Fonts/KlinicSlab_Personal_License_Titel/KlinicSlabLight.otf);
+}
 
 @font-face {
     font-family: Tekst;
     src: url(../Fonts/MissionGothic_Personal_License_Tekst/Mission%20Gothic%20Regular.otf);
 }
 
+@font-face {
+    font-family: Title Regular;
+    src: url(../Fonts/KlinicSlab_Personal_License_Titel/KlinicSlabMedium.otf);
+}
 
 body,html{
     width: 100%;
@@ -22,6 +30,7 @@ body,html{
 #map-canvas {
     width: 100%;
     height: 30%;
+    z-index:0;
 }
 
 
@@ -64,9 +73,9 @@ body,html{
 
 .events h3 {
     font-family: Title;
-    font-size: 1em;
+    font-size: 1.1em;
     float: left;
-    margin-bottom: 5px;
+    margin: 6% 0 5px;
 }
 
 .selected{
@@ -79,6 +88,7 @@ body,html{
     display: inline;
     font-size: 0.6em;
     margin-left: 5px;
+    
 }
 
 .infoSelected p{
@@ -90,8 +100,8 @@ body,html{
     display: inline;
     font-size: 0.8em;
     margin-left: 5px;
-    width: 65%;
-    font-family: Tekst;
+    width: 64%;
+    font-family: Title regular;
     
 }
 
@@ -101,6 +111,22 @@ body,html{
     width: 40%;
     padding-right: 20px;
     padding-bottom: 8px;
+    font-family: Title light;
+    
+}
+
+.eventMaand{
+    z-index: 1;
+    background-color: #838081;
+    position: absolute;
+    top: 36%;
+    opacity: 0.93;
+    width: 100%;
+    font-family: Title regular;
+    color: white;
+    font-size: 1.5em;
+    text-align: center;
+    padding: 2% 0 1%;
 }
 
 
@@ -132,7 +158,7 @@ body,html{
 }
 .events table{
     padding-bottom: 5px;
-    border-bottom: 2px dashed #999;
+    border-bottom: 1px dashed #999;
 }
 
 
