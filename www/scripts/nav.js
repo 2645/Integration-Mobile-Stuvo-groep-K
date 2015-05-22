@@ -1,11 +1,11 @@
 init();
 
 function init() {
-    $("#hamburger").click(function () {        
+    $("#hamburger").click(function () {
         toggleNavMenu(true);
     });
-    
-    $("#tandwiel").click(function () {        
+
+    $("#tandwiel").click(function () {
         toggleSettingsMenu(true);
     });
 }
@@ -13,46 +13,50 @@ function init() {
 var activeNav = false;
 var activeSettings = false;
 
-function toggleNavMenu(buttonPressed){  
-    if(!activeNav && buttonPressed){
+function toggleNavMenu(buttonPressed) {
+    if (!activeNav && buttonPressed) {
         $("#navigatie").animate({
-            left:"+=80%"
-        },300,false);
-         $("#black").show();
-         $("#black").fadeTo( "fast", 1);
+            left: "+=80%"
+        }, 300, false);
+        $("#black").show();
+        $("#black").fadeTo("fast", 1);
         activeNav = !activeNav;
         toggleSettingsMenu(false);
-    }else if(activeNav){
+    } else if (activeNav) {
         $("#navigatie").animate({
-            left:"-=80%"
-        },300,false);
-         $("#black").fadeTo( "fast", 0, function(){
-             $("#black").hide();
-         });
-        
+            left: "-=80%"
+        }, 300, false);
+        if (buttonPressed) {
+            $("#black").fadeTo("fast", 0, function () {
+                $("#black").hide();
+            });
+        }
+
         activeNav = !activeNav;
-    }    
+    }
 }
 
-function toggleSettingsMenu(buttonPressed){  
-    if(!activeSettings && buttonPressed){
+function toggleSettingsMenu(buttonPressed) {
+    if (!activeSettings && buttonPressed) {
         $("#settings").show();
         $("#settings").animate({
-            right:"+=80%"
-        },300,false);
-         $("#black").show();
-         $("#black").fadeTo( "fast", 1);
+            right: "+=80%"
+        }, 300, false);
+        $("#black").show();
+        $("#black").fadeTo("fast", 1);
         toggleNavMenu(false);
         activeSettings = !activeSettings;
-    }else if(activeSettings){
+    } else if (activeSettings) {
         $("#settings").animate({
-            right:"-=80%"
-        },300,false,function(){
+            right: "-=80%"
+        }, 300, false, function () {
             $("#settings").hide();
         });
-        $("#black").fadeTo( "fast", 0, function(){
-             $("#black").hide();
-         });
+        if (buttonPressed) {
+            $("#black").fadeTo("fast", 0, function () {
+                $("#black").hide();
+            });
+        }
         activeSettings = !activeSettings;
-    }    
+    }
 }
