@@ -24,6 +24,9 @@ function addActions() {
             }, 100);
         }
     });
+    $('.navContact li').click(function(){
+        
+    });
 }
 
 function updateSlider(distance){

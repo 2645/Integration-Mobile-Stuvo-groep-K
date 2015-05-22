@@ -10,23 +10,25 @@ function init() {
     $("#tandwiel").click(function () {
         toggleSettingsMenu(true);
     });
-    
-    $("#black").click(function(){
-        if(activeNav)toggleNavMenu(true);
-        if(activeSettings)toggleSettingsMenu(true);
+
+    $("#black").click(function () {
+        if (activeNav) toggleNavMenu(true);
+        if (activeSettings) toggleSettingsMenu(true);
     });
-    
-    $(".navigatieNav li").hover(function(){
-      $(this).css("background-color","red");
+
+    $(".navigatieNav li").hover(function () {
+        $(this).css("background-color", "red");
+    }, function () {
+        $(this).css("background-color", "#a33534");
     });
-    
-    $('.navWrapper').on("swipeleft",function(){
-        if(activeNav)toggleNavMenu(true);
+
+    $('.navWrapper').on("swipeleft", function () {
+        if (activeNav) toggleNavMenu(true);
     })
-    $('.navWrapper').on("swiperight",function(){
-        if(activeSettings)toggleSettingsMenu(true);
+    $('.navWrapper').on("swiperight", function () {
+        if (activeSettings) toggleSettingsMenu(true);
     })
-    
+
 }
 
 
