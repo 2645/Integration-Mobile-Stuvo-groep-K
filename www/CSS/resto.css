@@ -6,6 +6,9 @@
 .clearfix {
     clear: both;
 }
+body{
+    overflow-x: hidden;
+}
 
 @font-face {
     font-family: titel;
@@ -37,7 +40,7 @@
     width:20%;
     height:5px;
     margin-top: -5px;
-    background-color: red;
+    background-color: #6f2421;
 }
 /*****NAVIGATIE-RESTO*****/
 
@@ -51,6 +54,7 @@
 }
 
 .navResto li {
+    text-align: center;
     display: table-cell;
     width: 15%;
     text-align: center;
