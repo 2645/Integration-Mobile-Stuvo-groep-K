@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.clearfix {
+    clear: both;
+}
+
+@font-face {
+    font-family: titel;
+    src: url(../Fonts/KlinicSlab_Personal_License_Titel/KlinicSlabBook.otf);
+}
+
+@font-face {
+    font-family: Title;
+    src: url(../Fonts/KlinicSlab_Personal_License_Titel/KlinicSlabBold.otf);
+}
+
+@font-face {
+    font-family: Tekst;
+    src: url(../Fonts/MissionGothic_Personal_License_Tekst/Mission%20Gothic%20Regular.otf);
+}
+
+@font-face {
+    font-family: thinTekst;
+    src: url(../Fonts/MissionGothic_Personal_License_Tekst/Mission%20Gothic%20Thin.otf);
+}
+
+.hoofdNav {
+    background-color: #a33534;
+    height: 60px;
+}
+
+/*****NAV-NIEUWS*****/
+
+.navNieuws {
+  height: 50px;
+  background-color: rgb(105, 103, 101);
+}
+
+.navNieuws img {
+  width: 7%;
+}
+
+.navNieuws .alles {
+  width: 5%; 
+  margin-left: 25%;
+}
+.navNieuws ul {
+  list-style-type: none;
+}
+
+.navNieuws ul li {
+  display: inline;
+  color: white;
+  font-size: 1.6em;
+  font-family: Title;
+}
+
+.kak {
+  width: 50%;
+  background-color: red;
+  height: 50px;
+}
