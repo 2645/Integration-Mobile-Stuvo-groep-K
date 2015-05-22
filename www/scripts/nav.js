@@ -19,15 +19,17 @@ function toggleNavMenu(buttonPressed){
             left:"+=80%"
         },300,false);
          $("#black").show();
-         $("#black").fadeTo( "slow", 1);
+         $("#black").fadeTo( "fast", 1);
         activeNav = !activeNav;
         toggleSettingsMenu(false);
     }else if(activeNav){
         $("#navigatie").animate({
             left:"-=80%"
         },300,false);
-         $("#black").fadeTo( "slow", 0);
-        $("#black").hide();
+         $("#black").fadeTo( "fast", 0, function(){
+             $("#black").hide();
+         });
+        
         activeNav = !activeNav;
     }    
 }
@@ -38,6 +40,8 @@ function toggleSettingsMenu(buttonPressed){
         $("#settings").animate({
             right:"+=80%"
         },300,false);
+         $("#black").show();
+         $("#black").fadeTo( "fast", 1);
         toggleNavMenu(false);
         activeSettings = !activeSettings;
     }else if(activeSettings){
@@ -46,6 +50,9 @@ function toggleSettingsMenu(buttonPressed){
         },300,false,function(){
             $("#settings").hide();
         });
+        $("#black").fadeTo( "fast", 0, function(){
+             $("#black").hide();
+         });
         activeSettings = !activeSettings;
     }    
 }
