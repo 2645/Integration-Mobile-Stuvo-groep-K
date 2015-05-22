@@ -2,11 +2,11 @@ init();
 
 function init() {
     $("#hamburger").click(function () {        
-        toggleNavMenu(true);      
+        toggleNavMenu(true);
     });
     
     $("#tandwiel").click(function () {        
-        toggleSettingsMenu(true);      
+        toggleSettingsMenu(true);
     });
 }
 
@@ -18,12 +18,16 @@ function toggleNavMenu(buttonPressed){
         $("#navigatie").animate({
             left:"+=80%"
         },300,false);
+         $("#black").show();
+         $("#black").fadeTo( "slow", 1);
         activeNav = !activeNav;
         toggleSettingsMenu(false);
     }else if(activeNav){
         $("#navigatie").animate({
             left:"-=80%"
         },300,false);
+         $("#black").fadeTo( "slow", 0);
+        $("#black").hide();
         activeNav = !activeNav;
     }    
 }

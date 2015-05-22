@@ -38,7 +38,7 @@
 /**********NAVIGATIE**********/
 
 #navigatie {
-    z-index: 2;
+    z-index: 3;
     display: block;
     position: absolute;
     left: -80%;
@@ -106,11 +106,12 @@
     text-decoration: none;
     color: #a33534;
 }
+
 /**********SETTINGS**********/
 
 #settings {
     display:hidden;
-    z-index: 2;
+    z-index: 3;
     display: none;
     position: absolute;
     right: -80%;
