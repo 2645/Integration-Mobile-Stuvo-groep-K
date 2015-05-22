@@ -70,16 +70,26 @@ body,html{
     display: inline;
     margin-right: 1%;
 }
+.infoNotSelected .icoon {
+    width: 7%;
+    display: inline;
+    margin-right: 1%;
+}
 
 .events h3 {
     font-family: Title;
-    font-size: 1.1em;
-    float: left;
     margin: 6% 0 5px;
 }
 
 .selected{
     color: #6f2421;
+    font-size: 1.1em;
+    float: left;
+}
+
+.notSelected{
+    font-size: 1em;
+    float: right;
 }
 
 .eventInfo p {
@@ -95,6 +105,12 @@ body,html{
     display: inline;
 }
 
+.infoNotSelected p{
+    display: inline;
+}
+
+
+
 .description{
     color: rgb(105, 103, 101);
     display: inline;
@@ -105,7 +121,7 @@ body,html{
     
 }
 
-.infoSelected td{
+.events td{
     color: rgb(105, 103, 101);
     font-size: 0.7em;
     width: 40%;
@@ -168,13 +184,26 @@ body,html{
     box-shadow: 0px 0px 6px 1px rgba(50, 50, 50, 0.75);
 }
 
+.eventPictureNotSelected{
+    float:left;
+    max-width: 25%;
+    -webkit-box-shadow: 0px 0px 6px 1px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow: 0px 0px 6px 1px rgba(50, 50, 50, 0.75);
+    box-shadow: 0px 0px 6px 1px rgba(50, 50, 50, 0.75);
+}
+
 .column{
     display: inline-block;
     height: auto;
 }
-.events table{
+.events .infoSelected table{
     padding-bottom: 5px;
     border-bottom: 1px dashed #999;
+}
+
+.events table{
+     margin-bottom: 8%;
+}
 }
 
 
