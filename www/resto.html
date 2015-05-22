@@ -2,87 +2,182 @@
 
 
 <html lang="nl">
-  
-  <head>
+
+<head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="CSS/resto.css">
-  </head>
-  
-  <body>
-    
+    <meta name="viewport" content="width=device-width; initial-scale = 1.0; maximum-scale=1.0; user-scalable=no">
+    <link rel="stylesheet" href="CSS/jquery.mobile-1.0.min.css" />
+    <link rel="stylesheet" href="CSS/resto.css" />
+    <link rel="stylesheet" href="CSS/style_nav.css" />
+    <script type="text/javascript" src="phonegap.js"></script>
+    <script type="text/javascript" src="scripts/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="scripts/jquery.mobile.custom.js"></script>
+</head>
+
+<body>
+
     <header>
-      <nav class="hoofdNav">
-        
-      </nav>
+
+        <nav class="hoofdNav">
+            <div id="hamburger"><img src="img/hamburger.png">
+            </div>
+            <div id="tandwiel"><img src="img/settings.png">
+            </div>
+        </nav>
+
     </header>
-    
+    <div class="navWrapper">
+        <div id="navigatie">
+            <input type="text" name="search">
+            <input type="submit" class="searchButton" value="">
+            <nav class="navigatieNav">
+                <ul>
+                    <li class="current"><img src="img/home_red.png"><a href="home.html">Home</a>
+                    </li>
+                    <li><img src="img/diensten_red.png"><a href="diensten.html">Diensten</a>
+                    </li>
+                    <li><img src="img/agenda_red.png"><a href="agenda.html">Agenda</a>
+                    </li>
+                    <li><img src="img/nieuws_red.png"><a href="nieuws.html">Nieuws</a>
+                    </li>
+                    <li><img src="img/resto_red.png"><a href="resto.html">Resto</a>
+                    </li>
+                    <li><img src="img/contact_red.png"><a href="contact.html">Contact</a>
+                    </li>
+                    <li><img src="img/sponsors_red.png"><a href="sponsers.html">Sponsors</a>
+                    </li>
+                </ul>
+            </nav>
+
+        </div>
+
+        <div id="settings">
+
+            <nav class="settingsNav">
+                <ul>
+                    <li>
+                        <p>Pushberichten toestaan?</p>
+
+                        <div class="switch">
+                            <input id="cmn-toggle-7" class="cmn-toggle cmn-toggle-yes-no" type="checkbox">
+                            <label for="cmn-toggle-7" data-on="Ja" data-off="Nee"></label>
+                        </div>
+                    </li>
+
+                    <li>
+                        <p>Campusselectie:</p>
+                        <label class="label">
+                            <select name="campus">
+                                <option value="Dansaert">Dansaert</option>
+                                <option value="IWT">IWT</option>
+                                <option value="Jette">Jette</option>
+                                <option value="RITS">RITS</option>
+                                <option value="KCB">KCB</option>
+                                <option value="TTK">TTK</option>
+                            </select>
+                        </label>
+                    </li>
+
+
+                </ul>
+            </nav>
+        </div>
+        <div id="black"></div>
+    </div>
+
     <nav class="navResto">
-      <ul>
-        <li>
-          <a>DANS</a>
-        </li>
-        <li>
-          <a>IWT</a>
-        </li>
-        <li>
-          <a>Jette</a>
-        </li>
-        <li>
-          <a>Rits</a>
-        </li>
-        <li>
-          <a>KCB</a>
-        </li>
-        <li>
-          <a>TTK</a>
-        </li>
-      </ul>
+        <ul>
+            <li>
+                <a>DANS</a>
+            </li>
+            <li>
+                <a>IWT</a>
+            </li>
+            <li>
+                <a>Jette</a>
+            </li>
+            <li>
+                <a>Rits</a>
+            </li>
+            <li>
+                <a>KCB</a>
+            </li>
+            <li>
+                <a>TTK</a>
+            </li>
+        </ul>
     </nav>
-    
+
     <div class="dagSelectie">
-      <img class="pijltjes pijltjeLinks" src="img/pijltjeLinks.png">
-      <img class="pijltjes pijltjeRechts" src="img/pijltjeRechts.png">
-      <h1>Donderdag</h1>
+        <img class="pijltjes pijltjeLinks" src="img/pijltjeLinks.png">
+        <img class="pijltjes pijltjeRechts" src="img/pijltjeRechts.png">
+        <h1>Donderdag</h1>
     </div>
-    
-    <div class="menu">
-      <table>
-        <tr>
-          <td><img src="img/soep.png"></td>
-          <td class="info">Soep<br><span>Witloof</span></td>
-        </tr>
-        
-        <tr>
-          <td><img src="img/bord.png"></td>
-          <td class="info">Dagschotel<br><span>Kip in het groen met spinazie, erwten, mangetout en natuuraardappelen</span></td>
-        </tr>
-        
-        <tr>
-          <td><img src="img/wortel.png"></td>
-          <td class="info">Vegetarische schotel<br><span>Stoemp met savooikool en groentenworst</span></td>
-        </tr>
-        
-        <tr>
-          <td><img src="img/bord.png"></td>
-          <td class="info">Koude schotel<br><span>Kleurenpalet van groenten</span></td>
-        </tr>
-        
-        <tr>
-          <td><img src="img/broodje.png"></td>
-          <td class="info">Broodje van de week<br><span>Brie, salami, noten en rode krulsla</span></td>
-        </tr>
-        
-        <tr>
-          <td><img src="img/panini.png"></td>
-          <td class="info">Panini<br><span>Thai: spek, honing, mozzarella en kaas</span></td>
-        </tr>
-        
-        <tr>
-          <td><img src="img/muffin.png"></td>
-          <td class="info">Desert<br><span>Chocoladetaart</span></td>
-        </tr>
-      </table>
+    <div class="menuWrapper">
+        <div class="menuWrapperSlider">
+            <div class="menu">
+                <table>
+                    <tr>
+                        <td><img src="img/soep.png">
+                        </td>
+                        <td class="info">Soep
+                            <br><span>Witloof</span>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><img src="img/bord.png">
+                        </td>
+                        <td class="info">Dagschotel
+                            <br><span>Kip in het groen met spinazie, erwten, mangetout en natuuraardappelen</span>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><img src="img/wortel.png">
+                        </td>
+                        <td class="info">Vegetarische schotel
+                            <br><span>Stoemp met savooikool en groentenworst</span>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><img src="img/bord.png">
+                        </td>
+                        <td class="info">Koude schotel
+                            <br><span>Kleurenpalet van groenten</span>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><img src="img/broodje.png">
+                        </td>
+                        <td class="info">Broodje van de week
+                            <br><span>Brie, salami, noten en rode krulsla</span>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><img src="img/panini.png">
+                        </td>
+                        <td class="info">Panini
+                            <br><span>Thai: spek, honing, mozzarella en kaas</span>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><img src="img/muffin.png">
+                        </td>
+                        <td class="info">Desert
+                            <br><span>Chocoladetaart</span>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
     </div>
-  </body>
+</body>
+<script type="text/javascript" src="scripts/resto.js"></script>
+<script type="text/javascript" src="scripts/nav.js"></script>
+
 </html>
