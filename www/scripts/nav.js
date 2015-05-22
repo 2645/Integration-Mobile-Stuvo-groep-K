@@ -14,7 +14,6 @@ var activeNav = false;
 var activeSettings = false;
 
 function toggleNavMenu(buttonPressed){  
-    console.log("NAV : active:"+activeNav+"||button pressed:"+buttonPressed);
     if(!activeNav && buttonPressed){
         $("#navigatie").animate({
             left:"+=80%"
@@ -30,7 +29,6 @@ function toggleNavMenu(buttonPressed){
 }
 
 function toggleSettingsMenu(buttonPressed){  
-    console.log("SETTINGS : active:"+activeSettings+"||button pressed:"+buttonPressed);
     if(!activeSettings && buttonPressed){
         $("#settings").show();
         $("#settings").animate({
