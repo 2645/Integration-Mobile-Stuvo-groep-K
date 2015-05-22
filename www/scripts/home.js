@@ -24,6 +24,32 @@ function addActions() {
             }, 100);
         }
     });
+    
+    $('.nav a').click(function(event){
+        console.log($(event.target).position());
+        var left = $(event.target).position().left;
+        var width = $(window).width();
+        var leftPosSlider = 0;
+        console.log(width/3)
+        if(left < width/3){
+            leftPosSlider = 0;
+            console.log("go to events");
+            
+        }else if(left > 2*width/3){
+            console.log("go to actua");
+            leftPosSlider = -2*width;
+        }else{
+            console.log("go to home");
+            leftPosSlider = -width;
+        }
+        console.log(leftPosSlider);
+        $('.homepageSlider').animate({
+            left: leftPosSlider+"px"
+        });
+        $('#pointer').animate({
+           left : -leftPosSlider/3 +"px" 
+        });        
+    })
 }
 
 function updatePointer(distance){

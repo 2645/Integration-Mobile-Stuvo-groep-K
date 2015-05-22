@@ -83,6 +83,7 @@ p {
 }
 
 .nav ul li {
+    width:33%;
     padding-top:15px;
     display: table-cell;
     text-align: center;
