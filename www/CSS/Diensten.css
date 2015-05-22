@@ -317,7 +317,15 @@ header nav h1{
     right: 160px;
 }
 
-.GoedeRaad{
+.DienstTitel1 h1, .DienstTitel2 h1, .DienstTitel3 h1, .DienstTitel4 h1, .DienstTitel5 h1, .DienstTitel6 h1{
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+/*.GoedeRaad{
     color: #fff;
     font-size: 20px;
     text-align: center;
@@ -363,4 +371,4 @@ header nav h1{
     text-align: center;
     display: table-cell;
     vertical-align: middle;
-}
+}*/
