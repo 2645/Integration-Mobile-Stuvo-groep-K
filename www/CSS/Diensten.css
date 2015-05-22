@@ -15,7 +15,7 @@ padding: 0;
 }
 
 body {
-  font-family: Title;
+  font-family: Tekst;
   width: 100%;
 }
 
@@ -135,12 +135,27 @@ header nav h1{
     margin-bottom: 10px;
 }*/
 
-#ShowContent{
+#ToggleContent1{
     margin-bottom: 10px;
 }
 
-#ToggleContent{
-    display: none;
+#ToggleContent2{
+    margin-bottom: 10px;
+}
+
+#ToggleContent3{
+    margin-bottom: 10px;
+}
+
+#ToggleContent4{
+    margin-bottom: 10px;
+}
+
+#ToggleContent5{
+    margin-bottom: 10px;
+}
+
+#ToggleContent6{
     margin-bottom: 10px;
 }
 
@@ -179,6 +194,16 @@ header nav h1{
     padding-right: auto;
     height: 70px;
     background-color: #d07373;
+}
+
+.DienstTitel1Show{
+    display: table;
+    width: 100%;
+    padding-left: auto;
+    padding-right: auto;
+    height: 70px;
+    background-color: #d07373;
+    padding-top: 70px;
 }
 
 .DienstTitel2 h1{
