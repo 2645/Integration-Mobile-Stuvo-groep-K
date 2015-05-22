@@ -92,7 +92,7 @@ function generateActuasHtml(data) {
     for (var actua in actuas) {
         htmlString += generateActuaHtml(actuas[actua]);
         counter++;
-        if (counter >= 4) {
+        if (counter >= 3) {
             return htmlString;
         }
     }

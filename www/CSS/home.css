@@ -88,7 +88,7 @@ p {
     display: table-cell;
     text-align: center;
     list-style-type: none;
-    font-family: Title;
+    font-family: Title Regular;
 }
 
 #pointer{
@@ -135,10 +135,10 @@ p {
 .events .datum {
     font-family: Title;
     color: #a33534;
-    font-size: 1em;
+    font-size: 1.2em;
     line-height: 0.8em;
     float: left;
-    padding-top: 5%;
+    padding-top: 7.5%;
 }
 
 .datum span {
@@ -148,24 +148,27 @@ p {
 }
 
 .events .icoon {
-    width: 3%;
+    width: 4%;
     margin-top: 1.5%;
 }
 
 .events h3 {
     color: rgb(105, 103, 101);
-    font-size: 0.8em;
+    font-size: 1em;
+    font-family: Title Regular;
 }
 
 .events p {
     line-height: 1.5vw;
     color: rgb(105, 103, 101);
     display: inline;
-    font-size: 0.6em;
+    font-size: 0.8em;
     margin-left: 5px;
+    font-family: Tekst;
 }
 
 .events .info {
+    
     float: right;
     width: 75%;
     border-left: dashed 1px;
@@ -176,7 +179,7 @@ p {
 
 
 .actueel .info {
-    margin-left: 100px;
+    margin-left: 80px;
 }
 
 .actueel ul {
@@ -186,30 +189,34 @@ p {
 }
 
 .actueel li {
-    margin-bottom: 40px;
+    margin-bottom: 15px;
 }
 
 .actueel img {
-    width: 30%;
+    width: 20%;
     float: left;
 }
 
 .actueel .icoon {
     width: 5%;
-    margin-top: 3px;
+    margin-top: 2px;
+    margin-right: 5px;
 }
 
 .actueel h3 {
     color: rgb(105, 103, 101);
-    font-size: 0.8em;
+    font-size: 1em;
+    font-family: Title Regular;
 }
 
 .actueel p {
-    font-size: 0.6em;
-    margin-top: 5px;
+    font-size: 0.8em;
+    margin: 5px 0;
+    font-family: Tekst;
 }
 
 .actueel .datum {
     font-weight: bold;
     margin-top: -1px;
+    margin-left: 5px;
 }
