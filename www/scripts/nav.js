@@ -1,4 +1,6 @@
 init();
+var activeNav = false;
+var activeSettings = false;
 
 function init() {
     $("#hamburger").click(function () {
@@ -8,10 +10,13 @@ function init() {
     $("#tandwiel").click(function () {
         toggleSettingsMenu(true);
     });
+    $("#black").click(function(){
+        if(activeNav)toggleNavMenu(true);
+        if(activeSettings)toggleSettingsMenu(true);
+    });
 }
 
-var activeNav = false;
-var activeSettings = false;
+
 
 function toggleNavMenu(buttonPressed) {
     if (!activeNav && buttonPressed) {
