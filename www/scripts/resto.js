@@ -1,5 +1,12 @@
-getMenus(4);
-addActions();
+$(document).ready(function () {
+    var campusID = localStorage.getItem("campusID");
+    console.log(campusID);
+    
+    getMenus(campusID%3);
+    addActions();
+});
+
+
 
 function addActions() {
     $('.menuWrapperSlider').on("swipeleft", function (event) {
@@ -18,7 +25,9 @@ function addActions() {
         slideLeft($(".menuWrapperSlider"));
     });
     $('.navResto li').click(function (event) {
-        getMenus(0);
+        var width = $(window).width()/6;
+        var id = Math.round($(this).position().left/width);
+        getMenus(id%3);
         var position = $(this).position().left;
         $('#pointer').animate({
             left: position + "px"
@@ -58,7 +67,7 @@ function updateDaySlider(distance) {
 }
 
 function getMenus(id) {
-    $.post("http://dtprojecten.ehb.be/~stuvo/public_html/api/resto.php?campus=0", function (data) {
+    $.post("http://dtprojecten.ehb.be/~stuvo/public_html/api/resto.php?campus=" + id, function (data) {
         $(".dagSelectieWrapperSlider").html("");
         $(".menuWrapperSlider").html(generateMenusHtml(data));
 

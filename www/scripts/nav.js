@@ -1,8 +1,17 @@
-init();
 var activeNav = false;
 var activeSettings = false;
 
+$(document).ready(function () {
+    init();
+});
+
+
+
 function init() {
+    if (localStorage.getItem('campusID') !== null) {
+        $('.settingsNav select').val(localStorage.getItem('campusID'));
+    }
+
     $("#hamburger").click(function () {
         toggleNavMenu(true);
     });
@@ -28,6 +37,13 @@ function init() {
     $('.navWrapper').on("swiperight", function () {
         if (activeSettings) toggleSettingsMenu(true);
     })
+
+    $('.settingsNav .switch input').click(function () {
+        localStorage.setItem("pushBerichten", $(this).is(":checked"));
+    });
+    $('.settingsNav select').change(function () {
+        localStorage.setItem("campusID", $(this).val());
+    });
 
 }
 

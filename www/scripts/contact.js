@@ -18,14 +18,19 @@ function addActions() {
         var width = $(window).width();
         if (pos < 0) {
             updateSlider(-width/7);
-            updateSlider();
             $(this).animate({
                 left: '+=' + width + 'px'
             }, 100);
         }
     });
-    $('.navContact li').click(function(){
-        
+    $('.navContact li').click(function (event) {
+        var position = $(this).position().left;
+        $('.dienstSlider').animate({
+            left: position*-7 +"px"
+        },100)
+        $('#pointer').animate({
+            left: position + "px"
+        }, 100);
     });
 }
 
