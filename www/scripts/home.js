@@ -4,55 +4,66 @@ addActions();
 
 function addActions() {
     $('.homepageSlider').on("swipeleft", function (event) {
-        var pos = $(this).position().left;
-        var width = $(window).width();
-        if (pos > -width * 2) {
-            updatePointer(width/3);
-            $(this).animate({
-                left: '-=' + width + 'px'
-            }, 100);
-        }
+        slideLeft($(this));
     });
 
     $('.homepageSlider').on("swiperight", function (event) {
-        var pos = $(this).position().left;
-        var width = $(window).width();
-        if (pos < 0) {
-            updatePointer(-width/3);
-            $(this).animate({
-                left: '+=' + width + 'px'
-            }, 100);
-        }
+        slideRight($(this));
     });
-    
-    $('.nav a').click(function(event){
+
+    $('.nav a').click(function (event) {
         var left = $(event.target).position().left;
         var width = $(window).width();
         var leftPosSlider = 0;
-        if(left < width/3){
+        if (left < width / 3) {
             leftPosSlider = 0;
-            
-        }else if(left > 2*width/3){
-            leftPosSlider = -2*width;
-        }else{
+
+        } else if (left > 2 * width / 3) {
+            leftPosSlider = -2 * width;
+        } else {
             leftPosSlider = -width;
         }
         $('.homepageSlider').animate({
-            left: leftPosSlider+"px"
+            left: leftPosSlider + "px"
         });
         $('#pointer').animate({
-           left : -leftPosSlider/3 +"px" 
-        });        
+            left: -leftPosSlider / 3 + "px"
+        });
     })
 }
 
-function updatePointer(distance){
+function slideLeft(object) {
+    var pos = object.position().left;
+    var width = $(window).width();
+    if (pos > -width * 2) {
+        updatePointer(width / 3);
+        object.animate({
+            left: '-=' + width + 'px'
+        }, 100);
+    }
+}
+
+function slideRight(object) {
+    var pos = object.position().left;
+    var width = $(window).width();
+    if (pos < 0) {
+        updatePointer(-width / 3);
+        object.animate({
+            left: '+=' + width + 'px'
+        }, 100);
+    }
+}
+
+function updatePointer(distance) {
     $("#pointer").animate({
-        left: '+='+distance +"px"
-    },100,function(){
-        
+        left: '+=' + distance + "px"
+    }, 100, function () {
+
     });
 }
+
+
+// CONTENT JS
 
 function getEvents(amount) {
     $.post("http://dtprojecten.ehb.be/~stuvo/public_html/api/agenda.php", function (data) {
