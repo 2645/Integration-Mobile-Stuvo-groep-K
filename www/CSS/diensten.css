@@ -41,9 +41,69 @@ h1 {
     color:white;
 }
 
+.dienstContent {
+    width:80%;
+    margin: 0 auto;
+    font-family: Tekst;
+    font-size: 0.8em;
+}
+.dienstContent img{
+    width:30%;
+    display:block;
+    margin:0 auto;
+    padding: 5% 0;
+}
+
+.dienstContent ul{
+    list-style-type: none;
+}
+
+.dienstContent ul:nth-child(2){
+    border-bottom: #a33534 dashed 2px;
+}
 
 
+.dienstContent ul:nth-child(2) li:before{
+    content:"- ";    
+}
+
+
+.dienstContent ul:nth-child(2) li{
+    text-indent: 0.05em;
+    margin-bottom: 6%;
+}
+
+.dienstContent ul:nth-child(3) li:nth-child(odd){
+    margin-top:6%;
+    margin-bottom: 3%;
+}
+
+.email{
+    margin-top:6%;
+    margin-bottom:3%;
+    color: #a33534;
+}
 
 #goedeRaad{
+    background-color:#d03830;
+}
+
+#centenVoorStudenten{
+    background-color:#d03830;
+}
+
+#kotEnVervoer{
+    background-color:#d03830;
+}
+
+#sportEnCultuur{
+    background-color:#d03830;
+}
+
+#studentenResto{
+    background-color:#d03830;
+}
+
+#luisterendOor{
     background-color:#d03830;
 }
