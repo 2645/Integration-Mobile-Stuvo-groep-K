@@ -36,17 +36,19 @@ h1 {
 }
 
 .dienstTitel h1{
-    margin-top:-17%;
+    margin-top: -1.7em;
     font-family: Titel;
     color:white;
 }
 
 .dienstContent {
+    display:none;
     width:80%;
     margin: 0 auto;
     font-family: Tekst;
     font-size: 0.8em;
 }
+
 .dienstContent img{
     width:30%;
     display:block;
