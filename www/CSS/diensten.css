@@ -79,29 +79,39 @@ h1 {
 }
 
 .email{
+    float: left;
     margin-top:6%;
     margin-bottom:3%;
     color: #a33534;
 }
 
+.imgPijl img{
+    width: 8%;
+    margin-right: 0%;
+}
+
 #goedeRaad{
-    background-color:#d03830;
+    background-color: #b74041;
 }
 
 #centenVoorStudenten{
-    background-color:#e49090;
+    background-color: #d07373;
+}
+
+#diversiteit{
+    background-color: #e49090;
 }
 
 #kotEnVervoer{
-    background-color:#bcbcbc;
+    background-color: #bcbcbc;
 }
 
 #sportEnCultuur{
-    background-color:#878786;
+    background-color: #878786;
 }
 
 #studentenResto{
-    background-color:#3c3c3b;
+    background-color: #3c3c3b;
 }
 
 #luisterendOor{
