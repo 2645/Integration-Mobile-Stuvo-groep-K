@@ -1,7 +1,6 @@
 $(document).ready(function () {
     var campusID = localStorage.getItem("campusID");
-    console.log(campusID);
-    
+    movePointerToCampus(campusID);
     getMenus(campusID%3);
     addActions();
 });
@@ -34,6 +33,13 @@ function addActions() {
         }, 100);
     });
 
+}
+
+function movePointerToCampus(id){
+    var leftPos = id*$(window).width()/6
+    $('#pointer').animate({
+        left: leftPos + "px"
+    })
 }
 
 function slideLeft(object) {

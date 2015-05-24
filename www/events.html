@@ -11,8 +11,8 @@
     <script type="text/javascript" src="phonegap.js"></script>
     <script type="text/javascript" src="scripts/jquery-1.11.3.min.js"></script>
     <script type="text/javascript" src="scripts/jquery.mobile.custom.js"></script>
-
     <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script type="text/javascript" src="scripts/nav.js"></script>
     <script type="text/javascript" src="scripts/events.js"></script>
 
 </head>
@@ -91,169 +91,97 @@
     </div>
 
     <div id="map-canvas"></div>
-
-
-    <div class="eventsSliderWrapper">
-        <div class="eventMaand"><img src="img/pijltjeLinks_white.png" class="eventPijl pijlLinks"> Mei <img src="img/pijltjeRechts_white.png" class="eventPijl pijlRechts"></div>
-        <div class="eventsSlider">
-            <div class="eventSlide">
-                <div class="events">
-                    <ul>
-                        <li>
-
-                            <h3 class="selected">Voetbaltoernooi Campus Kaai</h3>
-                            <div class="clearfix"></div>
-
-
-                            <img src="img/Agenda_temp.jpg" class="eventPicture column">
-
-
-                            <div class="info ">
-
-
-                                <p class="description column">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id nisl urna. In eu augue sed orci accumsan pellentesque vitae quis velit. Aliquam euismod mollis diam, eget volutpat dui mattis id.</p>
-
-                            </div>
-
-                            <div class="infoSelected">
-                                <table>
-                                    <tr>
-                                        <td>
-                                            <img class="icoon" src="img/kalender_red.png" />
-                                            <p>Donderdag 21 Januari 2015</p>
-                                            <br>
-                                        </td>
-                                        <td>
-                                            <img class="icoon" src="img/Location_red.png" />
-                                            <p>Nijverheidskaai 170 1070 Anderlecht</p>
-                                        </td>
-
-
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <img class="icoon" src="img/Tijd_red.png" />
-                                            <p>12:45</p>
-                                        </td>
-                                    </tr>
-                                </table>
-
-
-                            </div>
-                            <div class="clearfix"></div>
-                        </li>
-                        <div class="clearfix"></div>
-                        <li>
-                            <img src="img/Agenda_temp.jpg" class="eventPictureNotSelected">
-                            <div class="infoNotSelected">
-                                <h3 class="notSelected">Voetbaltoernooi Campus Kaai</h3>
-                                <table>
-                                    <tr>
-                                        <td>
-                                            <img class="icoon" src="img/kalender_red.png" />
-                                            <p>Donderdag 21 Januari 2015</p>
-                                            <br>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <img class="icoon" src="img/Location_red.png" />
-                                            <p>Nijverheidskaai 170 1070 Anderlecht</p>
-                                        </td>
-
-
-                                    </tr>
-                                </table>
-                            </div>
-
-
-                        </li>
-                        <div class="clearfix"></div>
-                        <li>
-                            <img src="img/Agenda_temp.jpg" class="eventPictureNotSelected">
-                            <div class="infoNotSelected">
-                                <h3 class="notSelected">Voetbaltoernooi Campus Kaai</h3>
-                                <table>
-                                    <tr>
-                                        <td>
-                                            <img class="icoon" src="img/kalender_red.png" />
-                                            <p>Donderdag 21 Januari 2015</p>
-                                            <br>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <img class="icoon" src="img/Location_red.png" />
-                                            <p>Nijverheidskaai 170 1070 Anderlecht</p>
-                                        </td>
-
-
-                                    </tr>
-                                </table>
-                            </div>
-
-
-                        </li>
-                        <div class="clearfix"></div>
-                    </ul>
+    <div class='eventMonthWrapper'>
+        <div class='eventMonthSlider'>
+            <div class='eventMonth'>
+                <h2>Mei</h2>
+                <div class='event selected'>
+                    <h3>Woontours van Br(ik</h3>
+                    <img class='eventFoto' src="img/Agenda_temp.jpg">
+                    <p class='description'>Op zoek naar een leuk huis samen met je vrienden of lief? Kom mee op woontour met Br(ik en Wonen in Brussel (Letop! dit is geen immo tour we bezoeken dus geen beschikbare woningen)</p>
+                    <table>
+                        <tr>
+                            <td><img src='img/Location_red.png'>Nijverheidskaai 170 1070 Anderlecht</td>
+                            <td><img src='img/kalender_red.png'>19/05/2015</td>
+                            <td><img src='img/Tijd_red.png'>09:30</td>
+                        </tr>
+                    </table>
+                    <div class='clearfix'></div>
+                </div>
+                <div class='event'>
+                    <h3>Woontours van Br(ik</h3>
+                    <img class='eventFoto' src="img/Agenda_temp.jpg">
+                    <p class='description'>Op zoek naar een leuk huis samen met je vrienden of lief? Kom mee op woontour met Br(ik en Wonen in Brussel (Letop! dit is geen immo tour we bezoeken dus geen beschikbare woningen)</p>
+                    <table>
+                        <tr>
+                            <td><img src='img/Location_red.png'>Nijverheidskaai 170 1070 Anderlecht</td>
+                            <td><img src='img/kalender_red.png'>19/05/2015</td>
+                            <td><img src='img/Tijd_red.png'>09:30</td>
+                        </tr>
+                    </table>
+                    <div class='clearfix'></div>
+                </div>
+                <div class='event'>
+                    <h3>Woontours van Br(ik</h3>
+                    <img class='eventFoto' src="img/Agenda_temp.jpg">
+                    <p class='description'>Op zoek naar een leuk huis samen met je vrienden of lief? Kom mee op woontour met Br(ik en Wonen in Brussel (Letop! dit is geen immo tour we bezoeken dus geen beschikbare woningen)</p>
+                    <table>
+                        <tr>
+                            <td><img src='img/Location_red.png'>Nijverheidskaai 170 1070 Anderlecht</td>
+                            <td><img src='img/kalender_red.png'>19/05/2015</td>
+                            <td><img src='img/Tijd_red.png'>09:30</td>
+                        </tr>
+                    </table>
+                    <div class='clearfix'></div>
                 </div>
             </div>
-            
-            <div class="eventSlide">
-                <div class="events">
-                    <ul>
-                        <li>
-
-                            <h3 class="selected">Voetbaltoernooi Campus Kaai</h3>
-                            <div class="clearfix"></div>
-
-
-                            <img src="img/Agenda_temp.jpg" class="eventPicture column">
-
-
-                            <div class="info ">
-
-
-                                <p class="description column">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id nisl urna. In eu augue sed orci accumsan pellentesque vitae quis velit. Aliquam euismod mollis diam, eget volutpat dui mattis id.</p>
-
-                            </div>
-
-                            <div class="infoSelected">
-                                <table>
-                                    <tr>
-                                        <td>
-                                            <img class="icoon" src="img/kalender_red.png" />
-                                            <p>Donderdag 21 Januari 2015</p>
-                                            <br>
-                                        </td>
-                                        <td>
-                                            <img class="icoon" src="img/Location_red.png" />
-                                            <p>Nijverheidskaai 170 1070 Anderlecht</p>
-                                        </td>
-
-
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <img class="icoon" src="img/Tijd_red.png" />
-                                            <p>12:45</p>
-                                        </td>
-                                    </tr>
-                                </table>
-
-
-                            </div>
-                            <div class="clearfix"></div>
-                        </li>
-                        <div class="clearfix"></div>
-                    </ul>
+            <div class='eventMonth'>
+                <h2>Juni</h2>
+                <div class='event selected'>
+                    <h3>Woontours van Br(ik</h3>
+                    <img class='eventFoto' src="img/Agenda_temp.jpg">
+                    <p class='description'>Op zoek naar een leuk huis samen met je vrienden of lief? Kom mee op woontour met Br(ik en Wonen in Brussel (Letop! dit is geen immo tour we bezoeken dus geen beschikbare woningen)</p>
+                    <table>
+                        <tr>
+                            <td><img src='img/Location_red.png'>Nijverheidskaai 170 1070 Anderlecht</td>
+                            <td><img src='img/kalender_red.png'>19/05/2015</td>
+                            <td><img src='img/Tijd_red.png'>09:30</td>
+                        </tr>
+                    </table>
+                    <div class='clearfix'></div>
+                </div>
+                <div class='event'>
+                    <h3>Woontours van Br(ik</h3>
+                    <img class='eventFoto' src="img/Agenda_temp.jpg">
+                    <p class='description'>Op zoek naar een leuk huis samen met je vrienden of lief? Kom mee op woontour met Br(ik en Wonen in Brussel (Letop! dit is geen immo tour we bezoeken dus geen beschikbare woningen)</p>
+                    <table>
+                        <tr>
+                            <td><img src='img/Location_red.png'>Nijverheidskaai 170 1070 Anderlecht</td>
+                            <td><img src='img/kalender_red.png'>19/05/2015</td>
+                            <td><img src='img/Tijd_red.png'>09:30</td>
+                        </tr>
+                    </table>
+                    <div class='clearfix'></div>
+                </div>
+                <div class='event'>
+                    <h3>Woontours van Br(ik</h3>
+                    <img class='eventFoto' src="img/Agenda_temp.jpg">
+                    <p class='description'>Op zoek naar een leuk huis samen met je vrienden of lief? Kom mee op woontour met Br(ik en Wonen in Brussel (Letop! dit is geen immo tour we bezoeken dus geen beschikbare woningen)</p>
+                    <table>
+                        <tr>
+                            <td><img src='img/Location_red.png'>Nijverheidskaai 170 1070 Anderlecht</td>
+                            <td><img src='img/kalender_red.png'>19/05/2015</td>
+                            <td><img src='img/Tijd_red.png'>09:30</td>
+                        </tr>
+                    </table>
+                    <div class='clearfix'></div>
                 </div>
             </div>
         </div>
     </div>
+
 </body>
 
-<!-- <script type="text/javascript" src="scripts/home.js"></script> -->
-<script type="text/javascript" src="scripts/nav.js"></script>
+
 
 </html>
