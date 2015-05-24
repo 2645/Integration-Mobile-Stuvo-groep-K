@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="nl">
- 
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="CSS/nieuws.css">
@@ -9,9 +9,12 @@
     <script type="text/javascript" src="phonegap.js"></script>
     <script type="text/javascript" src="scripts/jquery-1.11.3.min.js"></script>
     <script type="text/javascript" src="scripts/jquery.mobile.custom.js"></script>
-  </head>
-  
-  <body>
+    <script type="text/javascript" src="scripts/nav.js"></script>
+    <script type="text/javascript" src="scripts/jquery-ui.js"></script>
+    <script type="text/javascript" src="scripts/nieuws.js"></script>
+</head>
+
+<body>
     <header>
 
         <nav class="hoofdNav">
@@ -30,23 +33,37 @@
             <input type="submit" class="searchButton" value="">
             <nav class="navigatieNav">
                 <ul>
-                     <a href="home.html"><li><img src="img/home_red.png">Home
-                    </li></a>
-                    <a href="diensten.html"><li><img src="img/diensten_red.png">Diensten
-                    </li></a>
-                    <a href="events.html"><li><img src="img/agenda_red.png">Agenda
-                    </li></a>
-                    <a href="nieuws.html"><li class="current"><img src="img/nieuws_red.png">Nieuws
-                    </li></a>
-                    <a href="resto.html"><li><img src="img/resto_red.png">Resto
-                    </li></a>
-                    <a href="contact.html"><li><img src="img/contact_red.png">Contact
-                    </li></a>
-                    <a href="sponsers.html"><li><img src="img/sponsors_red.png">Sponsors
-                    </li></a>
+                    <a href="home.html">
+                        <li><img src="img/home_red.png">Home
+                        </li>
+                    </a>
+                    <a href="diensten.html">
+                        <li><img src="img/diensten_red.png">Diensten
+                        </li>
+                    </a>
+                    <a href="events.html">
+                        <li><img src="img/agenda_red.png">Agenda
+                        </li>
+                    </a>
+                    <a href="nieuws.html">
+                        <li class="current"><img src="img/nieuws_red.png">Nieuws
+                        </li>
+                    </a>
+                    <a href="resto.html">
+                        <li><img src="img/resto_red.png">Resto
+                        </li>
+                    </a>
+                    <a href="contact.html">
+                        <li><img src="img/contact_red.png">Contact
+                        </li>
+                    </a>
+                    <a href="sponsers.html">
+                        <li><img src="img/sponsors_red.png">Sponsors
+                        </li>
+                    </a>
                 </ul>
             </nav>
-            
+
         </div>
 
         <div id="settings">
@@ -82,63 +99,23 @@
         </div>
         <div id="black"></div>
     </div>
-      
+
     <nav class="navNieuws">
-     
-      <ul>
-          <li><p><img src="img/kalender.png"/>Datum</p></li>
-        <li><p><img src="img/alles.png"/>Alles</p></li>
-      </ul>
+
+        <ul>
+            <li>
+                <p><img src="img/kalender.png" />Datum</p>
+            </li>
+            <li>
+                <p><img src="img/alles.png" />Alles</p>
+            </li>
+        </ul>
 
     </nav>
-      <div class="alles">
-          <ul>
-              <li>
-                  <h3 class="selected">Oorverdovend nieuws: XL Air is terug!</h3>
-                <div class="clearfix"></div>
-
-
-                <img src="img/Agenda_temp.jpg" class="nieuwsPicture column">
-                  
-                  <div class="info ">
-                                <img class="icoon" src="img/kalender_red.png" />
-                                <p class="kalender">Donderdag 21 Januari 2015</p>
-                                <br>
-
-                    <p class="description column">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id nisl urna. In eu augue sed orci accumsan pellentesque vitae quis velit. Aliquam euismod mollis diam, eget volutpat dui mattis id.</p>
-
-                </div>
-
-                <div class="infoSelected">
-                    <table>
-                    </table>
-
-
-                </div>
-                <div class="clearfix"></div>
-              </li>
-              <div class="clearfix"></div>
-            <li>
-                <img src="img/Agenda_temp.jpg" class="nieuwsPictureNotSelected">
-                <div class="infoNotSelected">
-                    <h3 class="notSelected">Voetbaltoernooi Campus Kaai</h3>
-                    <table>
-                        <tr>
-                            <td>
-                                <img class="icoon" src="img/kalender_red.png" />
-                                <p>Donderdag 21 Januari 2015</p>
-                                 <div class="clearfix"></div>
-                                <p class="leesMeer">Lees meer...</p>
-                                <br>
-                            </td>
-                        </tr>
-                    </table>
-                </div>
-            <div class="clearfix"></div>
-          </ul>
+    <div class="nieuws">
+        <ul>
+        </ul>
     </div>
-      <div class="alles">
-    </div>
-  </body>
-  <script type="text/javascript" src="scripts/nav.js"></script>
+</body>
+
 </html>

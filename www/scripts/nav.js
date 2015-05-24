@@ -14,6 +14,7 @@ function init() {
 
     $("#hamburger").click(function () {
         toggleNavMenu(true);
+        console.log("toggling nav")
     });
 
     $("#tandwiel").click(function () {
