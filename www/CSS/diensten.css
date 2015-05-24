@@ -89,21 +89,21 @@ h1 {
 }
 
 #centenVoorStudenten{
-    background-color:#d07373;
-}
-
-#kotEnVervoer{
     background-color:#e49090;
 }
 
-#sportEnCultuur{
+#kotEnVervoer{
     background-color:#bcbcbc;
 }
 
-#studentenResto{
+#sportEnCultuur{
     background-color:#878786;
 }
 
-#luisterendOor{
+#studentenResto{
     background-color:#3c3c3b;
+}
+
+#luisterendOor{
+    background-color:#d07373;
 }
