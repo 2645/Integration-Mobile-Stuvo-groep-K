@@ -1,13 +1,12 @@
 @font-face {
     font-family: Title;
-    src: url(../Fonts/KlinicSlab_Personal_License_Titel/KlinicSlabBold.otf);
+    src: url(../Fonts/KlinicSlab_Personal_License_Titel/KlinicSlabBook.otf);
 }
 
 @font-face {
     font-family: Tekst;
     src: url(../Fonts/MissionGothic_Personal_License_Tekst/Mission%20Gothic%20Regular.otf);
 }
-/*  fel rood: #d03830  */
 
 * {
     margin: 0;
@@ -29,27 +28,27 @@ h1 {
     height:4em;
 }
 .dienstTitel img{
-    width:15%;
+    width:12%;
     display:block;
     margin: 0 auto;
-    padding:2.5% 0;
+    padding:3% 0;
 }
 
 .dienstTitel h1{
-    margin-top:-17%;
-    font-family: Titel;
+    margin-top:-14%;
+    font-family: Title;
     color:white;
 }
 
 .dienstContent {
     display:none;
-    width:80%;
+    width:85%;
     margin: 0 auto;
     font-family: Tekst;
     font-size: 0.8em;
 }
 .dienstContent img{
-    width:30%;
+    width:45%;
     display:block;
     margin:0 auto;
     padding: 5% 0;
@@ -90,21 +89,21 @@ h1 {
 }
 
 #centenVoorStudenten{
-    background-color:#e49090;
+    background-color:#d07373;
 }
 
 #kotEnVervoer{
-    background-color:#bcbcbc;
+    background-color:#e49090;
 }
 
 #sportEnCultuur{
-    background-color:#878786;
+    background-color:#bcbcbc;
 }
 
 #studentenResto{
-    background-color:#3c3c3b;
+    background-color:#878786;
 }
 
 #luisterendOor{
-    background-color:#d07373;
+    background-color:#3c3c3b;
 }
