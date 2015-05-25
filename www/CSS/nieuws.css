@@ -80,51 +80,6 @@ html {
     margin-top: 0;
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-.datum ul {
-    margin: auto;
-    width: 80%;
-    list-style-type: none;
-    margin-top: 15px;
-}
-
-.datum li{
-    height: 100%;
-}
-
-.datum li:first{
-    height: 100%;
-    border-bottom: 1px dashed #999;
-    
-}
-.datum h3 {
-    font-family: Title;
-    
-}
-
-.datum .info {
-    width: 100%;
-    margin-bottom: 15px;
-=======
-.nieuws {
-    width: 80%;
-    margin: 15px auto;
-    font-family: Tekst;
-    color: rgb(105, 103, 101);
-    font-size: 0.8em;
-}
-
-.nieuws ul {
-    list-style-type: none;
->>>>>>> origin/master
-}
-
-.nieuws li {
-    margin-bottom: 20px;
-}
-
-=======
 .nieuws {
     width: 80%;
     margin: 15px auto;
@@ -141,7 +96,6 @@ html {
     margin-bottom: 20px;
 }
 
->>>>>>> origin/master
 .nieuws img:nth-child(2) {
     float: left;
     margin-right: 15px;
@@ -170,73 +124,6 @@ html {
     color: #6f2421;
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-.datum td{
-    color: rgb(105, 103, 101);
-    font-size: 0.8em;
-    width: 40%;
-    padding-right: 20px;
-    padding-bottom: 8px;
-    font-family: Title light;
-    
-}
-
-.datum table{
-    width: 100%;
-}
-
-.datum .infoSelected table{
-    border-bottom: 1px dashed #999;
-    margin-bottom: 15px;
-}
-
-.nieuwsPictureNotSelected{
-    float:left;
-    max-width: 25%;
-    margin: 6px 10px 0 0;
-    -webkit-box-shadow: 0px 0px 6px 1px rgba(50, 50, 50, 0.4);
-    -moz-box-shadow: 0px 0px 6px 1px rgba(50, 50, 50, 0.4);
-    box-shadow: 0px 0px 6px 1px rgba(50, 50, 50, 0.4);
-=======
-.nieuws .selected img {
-    width: 35%;
-}
-
-.nieuws .selected .readMore {
-    display: none;
-}
-
-.nieuws .notSelected {
-    float: none;
-}
-
-.nieuws .notSelected img {
-    width: 20%;
->>>>>>> origin/master
-}
-
-.nieuws .notSelected h3 {
-    color: black;
-    float: right;
-    width: 70%;
-}
-
-<<<<<<< HEAD
-.infoNotSelected .leesMeer{
-    display: inline;
-    color: #6f2421;
-    font-size: 0.9em;
-}
-.notSelected{
-    font-size: 1em;
-    color: #6f2421;
-    
-=======
-.nieuws .notSelected .description {
-    display: none;
->>>>>>> origin/master
-=======
 .nieuws .selected img {
     width: 35%;
 }
@@ -261,93 +148,12 @@ html {
 
 .nieuws .notSelected .description {
     display: none;
->>>>>>> origin/master
 }
 
 .nieuws .notSelected .date {
     float: right;
     width: 70%;
     margin-bottom: 0px;
-<<<<<<< HEAD
-}
-
-.nieuws .notSelected .readMore {
-    float: right;
-    width: 70%;
-}
-
-<<<<<<< HEAD
-.titelMaand {
-    font-size: 1.6em;
-    text-align: center;
-    color: #a33534;
-    border-top: dashed 1px;
-    border-bottom: dashed 1px;
-    padding: 5px 0 2.5px 0;
-    width: 80%;
-    margin: 15px auto;
-    font-family: Title;
-}
-
-.alles ul {
-    margin: auto;
-    width: 80%;
-    list-style-type: none;
-    margin-top: 15px;
-}
-
-.alles li{
-    height: 100%;
-}
-
-.alles li:first{
-    height: 100%;
-    border-bottom: 1px dashed #999;
-    
-}
-.alles h3 {
-    font-family: Title;
-    
-}
-
-.alles .info {
-    width: 100%;
-    margin-bottom: 15px;
-}
-
-.alles td{
-    color: rgb(105, 103, 101);
-    font-size: 0.8em;
-    width: 40%;
-    padding-right: 20px;
-    padding-bottom: 8px;
-    font-family: Title light;
-    
-}
-
-.alles table{
-    width: 71%;
-}
-
-.alles .infoSelected table{
-    border-bottom: 1px dashed #999;
-    margin-bottom: 15px;
-}
-
-.datum ul .maand {
-    margin: auto;
-    width: 80%;
-    list-style-type: none;
-    margin-top: 15px;
-}
-
-=======
-.nieuws .date img {
-    width: 7%;
-    padding-right: 10px;
-}
->>>>>>> origin/master
-=======
 }
 
 .nieuws .notSelected .readMore {
@@ -359,4 +165,3 @@ html {
     width: 7%;
     padding-right: 10px;
 }
->>>>>>> origin/master
