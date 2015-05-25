@@ -8,36 +8,60 @@ var map;
 var marker;
 
 $(document).ready(function () {
-    createMap();
+    createMap('Nijverheidskaai 170, anderlecht');
     getContent();
     addListeners();
 });
 
-function createMap() {
-    var latLng = new google.maps.LatLng(50.8415587, 4.3237141);
-    var options = {
-        zoom: 15,
-        center: latLng,
-        mapTypeId: google.maps.MapTypeId.ROADMAP
-    };
+function createMap(adres) {
 
-    map = new google.maps.Map(document.getElementById("map-canvas"), options);
+    var adresToLatLong = new google.maps.Geocoder();
+    var location;
+    adresToLatLong.geocode({
+        'address': adres
+    }, function (data) {
+        location = data[0].geometry.location;
+        var options = {
+            zoom: 15,
+            center: location,
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+        };
 
-    marker = new google.maps.Marker({
-        position: latLng,
-        map: map
+        map = new google.maps.Map(document.getElementById("map-canvas"), options);
+
+        marker = new google.maps.Marker({
+            position: location,
+            map: map
+        });
+
+        google.maps.event.addListener(marker, 'click', function () {
+            map.panTo(marker.getPosition());
+        });
     });
 
-    google.maps.event.addListener(marker, 'click', function () {
-        map.panTo(marker.getPosition());
-    });
+
+}
+
+function updateMap(selected) {
+    var adres = $('td:first',selected).text();
+    createMap(adres);
 }
 
 function getContent() {
     $.post("http://dtprojecten.ehb.be/~stuvo/public_html/api/agenda.php", function (data) {
-        $('.eventMonthSlider').html(generateEventMonthsHtml(data)+"<div class='clearfix'></div>");
+        $('.eventMonthSlider').html(generateEventMonthsHtml(data) + "<div class='clearfix'></div>");
         $('.event:nth-child(2)').addClass('selected');
         changeCss();
+        addSwapper();
+    });
+}
+
+function addSwapper() {
+    $('.event').click(function (event) {
+        $('.selected', $(this).parent()).before($(this));
+        $('.selected', $(this).parent()).removeClass('selected');
+        $(this).addClass('selected');
+        updateMap();
     });
 }
 
@@ -54,7 +78,7 @@ function addListeners() {
 function slideLeft(object) {
     var pos = object.position().left;
     var width = $(window).width();
-    if (pos > -width * (($('.eventMonth').length)-1)) {
+    if (pos > -width * (($('.eventMonth').length) - 1)) {
         object.animate({
             left: '-=' + width + 'px'
         }, 100);
