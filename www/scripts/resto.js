@@ -1,3 +1,4 @@
+
 $(document).ready(function () {
     var campusID = localStorage.getItem("campusID");
     movePointerToCampus(campusID);
@@ -45,7 +46,7 @@ function movePointerToCampus(id){
 function slideLeft(object) {
     var pos = object.position().left;
     var width = $(window).width();
-    if (pos > -width * 4) {
+    if (pos > -width * (($('.menuWrapperSlider .menu').length)-1)) {
         updateDaySlider(-width);
         object.animate({
             left: '-=' + width + 'px'
@@ -76,6 +77,7 @@ function getMenus(id) {
     $.post("http://dtprojecten.ehb.be/~stuvo/public_html/api/resto.php?campus=" + id, function (data) {
         $(".dagSelectieWrapperSlider").html("");
         $(".menuWrapperSlider").html(generateMenusHtml(data));
+        changeCss();
 
     });
 }
@@ -118,4 +120,10 @@ function generateMenuHtml(dagMenu) {
     htmlString += "</table></div>";
 
     return htmlString;
+}
+
+function changeCss(){
+    $('.menuWrapperSlider').css('width',100 * ($('.menuWrapperSlider .menu').length) + "%")
+    $('.menu').css('width', (100 / ($('.menuWrapperSlider .menu').length) - 6) + "%");
+    console.log(($('.menuWrapperSlider .menu').length))
 }

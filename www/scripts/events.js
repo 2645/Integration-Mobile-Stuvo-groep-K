@@ -6,7 +6,6 @@ jquery:true
 /* global google */
 var map;
 var marker;
-var amountOfMonths
 
 $(document).ready(function () {
     createMap();
@@ -55,7 +54,7 @@ function addListeners() {
 function slideLeft(object) {
     var pos = object.position().left;
     var width = $(window).width();
-    if (pos > -width * (amountOfMonths-1)) {
+    if (pos > -width * (($('.eventMonth').length)-1)) {
         object.animate({
             left: '-=' + width + 'px'
         }, 100);
@@ -76,10 +75,8 @@ function slideRight(object) {
 
 function generateEventMonthsHtml(data) {
     var eventMonths = JSON.parse(data).events;
-    amountOfMonths = 0
     var htmlString = '';
     for (var eventMonth in eventMonths) {
-        amountOfMonths++;
         htmlString += "<div class='eventMonth'><h2>" + eventMonth + "</h2>" + generateEventMonthHtml(eventMonths[eventMonth]) + "</div>";
     }
 
@@ -116,6 +113,6 @@ function generateEventHtml(event) {
 }
 
 function changeCss() {
-    $('.eventMonthSlider').css('width', 100 * amountOfMonths + "%");
-    $('.eventMonth').css('width', 100 / amountOfMonths + "%");
+    $('.eventMonthSlider').css('width', 100 * ($('.eventMonth').length) + "%");
+    $('.eventMonth').css('width', 100 / ($('.eventMonth').length) + "%");
 }
