@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="nl">
- 
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="CSS/nieuws.css">
@@ -9,9 +9,12 @@
     <script type="text/javascript" src="phonegap.js"></script>
     <script type="text/javascript" src="scripts/jquery-1.11.3.min.js"></script>
     <script type="text/javascript" src="scripts/jquery.mobile.custom.js"></script>
-  </head>
-  
-  <body>
+    <script type="text/javascript" src="scripts/nav.js"></script>
+    <script type="text/javascript" src="scripts/jquery-ui.js"></script>
+    <script type="text/javascript" src="scripts/nieuws.js"></script>
+</head>
+
+<body>
     <header>
 
         <nav class="hoofdNav">
@@ -30,23 +33,37 @@
             <input type="submit" class="searchButton" value="">
             <nav class="navigatieNav">
                 <ul>
-                     <a href="home.html"><li><img src="img/home_red.png">Home
-                    </li></a>
-                    <a href="diensten.html"><li><img src="img/diensten_red.png">Diensten
-                    </li></a>
-                    <a href="events.html"><li><img src="img/agenda_red.png">Agenda
-                    </li></a>
-                    <a href="nieuws.html"><li class="current"><img src="img/nieuws_red.png">Nieuws
-                    </li></a>
-                    <a href="resto.html"><li><img src="img/resto_red.png">Resto
-                    </li></a>
-                    <a href="contact.html"><li><img src="img/contact_red.png">Contact
-                    </li></a>
-                    <a href="sponsers.html"><li><img src="img/sponsors_red.png">Sponsors
-                    </li></a>
+                    <a href="home.html">
+                        <li><img src="img/home_red.png">Home
+                        </li>
+                    </a>
+                    <a href="diensten.html">
+                        <li><img src="img/diensten_red.png">Diensten
+                        </li>
+                    </a>
+                    <a href="events.html">
+                        <li><img src="img/agenda_red.png">Agenda
+                        </li>
+                    </a>
+                    <a href="nieuws.html">
+                        <li class="current"><img src="img/nieuws_red.png">Nieuws
+                        </li>
+                    </a>
+                    <a href="resto.html">
+                        <li><img src="img/resto_red.png">Resto
+                        </li>
+                    </a>
+                    <a href="contact.html">
+                        <li><img src="img/contact_red.png">Contact
+                        </li>
+                    </a>
+                    <a href="sponsers.html">
+                        <li><img src="img/sponsors_red.png">Sponsors
+                        </li>
+                    </a>
                 </ul>
             </nav>
-            
+
         </div>
 
         <div id="settings">
@@ -66,12 +83,12 @@
                         <p>Campusselectie:</p>
                         <label class="label">
                             <select name="campus">
-                                <option value="Dansaert">Dansaert</option>
-                                <option value="IWT">IWT</option>
-                                <option value="Jette">Jette</option>
-                                <option value="RITS">RITS</option>
-                                <option value="KCB">KCB</option>
-                                <option value="TTK">TTK</option>
+                                <option value="0">Dansaert</option>
+                                <option value="1">IWT</option>
+                                <option value="2">Jette</option>
+                                <option value="3">RITS</option>
+                                <option value="4">KCB</option>
+                                <option value="5">TTK</option>
                             </select>
                         </label>
                     </li>
@@ -82,6 +99,7 @@
         </div>
         <div id="black"></div>
     </div>
+<<<<<<< HEAD
       
     <nav class="navNieuws">
      
@@ -91,6 +109,128 @@
       </ul>
 
     </nav>
+      <div class="datum">
+      <h1 class="titelMaand">Mei 2015</h1>
+          <ul>
+            <li>
+                <img src="img/Agenda_temp.jpg" class="nieuwsPictureNotSelected">
+                <div class="infoNotSelected">
+                    <h3 class="notSelected">Voetbaltoernooi Campus Kaai</h3>
+                    <table>
+                        <tr>
+                            <td>
+                                <img class="icoon" src="img/kalender_red.png" />
+                                <p>Donderdag 21 Januari 2015</p>
+                                 <div class="clearfix"></div>
+                                <p class="leesMeer">Lees meer...</p>
+                                <br>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+              </li>
+              <div class="clearfix"></div>
+              <li>
+                <img src="img/Agenda_temp.jpg" class="nieuwsPictureNotSelected">
+                <div class="infoNotSelected">
+                    <h3 class="notSelected">Voetbaltoernooi Campus Kaai</h3>
+                    <table>
+                        <tr>
+                            <td>
+                                <img class="icoon" src="img/kalender_red.png" />
+                                <p>Donderdag 21 Januari 2015</p>
+                                 <div class="clearfix"></div>
+                                <p class="leesMeer">Lees meer...</p>
+                                <br>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+              </li>
+              <div class="clearfix"></div>
+              <li>
+                <img src="img/Agenda_temp.jpg" class="nieuwsPictureNotSelected">
+                <div class="infoNotSelected">
+                    <h3 class="notSelected">Voetbaltoernooi Campus Kaai</h3>
+                    <table>
+                        <tr>
+                            <td>
+                                <img class="icoon" src="img/kalender_red.png" />
+                                <p>Donderdag 21 Januari 2015</p>
+                                 <div class="clearfix"></div>
+                                <p class="leesMeer">Lees meer...</p>
+                                <br>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+              </li>
+              <div class="clearfix"></div>
+          </ul>
+            
+              
+              <h1 class="titelMaand">April 2015</h1>
+          <ul>
+            <li>
+                <img src="img/Agenda_temp.jpg" class="nieuwsPictureNotSelected">
+                <div class="infoNotSelected">
+                    <h3 class="notSelected">Voetbaltoernooi Campus Kaai</h3>
+                    <table>
+                        <tr>
+                            <td>
+                                <img class="icoon" src="img/kalender_red.png" />
+                                <p>Donderdag 21 Januari 2015</p>
+                                 <div class="clearfix"></div>
+                                <p class="leesMeer">Lees meer...</p>
+                                <br>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+              </li>
+          </ul>
+            <div class="clearfix"></div>
+              
+              <h1 class="titelMaand">Maart 2015</h1>
+          <ul>
+            <li>
+                <img src="img/Agenda_temp.jpg" class="nieuwsPictureNotSelected">
+                <div class="infoNotSelected">
+                    <h3 class="notSelected">Voetbaltoernooi Campus Kaai</h3>
+                    <table>
+                        <tr>
+                            <td>
+                                <img class="icoon" src="img/kalender_red.png" />
+                                <p>Donderdag 21 Januari 2015</p>
+                                 <div class="clearfix"></div>
+                                <p class="leesMeer">Lees meer...</p>
+                                <br>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+              </li>
+              <li>
+                <img src="img/Agenda_temp.jpg" class="nieuwsPictureNotSelected">
+                <div class="infoNotSelected">
+                    <h3 class="notSelected">Voetbaltoernooi Campus Kaai</h3>
+                    <table>
+                        <tr>
+                            <td>
+                                <img class="icoon" src="img/kalender_red.png" />
+                                <p>Donderdag 21 Januari 2015</p>
+                                 <div class="clearfix"></div>
+                                <p class="leesMeer">Lees meer...</p>
+                                <br>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+              </li>
+          </ul>
+            <div class="clearfix"></div>
+          
+      </div>
       <div class="alles">
           <ul>
               <li>
@@ -112,13 +252,14 @@
                 <div class="infoSelected">
                     <table>
                     </table>
+=======
+>>>>>>> origin/master
 
+    <nav class="navNieuws">
 
-                </div>
-                <div class="clearfix"></div>
-              </li>
-              <div class="clearfix"></div>
+        <ul>
             <li>
+<<<<<<< HEAD
                 <img src="img/Agenda_temp.jpg" class="nieuwsPictureNotSelected">
                 <div class="infoNotSelected">
                     <h3 class="notSelected">Voetbaltoernooi Campus Kaai</h3>
@@ -134,11 +275,43 @@
                         </tr>
                     </table>
                 </div>
+              </li>
+            <div class="clearfix"></div>
+              <li>
+                <img src="img/Agenda_temp.jpg" class="nieuwsPictureNotSelected">
+                <div class="infoNotSelected">
+                    <h3 class="notSelected">Voetbaltoernooi Campus Kaai</h3>
+                    <table>
+                        <tr>
+                            <td>
+                                <img class="icoon" src="img/kalender_red.png" />
+                                <p>Donderdag 21 Januari 2015</p>
+                                 <div class="clearfix"></div>
+                                <p class="leesMeer">Lees meer...</p>
+                                <br>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+              </li>
             <div class="clearfix"></div>
           </ul>
     </div>
       <div class="alles">
+=======
+                <p><img src="img/kalender.png" />Datum</p>
+            </li>
+            <li>
+                <p><img src="img/alles.png" />Alles</p>
+            </li>
+        </ul>
+
+    </nav>
+    <div class="nieuws">
+        <ul>
+        </ul>
+>>>>>>> origin/master
     </div>
-  </body>
-  <script type="text/javascript" src="scripts/nav.js"></script>
+</body>
+
 </html>

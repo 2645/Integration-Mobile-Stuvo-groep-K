@@ -10,7 +10,9 @@
     <script type="text/javascript" src="phonegap.js"></script>
     <script type="text/javascript" src="scripts/jquery-1.11.3.min.js"></script>
     <script type="text/javascript" src="scripts/jquery.mobile.custom.js"></script>
-    
+    <script type="text/javascript" src="scripts/nav.js"></script>
+    <script type="text/javascript" src="scripts/diensten.js"></script>
+
 </head>
 
 <body>
@@ -33,20 +35,34 @@
             <input type="submit" class="searchButton" value="">
             <nav class="navigatieNav">
                 <ul>
-                    <a href="home.html"><li><img src="img/home_red.png">Home
-                    </li></a>
-                    <a href="diensten.html"><li class="current"><img src="img/diensten_red.png">Diensten
-                    </li></a>
-                    <a href="agenda.html"><li><img src="img/agenda_red.png">Agenda
-                    </li></a>
-                    <a href="nieuws.html"><li><img src="img/nieuws_red.png">Nieuws
-                    </li></a>
-                    <a href="resto.html"><li><img src="img/resto_red.png">Resto
-                    </li></a>
-                    <a href="contact.html"><li><img src="img/contact_red.png">Contact
-                    </li></a>
-                    <a href="sponsers.html"><li><img src="img/sponsors_red.png">Sponsors
-                    </li></a>
+                    <a href="home.html">
+                        <li><img src="img/home_red.png">Home
+                        </li>
+                    </a>
+                    <a href="diensten.html">
+                        <li class="current"><img src="img/diensten_red.png">Diensten
+                        </li>
+                    </a>
+                    <a href="events.html">
+                        <li><img src="img/agenda_red.png">Agenda
+                        </li>
+                    </a>
+                    <a href="nieuws.html">
+                        <li><img src="img/nieuws_red.png">Nieuws
+                        </li>
+                    </a>
+                    <a href="resto.html">
+                        <li><img src="img/resto_red.png">Resto
+                        </li>
+                    </a>
+                    <a href="contact.html">
+                        <li><img src="img/contact_red.png">Contact
+                        </li>
+                    </a>
+                    <a href="sponsers.html">
+                        <li><img src="img/sponsors_red.png">Sponsors
+                        </li>
+                    </a>
                 </ul>
             </nav>
         </div>
@@ -68,12 +84,12 @@
                         <p>Campusselectie:</p>
                         <label class="label">
                             <select name="campus">
-                                <option value="Dansaert">Dansaert</option>
-                                <option value="IWT">IWT</option>
-                                <option value="Jette">Jette</option>
-                                <option value="RITS">RITS</option>
-                                <option value="KCB">KCB</option>
-                                <option value="TTK">TTK</option>
+                                <option value="0">Dansaert</option>
+                                <option value="1">IWT</option>
+                                <option value="2">Jette</option>
+                                <option value="3">RITS</option>
+                                <option value="4">KCB</option>
+                                <option value="5">TTK</option>
                             </select>
                         </label>
                     </li>
@@ -85,220 +101,184 @@
         </div>
         <div id="black"></div>
     </div>
-    
-    <div class="DienstTitel1"><img src="img/EenHoekCirkel.png" alt=""/><h1 class="GoedeRaad">Goede Raad</h1></div>
+    <div class='dienst'>
+        <div class="dienstTitel" id='goedeRaad'>
+            <img src="img/EenHoekCirkel.png" alt="" />
+            <h1>Goede Raad</h1>
+        </div>
 
-    <div id="ToggleContent1">
-        <div id="IcoonGoedeRaad"><img src="img/GoedeRaadIcoon.png" alt="GoedeRaad" class="FotoGoedeRaad"></div>
-        
-        <ul class="InfoTekst">
-            <li>- Hulp bij aanvraag van een studietoelage van de Vlaamse gemeenschap.</li>
-            <br>
-            <li>- Sociaaljuridisch advies over alle studententhema's: kinderbijslag, leefloon, werken en studeren, onderhoudsplichten, ...</li>
-        </ul>
+        <div class="dienstContent">
+            <img src="img/GoedeRaadIcoon.png" alt="GoedeRaad">
+            <ul class="InfoTekst">
+                <li>Hulp bij aanvraag van een studietoelage van de Vlaamse gemeenschap.</li>
+                <li>Sociaaljuridisch advies over alle studententhema's: kinderbijslag, leefloon, werken en studeren, onderhoudsplichten.</li>
+            </ul>
 
-        <div class="dashedRedLine"></div>
-        
-        <ul class="InfoTekst">
-            <li><b>02 526 85 03</b>
-            </li>
-            <li>Campus Dansaert - Bloemenhof - Jette.</li>
-            <li>RITS | school of arts en KBC | school of arts</li>
-            <br>
+            <ul class="InfoTekst">
+                <li><b>02 526 85 03</b>
+                </li>
+                <li>Campus Dansaert - Bloemenhof - Jette, RITS | school of arts en KBC | school of arts</li>
+                <li><b>02 526 85 00</b>
+                </li>
+                <li>Campus Dansaert - Bloemenhof, kaai (incl VUB'ers), RITS | school of arts en KBC | school of arts</li>
+            </ul>
 
-            <!--dashed line-->
+            <p class="email">goederaad@ehb.be</p>
+            <div class="imgPijl"><img src="img/ArrowUp.png" alt="Sluit Dienst Inhoud"/></div>
             
-            <li><b>02 526 85 00</b>
-            </li>
-            <li>Campus Dansaert - Bloemenhof, kaai (incl VUB'ers), RITS | school of arts en KBC | school of arts</li>
-        </ul>
-
-        <div id="emailENpijl">
-            <p class="emailRood">goederaad@ehb.be</p>
-            <div class="pijlUp"><img src="img/ArrowUp.png" alt="CloseContent">
-            </div>
-            <br>
         </div>
     </div>
-
-    <div class="DienstTitel2"><img src="img/Bolletje.png" alt=""/><h1 class="Centen">Centen voor studenten</h1></div>
-    
-    <div id="ToggleContent2">
-        <div id="IcoonGoedeRaad"><img src="img/CVS.png" alt="CentenVoorStudenten" class="FotoGoedeRaad">
+        <div class='dienst'>
+        <div class="dienstTitel" id='centenVoorStudenten'>
+            <img src="img/Bolletje.png" alt="" />
+            <h1>Centen voor Studenten</h1>
         </div>
-        <ul class="InfoTekst">
-            <li>- Hulp bij aanvraag van een studietoelage van de Vlaamse gemeenschap.</li>
-            <br>
-            <li>- Sociaaljuridisch advies over alle studententhema's: kinderbijslag, leefloon, werken en studeren, onderhoudsplichten, ...</li>
-        </ul>
 
-        <div class="dashedRedLine"></div>
-        
-        <ul class="InfoTekst">
-            <li><b>02 527 14 99</b>
-            </li>
-            <li>Campus Dansaert - Bloemenhof - Jette.</li>
-            <li>RITS | school of arts en KBC | school of arts</li>
-            <br>
-            
-            <!--dashed line-->
-            
-            <li><b>02 527 14 99</b>
-            </li>
-            <li>Campus Dansaert - Bloemenhof, kaai (incl VUB'ers), RITS | school of arts en KBC | school of arts</li>
-        </ul>
+        <div class="dienstContent">
+            <img src="img/CentenVoorStudenten.png" alt="centen voor studenten">
+            <ul class="InfoTekst">
+                <li>Voorschot studietoelage van de Vlaamse Gemeenschap</li>
+                <li>Aanvullende of vervangende toelage en renteloze studielening</li>
+                <li>Studentenjobs</li>
+            </ul>
 
-        <div id="emailENpijl">
-            <p class="emailRood">centenvoorstudenten@sovehb.be</p>
-            <div class="pijlUp"><img src="img/ArrowUp.png" alt="CloseContent">
-            </div>
-            <br>
+            <ul class="InfoTekst">
+                <li><b>02 526 85 03</b>
+                </li>
+                <li>Campus Dansaert - Bloemenhof - Jette, RITS | school of arts en KBC | school of arts</li>
+                <li><b>02 526 85 00</b>
+                </li>
+                <li>Campus Dansaert - Bloemenhof, kaai (incl VUB'ers), RITS | school of arts en KBC | school of arts</li>
+            </ul>
+
+            <p class="email">centenvoorstudenten@ehb.be</p>
+            <div class="imgPijl"><img src="img/ArrowUp.png" alt="Sluit Dienst Inhoud"/></div>
         </div>
     </div>
     
-    <div class="DienstTitel3"><img src="img/6-hoek.png" alt=""/><h1 class="Diversiteit">Diversiteit</h1></div>
-    
-    <div id="ToggleContent3">
-        <div id="IcoonGoedeRaad"><img src="img/Diversiteit.png" alt="GoedeRaad" class="FotoGoedeRaad">
+    <div class='dienst'>
+        <div class="dienstTitel" id='diversiteit'>
+            <img src="img/6-hoek.png" alt="" />
+            <h1>Diversiteit</h1>
         </div>
-        <ul class="InfoTekst">
-            <li>- Hulp bij aanvraag van een studietoelage van de Vlaamse gemeenschap.</li>
-            <br>
-            <li>- Sociaaljuridisch advies over alle studententhema's: kinderbijslag, leefloon, werken en studeren, onderhoudsplichten, ...</li>
-        </ul>
 
-        <div class="dashedRedLine"></div>
-        
-        <ul class="InfoTekst">
-            <li><b>02 526 85 03</b>
-            </li>
-            <li>Campus Dansaert - Bloemenhof - Jette.</li>
-            <li>RITS | school of arts en KBC | school of arts</li>
-            <br>
+        <div class="dienstContent">
+            <img src="img/Diversiteit.png" alt="diversiteit">
+            <ul class="InfoTekst">
+                <li>Stuvo EhB staat voor ... kansen bieden.</li>
+                <li>Naast materiële, financiële en mentale steun willen we dat je lekker jezelf kan zijn en je thuis voelt op onze hogeschool. Studeren moet haalbaar zijn voor iedereen. Talenten moet je kunnen ontplooien. </li>
+                <li>welkom zoals je bent</li>
+                <li>gelijke kansen</li>
+                <li>internationaal</li>
+                <li>pluralisme</li>
+            </ul>
+
+            <ul class="InfoTekst">
+                <li><b>02 526 85 02</b>
+                </li>
+            </ul>
+
+            <p class="email">sofie.giets@ehb.be</p>
+            <div class="imgPijl"><img src="img/ArrowUp.png" alt="Sluit Dienst Inhoud"/></div>
+        </div>
+    </div>
+    
+        <div class='dienst'>
+        <div class="dienstTitel" id='kotEnVervoer'>
+            <img src="img/Driehoek.png" alt="" />
+            <h1>Kot en Vervoer</h1>
+        </div>
+
+        <div class="dienstContent">
+            <img src="img/KotenVervoer.png" alt="Kot en Vervoer">
+            <ul class="InfoTekst">
+                <li>Betaalbare kamers in het Studenten-home Jette en Dansaert 123</li>
+                <li>Eigen huisvestingsdienst</li>
+                <li>Partner Br(ik): Studentenkamers in Brussel Centrum</li>
+                <li>Tips openbaar vervoer, fietsen in Brussel, ...</li>
+            </ul>
+
+            <ul class="InfoTekst">
+                <li><b>02 476 16 17</b>
+                </li>
+            </ul>
+
+            <p class="email">kot@ehb.be</p>
+            <p class="email">vervoer@ehb.be</p>
+            <div class="imgPijl"><img src="img/ArrowUp.png" alt="Sluit Dienst Inhoud"/></div>
+        </div>
+    </div>
+        <div class='dienst'>
+        <div class="dienstTitel" id='sportEnCultuur'>
+            <img src="img/TweehoekCirkel.png" alt="" />
+            <h1>Sport en Cultuur</h1>
+        </div>
+
+        <div class="dienstContent">
+            <img src="img/SportCultuur.png" alt="Sport en Cultuur">
+            <ul class="InfoTekst">
+                <li>Sportaanbod: sportprogramma, lessenreeksen, kortingen, sport-evenementen, competities en clubs</li>
+                <li>Rits Café: studentenbar met een culturele twist met o.a. concerten, films, debatten en cultuurkortingen. Voor en door studenten</li>
+                <li>Ondersteuning studentenorganisaties</li>
+            </ul>
+
+            <ul class="InfoTekst">
+                <li><b>02 559 15 77 of 02 559 15 78</b>
+            </ul>
+            <p class="email">sport@ehb.be of cultuur@ehb.be</p>
             
-            <!--dashed line-->
-            
-            <li><b>02 526 85 00</b>
-            </li>
-            <li>Campus Dansaert - Bloemenhof, kaai (incl VUB'ers), RITS | school of arts en KBC | school of arts</li>
-        </ul>
-
-        <div id="emailENpijl">
-            <p class="emailRood">goederaad@ehb.be</p>
-            <div class="pijlUp"><img src="img/ArrowUp.png" alt="CloseContent">
-            </div>
-            <br>
+            <div class="imgPijl"><img src="img/ArrowUp.png" alt="Sluit Dienst Inhoud"/></div>
         </div>
     </div>
-    
-    <div class="DienstTitel4"><img src="img/Driehoek.png" alt=""/><h1 class="KotenVervoer">Kot en vervoer</h1></div>
-    
-    <div id="ToggleContent4">
-        <div id="IcoonGoedeRaad"><img src="img/KEV.png" alt="GoedeRaad" class="FotoGoedeRaad">
+        <div class='dienst'>
+        <div class="dienstTitel" id='studentenResto'>
+            <img src="img/Rechthoek.png" alt="" />
+            <h1>Studenten Resto's</h1>
         </div>
-        <ul class="InfoTekst">
-            <li>- Hulp bij aanvraag van een studietoelage van de Vlaamse gemeenschap.</li>
-            <br>
-            <li>- Sociaaljuridisch advies over alle studententhema's: kinderbijslag, leefloon, werken en studeren, onderhoudsplichten, ...</li>
-        </ul>
 
-        <div class="dashedRedLine"></div>
-        
-        <ul class="InfoTekst">
-            <li><b>02 526 85 03</b>
-            </li>
-            <li>Campus Dansaert - Bloemenhof - Jette.</li>
-            <li>RITS | school of arts en KBC | school of arts</li>
-            <br>
+        <div class="dienstContent">
+            <img src="img/SR.png" alt="studenten resto's">
+            <ul class="InfoTekst">
+                <li>Goed, gezond, gezellig en goedkoop eten op de campus:</li>
+                <li>Koninklijk Conservatorium (Brussel)</li>
+                <li>resto Bloemenhof (Brussel)</li>
+                <li>resto Nijverheidskaai (Anderlecht)</li>
+                <li>The Link (Jette)</li>
+                <li>Rits Café (Brussel)</li>
+                <li>Samenwerking met VUB resto's in Jette en Etterbeek</li>
+            </ul>
 
-            <!--dashed line-->
+            <ul class="InfoTekst">
+                <li><b>02 559 15 76</b></li>
+            </ul>
 
-            <li><b>02 526 85 00</b>
-            </li>
-            <li>Campus Dansaert - Bloemenhof, kaai (incl VUB'ers), RITS | school of arts en KBC | school of arts</li>
-        </ul>
-
-        <div id="emailENpijl">
-            <p class="emailRood">goederaad@ehb.be</p>
-            <div class="pijlUp"><img src="img/ArrowUp.png" alt="CloseContent">
-            </div>
-            <br>
+            <p class="email">studentenrestos@ehb.be</p>
+            <div class="imgPijl"><img src="img/ArrowUp.png" alt="Sluit Dienst Inhoud"/></div>
         </div>
     </div>
-    
-    <div class="DienstTitel5"><img src="img/Hartje.png" alt=""/><h1 class="LuisterendOor">Luisterend oor</h1></div>
-    
-    <div id="ToggleContent5">
-        <div id="IcoonGoedeRaad"><img src="img/LO.png" alt="GoedeRaad" class="FotoGoedeRaad">
+        <div class='dienst'>
+        <div class="dienstTitel" id='luisterendOor'>
+            <img src="img/Hartje.png" alt="" />
+            <h1>Luisterend Oor</h1>
         </div>
-        <ul class="InfoTekst">
-            <li>- Hulp bij aanvraag van een studietoelage van de Vlaamse gemeenschap.</li>
-            <br>
-            <li>- Sociaaljuridisch advies over alle studententhema's: kinderbijslag, leefloon, werken en studeren, onderhoudsplichten, ...</li>
-        </ul>
 
-        <div class="dashedRedLine"></div>
-        
-        <ul class="InfoTekst">
-            <li><b>02 526 85 03</b>
-            </li>
-            <li>Campus Dansaert - Bloemenhof - Jette.</li>
-            <li>RITS | school of arts en KBC | school of arts</li>
-            <br>
+        <div class="dienstContent">
+            <img src="img/LuisterendOor.png" alt="Luisterend oor">
+            <ul class="InfoTekst">
+                <li>Stuvo EhB staat voor je klaar, in goede en kwade tijden, voor grote en kleine problemen.</li>
+                <li>Je kan bij ons terecht voor professionele psychosociale begeleiding, maar ook gewoon om eens een keertje je hart te luchten.</li>
+            </ul>
+            <ul class="InfoTekst">
+                <li><b>02 526 85 02</b>
+                </li>
+            </ul>
 
-            <!--dashed line-->
-
-            <li><b>02 526 85 00</b>
-            </li>
-            <li>Campus Dansaert - Bloemenhof, kaai (incl VUB'ers), RITS | school of arts en KBC | school of arts</li>
-        </ul>
-
-        <div id="emailENpijl">
-            <p class="emailRood">goederaad@ehb.be</p>
-            <div class="pijlUp"><img src="img/ArrowUp.png" alt="CloseContent">
-            </div>
-            <br>
-        </div>
-    </div>
-
-    <div class="DienstTitel6"><img src="img/TweehoekCirkel.png" alt=""/><h1 class="SportCultuur">Sport en cultuur</h1></div>
-        
-    <div id="ToggleContent6">
-        <div id="IcoonGoedeRaad"><img src="img/SEC.png" alt="GoedeRaad" class="FotoGoedeRaad">
-        </div>
-        <ul class="InfoTekst">
-            <li>- Hulp bij aanvraag van een studietoelage van de Vlaamse gemeenschap.</li>
-            <br>
-            <li>- Sociaaljuridisch advies over alle studententhema's: kinderbijslag, leefloon, werken en studeren, onderhoudsplichten, ...</li>
-        </ul>
-
-        <div class="dashedRedLine"></div>
-        
-        <ul class="InfoTekst">
-            <li><b>02 526 85 03</b>
-            </li>
-            <li>Campus Dansaert - Bloemenhof - Jette.</li>
-            <li>RITS | school of arts en KBC | school of arts</li>
-            <br>
-
-            <!--dashed line-->
-
-            <li><b>02 526 85 00</b>
-            </li>
-            <li>Campus Dansaert - Bloemenhof, kaai (incl VUB'ers), RITS | school of arts en KBC | school of arts</li>
-        </ul>
-
-        <div id="emailENpijl">
-            <p class="emailRood">goederaad@ehb.be</p>
-            <div class="pijlUp"><img src="img/ArrowUp.png" alt="CloseContent">
-            </div>
-            <br>
+            <p class="email">sofie.giets@ehb.be</p>
+            <div class="imgPijl"><img src="img/ArrowUp.png" alt="Sluit Dienst Inhoud"/></div>
         </div>
     </div>
 
     <footer>
     </footer>
 </body>
-<script type="text/javascript" src="scripts/nav.js"></script>
-<script type="text/javascript" src="scripts/diensten.js"></script>
 </html>

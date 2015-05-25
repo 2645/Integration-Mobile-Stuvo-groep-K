@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
@@ -7,6 +7,7 @@
     font-family: Title;
     src: url(../Fonts/KlinicSlab_Personal_License_Titel/KlinicSlabBold.otf);
 }
+
 @font-face {
     font-family: Title Light;
     src: url(../Fonts/KlinicSlab_Personal_License_Titel/KlinicSlabLight.otf);
@@ -22,7 +23,8 @@
     src: url(../Fonts/KlinicSlab_Personal_License_Titel/KlinicSlabMedium.otf);
 }
 
-body,html{
+body,
+html {
     width: 100%;
     height: 100%;
 }
@@ -30,203 +32,121 @@ body,html{
 #map-canvas {
     width: 100%;
     height: 30%;
-    z-index:0;
+    z-index: 0;
 }
 
-.eventsSliderWrapper {
+.clearfix {
+    clear: both;
+}
+
+.eventMonthWrapper {
     width: 100%;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
-.eventsSlider {
-    width: 1200%;
+.eventMonthSlider {
+    width: 100%;
     position: relative;
-    left: -100%;
-    height:100%;
 }
 
-.eventSlide {
-    
+.eventMonth {
+    float:left;
+    width:100%;
     display: inline-block;
-    width: 8.333333%;
 }
-
-
-
-.clearfix{
-    clear:both;
-}
-
-.events ul {
-    margin: auto;
-    width: 80%;
-    list-style-type: none;
-    margin-top: 15px;
-}
-
-.events li{
-    height: 100%;
-}
-
-.events .datum {
-    font-family: Title;
-    color: #a33534;
-    font-size: 1em;
-    line-height: 0.8em;
-    float: left;
-    padding-top: 5%;
-}
-
-.datum span {
-    color: #a33534;
-    font-size: 9.5vw;
-    line-height: 0;
-}
-
-.infoSelected .icoon {
-    width: 7%;
-    display: inline;
-    margin-right: 1%;
-}
-.infoNotSelected .icoon {
-    width: 7%;
-    display: inline;
-    margin-right: 1%;
-}
-
-.events h3 {
-    font-family: Title;
-    
-}
-
-.selected{
-    color: #6f2421;
-    font-size: 1.1em;
-    float: left;
-    margin: 6% 0 5px;
-}
-
-.notSelected{
-    font-size: 1em;
-    
-}
-
-.eventInfo p {
-
-    color: rgb(105, 103, 101);
-    display: inline;
-    font-size: 0.6em;
-    margin-left: 5px;
-    
-}
-
-.infoSelected p{
-    display: inline;
-}
-
-.infoNotSelected p{
-    display: inline;
-}
-
-
-
-.description{
-    color: rgb(105, 103, 101);
-    display: inline;
-    font-size: 0.8em;
-    margin-left: 5px;
-    width: 64%;
-    font-family: Tekst;
-    
-}
-
-.events td{
-    color: rgb(105, 103, 101);
-    font-size: 0.9em;
-    width: 40%;
-    padding-right: 20px;
-    padding-bottom: 8px;
-    font-family: Title light;
-    
-}
-
-.eventMaand{
-    z-index: 1;
-    background-color: #838081;
-    position: absolute;
-    top: 36%;
-    opacity: 0.91;
-    width: 100%;
-    font-family: Title regular;
-    color: white;
-    font-size: 1.5em;
+.eventMonth h2{
+    color:white;
+    display: block;
     text-align: center;
-    padding: 2% 0 0.2%;
+    background-color: rgb(105, 103, 101);
+    height:2em;
+    font-family: Title;
 }
 
-.eventPijl{
-    z-index: 2;
-    height: 19px;
-}
-
-.pijlLinks{
-    float: left;
-    margin-left: 5%;
-}
-.pijlRechts{
-    float: right;
-    margin-right: 5%;
-}
-
- 
-
-
-.events .info {
-    width: 100%;
+.event {
+    width: 80%;
+    margin:auto;
     margin-bottom: 15px;
 }
 
-.infoSelected{
-    clear:both;
+.event>img {
+    float: left;
+    width: 20%;
+    margin-right: 15px;
 }
 
-.eventTime{
+.event h3 {
+    font-family: Title;
+    font-size: 1em;
+    color: rgb(105, 103, 101);
+}
+
+.event .description {
     display: none;
 }
 
-.eventPicture{
-    max-width: 30%;
+.event table {
+    font-size: 0.6em;
+    margin-top:10px;
+    color: rgb(105, 103, 101);
+}
+
+.event table tr td img {
+    float: left;
+    padding-right: 5px;
+    width: 1.5em;
+}
+
+.event tr {
+    width: 100%;
+}
+
+.event td:nth-child(1) {
+    width: 45%;
+}
+
+.event td:nth-child(2) {
+    width: 25%;
+}
+
+.event td:nth-child(3) {
+    width: 30%;
+    display: none;
+}
+
+.selected {
+    padding-bottom: 15px;
+    border-bottom: #a33534 2px dashed;
+}
+
+.selected h3 {
+    text-align: center;
+    float: none;
+    color: #a33534;
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+
+.selected>img {
+    width: 30%;
+    -webkit-box-shadow: 0px 0px 6px 1px rgba(50, 50, 50, 0.4);
+    -moz-box-shadow: 0px 0px 6px 1px rgba(50, 50, 50, 0.4);
+    box-shadow: 0px 0px 6px 1px rgba(50, 50, 50, 0.4);
+}
+
+.selected table{
     float:left;
-    margin: 6px 10px 0 0;
-    -webkit-box-shadow: 0px 0px 6px 1px rgba(50, 50, 50, 0.75);
-    -moz-box-shadow: 0px 0px 6px 1px rgba(50, 50, 50, 0.75);
-    box-shadow: 0px 0px 6px 1px rgba(50, 50, 50, 0.75);
 }
 
-.eventPictureNotSelected{
-    float:left;
-    max-width: 25%;
-    margin: 6px 10px 0 0;
-    -webkit-box-shadow: 0px 0px 6px 1px rgba(50, 50, 50, 0.75);
-    -moz-box-shadow: 0px 0px 6px 1px rgba(50, 50, 50, 0.75);
-    box-shadow: 0px 0px 6px 1px rgba(50, 50, 50, 0.75);
+.selected .description {
+    display: inline;
+    float-right;
+    font-family: Tekst;
+    color: rgb(105, 103, 101);
 }
 
-.column{
-    display: inline-block;
-    height: auto;
+.selected td:nth-child(3) {
+    width: 15%;
+    display: table-cell;
 }
-.events .infoSelected table{
-    padding-bottom: 5px;
-    border-bottom: 1px dashed #999;
-}
-
-.events table{
-     margin-bottom: 8%;
-}
-.infoNotSelected{
-    width: 64%;
-    float: right;
-}
-
-
+/**color: #a33534;**/
