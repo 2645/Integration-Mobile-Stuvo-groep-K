@@ -1,6 +1,6 @@
 * {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 .clearfix {
@@ -32,22 +32,43 @@
     height: 60px;
 }
 
+.dienstWrapper {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.dienstSlider {
+    display:table;
+    width: 700%;
+    top:0;
+    position: relative;
+}
 /*****NAVIGATIE-CONTACT*****/
 
 .navContact {
-  background-color: rgb(105, 103, 101);
-  height: 50px;
+    background-color: rgb(105, 103, 101);
+    height: 50px;
+}
+.navContact ul{
+    display:table;
+    width:100%;
 }
 
 .navContact li {
-  display: inline-block;
-  width: 15.73%;
-  text-align: center;
-  padding: 16px 0;
-  color: white;
-  font-family: titel;
+    display: table-cell;
+    width: 14.28%;
+    text-align: center;
+    padding: 16px 0;
+    color: white;
+    font-family: titel;
 }
-
+#pointer{
+    width:14.28%;
+    height:5px;
+    position:relative;
+    top:-5px;
+    background-color: #6f2421;
+}
 /**********CONTACT**********/
 
 .titelContact {
@@ -60,101 +81,102 @@
     margin: 15px auto;
     font-family: Title;
 }
-
 /*****GOEDE-RAAD*****/
 
 .dienst {
-  width: 90%;
-  margin: auto;
+    
+    width: 14.28%;
+    padding-left: 1%;
+    padding-right: 1%;
+    display: table-cell;
 }
+
 .dienst .icoon {
-  width: 12%;
-  float: left;
+    width: 12%;
+    float: left;
 }
 
 .dienst .icoonEmail {
-  width: 12%;
-  float: left;
+    width: 12%;
+    float: left;
 }
 
 .dienst .info {
-  margin-left: 50px;
+    margin-left: 50px;
 }
 
 .dienst ul {
-  list-style-type: none;
+    list-style-type: none;
 }
 
 .dienst ul p {
-  float: left;
-  font-family: Tekst;
-  color: rgb(105, 103, 101);
-  padding-right: 20px;
+    float: left;
+    font-family: Tekst;
+    color: rgb(105, 103, 101);
+    padding-right: 20px;
 }
 
 .dienst ul .naam {
-  padding-right: 10px;
+    padding-right: 10px;
 }
 
 .dienst ul .telefoonNummer {
-  border-left: solid 2px #a33534;
-  padding-left: 10px;
+    border-left: solid 2px #a33534;
+    padding-left: 10px;
 }
 
-
 .dienst .emailAdres {
-  margin-top: 20px;
+    margin-top: 20px;
 }
 
 .dienst .emailAdres p {
-  color: #a33534;
-  padding: 2.5px 0;
-  margin-left: 50px;
-  font-family: tekst;
+    color: #a33534;
+    padding: 2.5px 0;
+    margin-left: 50px;
+    font-family: tekst;
 }
-
 /*****EMAIL*****/
 
 .email {
-  margin-top: 25px;
-  background-color: rgba(209,55,47,0.6);
-  padding-bottom: 14px;
+    margin-top: 25px;
+    background-color: rgba(209, 55, 47, 0.6);
+    padding-bottom: 14px;
 }
 
 .email p {
-  font-family: tekst;
-  color: white;
-  text-align: center;
-  padding: 20px 0;
+    font-family: tekst;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
 }
 
 .email span {
-  font-family: thinTekst;
-  font-size: 0.8em;
-  color: white;
+    font-family: thinTekst;
+    font-size: 0.8em;
+    color: white;
 }
 
 .emailSchrijven {
-  width: 75%;
-  margin: auto;
+    width: 75%;
+    margin: auto;
 }
 
 .emailInput {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  width: 89%;
-  height: 5px;
-  border: 0;
-  color: rgb(105, 103, 101);
-  padding: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 89%;
+    height: 5px;
+    border: 0;
+    color: rgb(105, 103, 101);
+    padding: 15px;
 }
 
 textarea {
-  padding: 15px;
-  resize: none;
-  width: 89%;
-  height: 100px;
-  margin-top: 10px;
-  border: 0;
-  color: rgb(105, 103, 101);
+    padding: 15px;
+    resize: none;
+    width: 89%;
+    height: 100px;
+    margin-top: 10px;
+    border: 0;
+    color: rgb(105, 103, 101);
 }

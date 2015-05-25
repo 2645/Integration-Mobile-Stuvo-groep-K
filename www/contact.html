@@ -23,30 +23,44 @@
             </div>
         </nav>
     </header>
-    
+
     <div class="navWrapper">
         <div id="navigatie">
             <input type="text" name="search">
             <input type="submit" class="searchButton" value="">
             <nav class="navigatieNav">
                 <ul>
-                    <a href="home.html"><li ><img src="img/home_red.png">Home
-                    </li></a>
-                    <a href="diensten.html"><li><img src="img/diensten_red.png">Diensten
-                    </li></a>
-                    <a href="events.html"><li><img src="img/agenda_red.png">Agenda
-                    </li></a>
-                    <a href="nieuws.html"><li><img src="img/nieuws_red.png">Nieuws
-                    </li></a>
-                    <a href="resto.html"><li><img src="img/resto_red.png">Resto
-                    </li></a>
-                    <a href="contact.html"><li class="current"><img src="img/contact_red.png">Contact
-                    </li></a>
-                    <a href="sponsers.html"><li><img src="img/sponsors_red.png">Sponsors
-                    </li></a>
+                    <a href="home.html">
+                        <li><img src="img/home_red.png">Home
+                        </li>
+                    </a>
+                    <a href="diensten.html">
+                        <li><img src="img/diensten_red.png">Diensten
+                        </li>
+                    </a>
+                    <a href="events.html">
+                        <li><img src="img/agenda_red.png">Agenda
+                        </li>
+                    </a>
+                    <a href="nieuws.html">
+                        <li><img src="img/nieuws_red.png">Nieuws
+                        </li>
+                    </a>
+                    <a href="resto.html">
+                        <li><img src="img/resto_red.png">Resto
+                        </li>
+                    </a>
+                    <a href="contact.html">
+                        <li class="current"><img src="img/contact_red.png">Contact
+                        </li>
+                    </a>
+                    <a href="sponsers.html">
+                        <li><img src="img/sponsors_red.png">Sponsors
+                        </li>
+                    </a>
                 </ul>
             </nav>
-            
+
         </div>
 
         <div id="settings">
@@ -66,12 +80,12 @@
                         <p>Campusselectie:</p>
                         <label class="label">
                             <select name="campus">
-                                <option value="Dansaert">Dansaert</option>
-                                <option value="IWT">IWT</option>
-                                <option value="Jette">Jette</option>
-                                <option value="RITS">RITS</option>
-                                <option value="KCB">KCB</option>
-                                <option value="TTK">TTK</option>
+                                <option value="0">Dansaert</option>
+                                <option value="1">IWT</option>
+                                <option value="2">Jette</option>
+                                <option value="3">RITS</option>
+                                <option value="4">KCB</option>
+                                <option value="5">TTK</option>
                             </select>
                         </label>
                     </li>
@@ -85,10 +99,13 @@
     <nav class="navContact">
         <ul>
             <li>
-                <a>GR</a>
+                <a>SJA</a>
             </li>
-            <li> 
+            <li>
                 <a>CVS</a>
+            </li>
+            <li>
+                <a>DIV</a>
             </li>
             <li>
                 <a>K&amp;V</a>
@@ -97,38 +114,41 @@
                 <a>S&amp;C</a>
             </li>
             <li>
-                <a>DIV</a>
+                <a>SR</a>
             </li>
             <li>
-                <a>LO</a>
+                <a>CVS</a>
             </li>
         </ul>
     </nav>
+    <div id="pointer"></div>
+    <div class="dienstWrapper">
+        <div class="dienstSlider">
+            <div class="dienst">
+                <h1 class="titelContact">Goede Raad</h1>
 
-    <div class="dienst">
-        <h1 class="titelContact">Goede Raad</h1>
+                <img class="icoon" src="Img/iconen_psd.png">
 
-        <img class="icoon" src="Img/iconen_psd.png">
+                <div class="info">
+                    <ul>
+                        <li>
+                            <p><span class="naam">Angelique Roels</span><span class="telefoonNummer">02/526.85.03</span>
+                            </p>
+                        </li>
+                        <br>
+                    </ul>
+                </div>
 
-        <div class="info">
-            <ul>
-                <li>
-                    <p><span class="naam">Angelique Roels</span><span class="telefoonNummer">02/526.85.03</span>
-                    </p>
-                </li>
-                <br>
-            </ul>
+                <div class="clearfix"></div>
+
+                <div class="emailAdres">
+                    <img class="icoonEmail" src="Img/enveloppe_grey.png">
+                    <p>centenvoorstudenten@ehb.be</p>
+                </div>
+
+            </div>
         </div>
-
-        <div class="clearfix"></div>
-
-        <div class="emailAdres">
-            <img class="icoonEmail" src="Img/enveloppe_grey.png">
-            <p>centenvoorstudenten@ehb.be</p>
-        </div>
-
     </div>
-
     <div class="email">
         <p>Of stuur ons rechtstreeks een berichtje!</p>
         <div class="emailSchrijven">

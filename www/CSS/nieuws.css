@@ -81,6 +81,7 @@ html {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .datum ul {
     margin: auto;
     width: 80%;
@@ -123,6 +124,24 @@ html {
     margin-bottom: 20px;
 }
 
+=======
+.nieuws {
+    width: 80%;
+    margin: 15px auto;
+    font-family: Tekst;
+    color: rgb(105, 103, 101);
+    font-size: 0.8em;
+}
+
+.nieuws ul {
+    list-style-type: none;
+}
+
+.nieuws li {
+    margin-bottom: 20px;
+}
+
+>>>>>>> origin/master
 .nieuws img:nth-child(2) {
     float: left;
     margin-right: 15px;
@@ -151,6 +170,7 @@ html {
     color: #6f2421;
 }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 .datum td{
     color: rgb(105, 103, 101);
@@ -216,12 +236,39 @@ html {
 .nieuws .notSelected .description {
     display: none;
 >>>>>>> origin/master
+=======
+.nieuws .selected img {
+    width: 35%;
+}
+
+.nieuws .selected .readMore {
+    display: none;
+}
+
+.nieuws .notSelected {
+    float: none;
+}
+
+.nieuws .notSelected img {
+    width: 20%;
+}
+
+.nieuws .notSelected h3 {
+    color: black;
+    float: right;
+    width: 70%;
+}
+
+.nieuws .notSelected .description {
+    display: none;
+>>>>>>> origin/master
 }
 
 .nieuws .notSelected .date {
     float: right;
     width: 70%;
     margin-bottom: 0px;
+<<<<<<< HEAD
 }
 
 .nieuws .notSelected .readMore {
@@ -295,6 +342,19 @@ html {
 }
 
 =======
+.nieuws .date img {
+    width: 7%;
+    padding-right: 10px;
+}
+>>>>>>> origin/master
+=======
+}
+
+.nieuws .notSelected .readMore {
+    float: right;
+    width: 70%;
+}
+
 .nieuws .date img {
     width: 7%;
     padding-right: 10px;
