@@ -1,50 +1,8 @@
 getContacts();
-addActions();
-
-function addActions() {
-    $('.dienstSlider').on("swipeleft", function (event) {
-        var pos = $(this).position().left;
-        var width = $(window).width();
-        if (pos > -width * 6) {
-            updateSlider(width/7);
-            $(this).animate({
-                left: '-=' + width + 'px'
-            }, 100);
-        }
-    });
-
-    $('.dienstSlider').on("swiperight", function (event) {
-        var pos = $(this).position().left;
-        var width = $(window).width();
-        if (pos < 0) {
-            updateSlider(-width/7);
-            $(this).animate({
-                left: '+=' + width + 'px'
-            }, 100);
-        }
-    });
-    $('.navContact li').click(function (event) {
-        var position = $(this).position().left;
-        $('.dienstSlider').animate({
-            left: position*-7 +"px"
-        },100)
-        $('#pointer').animate({
-            left: position + "px"
-        }, 100);
-    });
-}
-
-function updateSlider(distance){
-    $("#pointer").animate({
-        left: '+='+distance +"px"
-    },100,function(){
-        
-    });
-}
 
 function getContacts() {
     $.post("http://dtprojecten.ehb.be/~stuvo/public_html/api/contacts.php", function (data) {
-        $('.dienstSlider').html(generateContactsHtml(data));
+        $('.dienst').html(generateContactsHtml(data));
     });
 }
 
@@ -79,7 +37,7 @@ function generateContactHtml(dienst) {
         htmlString += "<li><p><span class='telefoonNummer'>" + tel + "</span></p></li><br></ul></div><div class='clearfix'></div>"
     } else {
         for (var i in voornaam) {
-            htmlString += singleContact(voornaam[i], achternaam[i], tel[i]);
+            htmlString += singleContact(voornaam[i],achternaam[i],tel[i]);
         }
 
         htmlString += "</ul></div>";

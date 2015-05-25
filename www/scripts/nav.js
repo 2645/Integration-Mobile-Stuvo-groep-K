@@ -1,51 +1,32 @@
+init();
 var activeNav = false;
 var activeSettings = false;
 
-$(document).ready(function () {
-    init();
-});
-
-
-
 function init() {
-    if (localStorage.getItem('campusID') !== null) {
-        $('.settingsNav select').val(localStorage.getItem('campusID'));
-    }
-
     $("#hamburger").click(function () {
         toggleNavMenu(true);
-        console.log("toggling nav")
     });
 
     $("#tandwiel").click(function () {
         toggleSettingsMenu(true);
     });
-
-    $("#black").click(function () {
-        if (activeNav) toggleNavMenu(true);
-        if (activeSettings) toggleSettingsMenu(true);
+    
+    $("#black").click(function(){
+        if(activeNav)toggleNavMenu(true);
+        if(activeSettings)toggleSettingsMenu(true);
     });
-
-    $(".navigatieNav li").hover(function () {
-        $(this).css("background-color", "red");
-    }, function () {
-        $(this).css("background-color", "#a33534");
+    
+    $(".navigatieNav li").hover(function(){
+      $(this).css("background-color","red");
     });
-
-    $('.navWrapper').on("swipeleft", function () {
-        if (activeNav) toggleNavMenu(true);
+    
+    $('.navWrapper').on("swipeleft",function(){
+        if(activeNav)toggleNavMenu(true);
     })
-    $('.navWrapper').on("swiperight", function () {
-        if (activeSettings) toggleSettingsMenu(true);
+    $('.navWrapper').on("swiperight",function(){
+        if(activeSettings)toggleSettingsMenu(true);
     })
-
-    $('.settingsNav .switch input').click(function () {
-        localStorage.setItem("pushBerichten", $(this).is(":checked"));
-    });
-    $('.settingsNav select').change(function () {
-        localStorage.setItem("campusID", $(this).val());
-    });
-
+    
 }
 
 

@@ -13,46 +13,44 @@
     <header>
 
         <nav class="hoofdNav">
-            <div id="tandwiel"><img src="img/settings.png">
-            </div>
+            <div id="tandwiel"><img src="img/settings.png"></div>
         </nav>
 
     </header>
-
-
+    
+    
     <div id="settings">
+    
+    <nav class="settingsNav">
+    <ul>
+        <li><p>Pushberichten toestaan?</p>
+        
+        <div class="switch">
+  <input id="cmn-toggle-7" class="cmn-toggle cmn-toggle-yes-no" type="checkbox">
+  <label for="cmn-toggle-7" data-on="Ja" data-off="Nee"></label>
+</div>
+        </li>
+        
+        <li>
+            <p>Campusselectie:</p>
+<label class="label">
+        <select name="campus">
+<option value="Dansaert">Dansaert</option>
+<option value="IWT">IWT</option>
+<option value="Jette">Jette</option>
+<option value="RITS">RITS</option>
+<option value="KCB">KCB</option>
+<option value="TTK">TTK</option>
+</select>
+</label>
+        </li>
+        
 
-        <nav class="settingsNav">
-            <ul>
-                <li>
-                    <p>Pushberichten toestaan?</p>
-
-                    <div class="switch">
-                        <input id="cmn-toggle-7" class="cmn-toggle cmn-toggle-yes-no" type="checkbox">
-                        <label for="cmn-toggle-7" data-on="Ja" data-off="Nee"></label>
-                    </div>
-                </li>
-
-                <li>
-                    <p>Campusselectie:</p>
-                    <label class="label">
-                        <select name="campus">
-                            <option value="0">Dansaert</option>
-                            <option value="1">IWT</option>
-                            <option value="2">Jette</option>
-                            <option value="0">RITS</option>
-                            <option value="1">KCB</option>
-                            <option value="2">TTK</option>
-                        </select>
-                    </label>
-                </li>
-
-
-            </ul>
-        </nav>
-    </div>
+    </ul>    
+    </nav>
+ </div>
 </body>
 <script type="text/javascript" src="scripts/script.js"></script>
-<script type="text/javascript" src="scripts/settings.js"></script>
+            <script type="text/javascript" src="scripts/settings.js"></script>
 
 </html>
