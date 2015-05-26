@@ -20,7 +20,6 @@ html {
 #map-canvas {
     width: 100%;
     height: 30%;
-    z-index: 0;
 }
 
 .clearfix {
