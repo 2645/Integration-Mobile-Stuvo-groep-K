@@ -29,7 +29,7 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
-    z-index:2;
+    z-index:10;
 }
 
 .hoofdNav #hamburger {
@@ -68,7 +68,6 @@ body {
     min-height:100%;
     overflow-x: hidden;
     position: fixed;
-    z-index:2;
 }
 /**********NAVIGATIE**********/
 
