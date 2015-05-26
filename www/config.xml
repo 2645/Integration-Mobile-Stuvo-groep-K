@@ -14,6 +14,7 @@
     <author href="http://erasmushogeschool.be">
         
     </author>
+    <icon src="icon.png"/>
     
     <!-- Platforms -->
     <!-- If you specify none, all platforms will be built. -->
