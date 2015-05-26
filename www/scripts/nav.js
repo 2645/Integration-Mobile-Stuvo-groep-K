@@ -27,7 +27,7 @@ function init() {
         if (activeSettings) toggleSettingsMenu(true);
     });
 
-    $(".navigatieNav li").on('mousepressed', function () {
+    $(".navigatieNav li").on('click', function () {
         console.log("appels!");
         $(this).css("background-color", "blue");
     });
