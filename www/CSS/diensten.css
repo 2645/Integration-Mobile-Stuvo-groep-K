@@ -4,11 +4,6 @@
     src: url(../Fonts/KlinicSlab_Personal_License_Titel/KlinicSlabLight.otf);
 }
 
-@font-face {
-    font-family: Tekst;
-    src: url(../Fonts/MissionGothic_Personal_License_Tekst/Mission%20Gothic%20Regular.otf);
-}
-
 * {
     margin: 0;
     padding: 0;

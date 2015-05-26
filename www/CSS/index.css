@@ -14,10 +14,6 @@ body,html{
     src: url('../Fonts/KlinicSlab_Personal_License_Titel/KlinicSlabLight.otf');
 }
 
-@font-face {
-    font-family: 'KlinicSlabMedium';
-    src: url('../Fonts/KlinicSlab_Personal_License_Titel/KlinicSlabMedium.otf');
-}
 
 .login-grey-background {
     background-color: #999999;
@@ -89,7 +85,7 @@ body,html{
     margin-top: 17px;
     padding: 6px 0;
     width: 100%;
-    font-family: KlinicSlabMedium;
+    font-family: Title Regular;
     font-size: 1.2em;
 }
 

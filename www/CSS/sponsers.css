@@ -4,16 +4,6 @@
   padding: 0;
 }
 
-@font-face {
-    font-family: Title;
-    src: url(../Fonts/KlinicSlab_Personal_License_Titel/KlinicSlabBold.otf);
-}
-
-@font-face {
-    font-family: Tekst;
-    src: url(../Fonts/MissionGothic_Personal_License_Tekst/Mission%20Gothic%20Regular.otf);
-}
-
 .hoofdNav {
     background-color: #a33534;
     height: 60px;

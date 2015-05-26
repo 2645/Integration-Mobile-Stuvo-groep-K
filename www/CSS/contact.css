@@ -14,15 +14,6 @@
     src: url(../Fonts/KlinicSlab_Personal_License_Titel/KlinicSlabBook.otf);
 }
 
-@font-face {
-    font-family: Title;
-    src: url(../Fonts/KlinicSlab_Personal_License_Titel/KlinicSlabBold.otf);
-}
-
-@font-face {
-    font-family: Tekst;
-    src: url(../Fonts/MissionGothic_Personal_License_Tekst/Mission%20Gothic%20Regular.otf);
-}
 
 @font-face {
     font-family: thinTekst;
