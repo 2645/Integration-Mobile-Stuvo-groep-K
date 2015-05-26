@@ -63,7 +63,7 @@ body {
     left: 43%;
 }
 
-#navWrapper {
+.navWrapper {
     width: 100%;
     min-height:100%;
     overflow-x: hidden;
@@ -201,7 +201,7 @@ body {
 
 #black {
     position: absolute;
-    bottom: -60px;
+    top: 0;
     left: 0;
     z-index: 2;
     display: none;
