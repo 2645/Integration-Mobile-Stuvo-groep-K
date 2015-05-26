@@ -27,9 +27,7 @@ function init() {
         if (activeSettings) toggleSettingsMenu(true);
     });
 
-    $(".navigatieNav li").click(function () {
-        $(this).css("background-color", "red");
-    }, function () {
+    $(".navigatieNav li").on('mousepressed', function () {
         $(this).css("background-color", "#a33534");
     });
 

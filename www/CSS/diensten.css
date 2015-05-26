@@ -28,6 +28,10 @@ h1 {
     padding-top: 0px;
 }
 
+.dienstContent li {
+  color: #696765;
+}
+
 .dienstTitel{
     text-align: center;
     height:5.65em;
