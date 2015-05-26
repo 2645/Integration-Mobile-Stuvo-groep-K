@@ -1,6 +1,6 @@
 @font-face {
-    font-family: Title;
-    src: url(../Fonts/KlinicSlab_Personal_License_Titel/KlinicSlabBook.otf);
+    font-family: TitleLight;
+    src: url(../Fonts/KlinicSlab_Personal_License_Titel/KlinicSlabLight.otf);
 }
 
 @font-face {
@@ -19,13 +19,17 @@ body {
     overflow-x:hidden;
 }
 
+.pageTitle{
+    font-family: TitleLight;
+}
+
 h1 {
     padding-top: 0px;
 }
 
 .dienstTitel{
     text-align: center;
-    height:5.4em;
+    height:5.65em;
 }
 .dienstTitel img{
     width:14%;
@@ -36,7 +40,7 @@ h1 {
 
 .dienstTitel h1{
     margin-top:-17.5%;
-    font-family: Title;
+    font-family: TitleLight;
     color:white;
 }
 
