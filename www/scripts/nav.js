@@ -15,7 +15,6 @@ function init() {
 
     $("#hamburger").click(function () {
         toggleNavMenu(true);
-        updateNavCss();
         console.log("toggling nav")
     });
 
@@ -45,14 +44,6 @@ function init() {
 
 }
 
-function updateNavCss(){
-    var height = $('#navigatie').height();
-    console.log(height);
-    $(body).css('max-height')
-}
-
-
-
 function toggleNavMenu(buttonPressed) {
     if (!activeNav && buttonPressed) {
         $("#navigatie").animate({
@@ -62,16 +53,19 @@ function toggleNavMenu(buttonPressed) {
         $("#black").fadeTo("fast", 1);
         activeNav = !activeNav;
         toggleSettingsMenu(false);
+        $('.navWrapper').css('z-index', '2');
     } else if (activeNav) {
         $("#navigatie").animate({
             left: "-=80%"
-        }, 300, false);
+        }, 300, false, function () {
+
+        });
         if (buttonPressed) {
             $("#black").fadeTo("fast", 0, function () {
                 $("#black").hide();
+                $('.navWrapper').css('z-index', '0');
             });
         }
-
         activeNav = !activeNav;
     }
 }
@@ -85,16 +79,19 @@ function toggleSettingsMenu(buttonPressed) {
         $("#black").show();
         $("#black").fadeTo("fast", 1);
         toggleNavMenu(false);
+        $('.navWrapper').css('z-index', '2');
         activeSettings = !activeSettings;
     } else if (activeSettings) {
         $("#settings").animate({
             right: "-=80%"
         }, 300, false, function () {
+
             $("#settings").hide();
         });
         if (buttonPressed) {
             $("#black").fadeTo("fast", 0, function () {
                 $("#black").hide();
+                $('.navWrapper').css('z-index', '0');
             });
         }
         activeSettings = !activeSettings;
