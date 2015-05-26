@@ -7,29 +7,10 @@
     clear: both;
 }
 
-@font-face {
-    font-family: titel;
-    src: url(../Fonts/KlinicSlab_Personal_License_Titel/KlinicSlabBook.otf);
-}
 
 @font-face {
     font-family: Title Light;
     src: url(../Fonts/KlinicSlab_Personal_License_Titel/KlinicSlabLight.otf);
-}
-
-@font-face {
-    font-family: Title;
-    src: url(../Fonts/KlinicSlab_Personal_License_Titel/KlinicSlabBold.otf);
-}
-
-@font-face {
-    font-family: Title Regular;
-    src: url(../Fonts/KlinicSlab_Personal_License_Titel/KlinicSlabMedium.otf);
-}
-
-@font-face {
-    font-family: Tekst;
-    src: url(../Fonts/MissionGothic_Personal_License_Tekst/Mission%20Gothic%20Regular.otf);
 }
 
 @font-face {
