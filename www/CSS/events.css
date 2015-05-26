@@ -55,13 +55,14 @@ html {
     display: inline-block;
 }
 .eventMonth h2{
-    color:white;
+    color:#FFF;
     display: block;
     text-align: center;
     background-color: rgb(105, 103, 101);
-    height:2em;
-    font-family: Title;
+    padding: 10px;
+    font-family: Title regular
 }
+
 
 .event {
     width: 80%;
@@ -148,5 +149,21 @@ html {
 .selected td:nth-child(3) {
     width: 15%;
     display: table-cell;
+}
+
+.currentMonth{
+    display: inline-block;
+}
+
+.eventMonth h2 img {
+    height: 28px;
+}
+
+.eventMonth h2 img:nth-child(1){
+    float: left;
+}
+
+.eventMonth h2 img:nth-child(2){
+    float: right;
 }
 /**color: #a33534;**/
