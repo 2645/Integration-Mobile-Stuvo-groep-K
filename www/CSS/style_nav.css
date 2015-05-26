@@ -88,10 +88,9 @@
     float: none;
     background: url(../img/search_red.png) no-repeat;
     border: 0;
-    margin-left: -12%;
-    padding: 11px;
-    width: 30px;
-    height: 30px;
+    margin-left: -13%;
+    padding: 2%;
+    width: 13%;
 }
 
 #navigatie .navigatieNav {
