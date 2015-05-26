@@ -1,3 +1,4 @@
+/**Jan Desmet, Bart Sevenois, Gabriel Deschamps, Lieven Luycks, Cédric Brichau**/
 var activeNav = false;
 var activeSettings = false;
 

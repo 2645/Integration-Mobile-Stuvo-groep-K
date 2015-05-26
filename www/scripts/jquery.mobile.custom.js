@@ -1,3 +1,4 @@
+/**Jan Desmet, Bart Sevenois, Gabriel Deschamps, Lieven Luycks, Cédric Brichau**/
 /*
 * jQuery Mobile v1.4.5
 * http://jquerymobile.com

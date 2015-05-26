@@ -1,3 +1,4 @@
+/**Jan Desmet, Bart Sevenois, Gabriel Deschamps, Lieven Luycks, Cédric Brichau**/
 /*! jQuery UI - v1.11.4 - 2015-05-24
 * http://jqueryui.com
 * Includes: effect.js
