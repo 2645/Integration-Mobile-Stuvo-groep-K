@@ -10,7 +10,7 @@ var marker;
 $(document).ready(function () {
     createMap('Nijverheidskaai 170, anderlecht');
     getContent();
-    addListeners();
+
 });
 
 function createMap(adres) {
@@ -43,7 +43,7 @@ function createMap(adres) {
 }
 
 function updateMap(selected) {
-    var adres = $('td:first',selected).text();
+    var adres = $('td:first', selected).text();
     createMap(adres);
 }
 
@@ -53,6 +53,7 @@ function getContent() {
         $('.event:nth-child(2)').addClass('selected');
         changeCss();
         addSwapper();
+        addListeners();
     });
 }
 
@@ -73,6 +74,13 @@ function addListeners() {
     $('.eventMonthSlider').on('swiperight', function (event) {
         slideRight($(this));
     });
+    $('.arrowLeft').click(function (event) {
+        slideRight($('.eventMonthSlider'));
+    });
+    $('.arrowRight').click(function (event) {
+        slideLeft($('.eventMonthSlider'));
+    });
+
 }
 
 function slideLeft(object) {
@@ -101,7 +109,7 @@ function generateEventMonthsHtml(data) {
     var eventMonths = JSON.parse(data).events;
     var htmlString = '';
     for (var eventMonth in eventMonths) {
-        htmlString += "<div class='eventMonth'><h2><img src='img/pijltjeLinks_white.png'>" + eventMonth + "<img src='img/pijltjeRechts_white.png'></h2>" + generateEventMonthHtml(eventMonths[eventMonth]) + "</div>";
+        htmlString += "<div class='eventMonth'><h2><img class='arrowLeft' src='img/pijltjeLinks_white.png'>" + eventMonth + "<img class='arrowRight' src='img/pijltjeRechts_white.png'></h2>" + generateEventMonthHtml(eventMonths[eventMonth]) + "</div>";
     }
 
     return htmlString;
