@@ -19,6 +19,12 @@
     padding: 0;
 }
 
+body {
+    
+    min-height: 100%;
+    display: block;
+}
+
 .hoofdNav {
     background-color: #a33534;
     height: 60px;
@@ -333,6 +339,7 @@ option {
 footer {
   width: 100%;
   height: 60px;
+  bottom: 0;
   background-color: #a33534;
   font-family: Title Regular;
 }
