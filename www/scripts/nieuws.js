@@ -13,10 +13,10 @@ function addContent() {
 }
 
 function addListeners() {
-    $('li').click(function(){
+    $('.readMore').click(function(){
         $('.selected').switchClass('selected','notSelected');
-        $(this).switchClass('notSelected','selected');
-    })
+        $(this).parent().switchClass('notSelected','selected');
+    });
 }
 
 function generateNewsHtml(data) {
