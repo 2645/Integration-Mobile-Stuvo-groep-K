@@ -57,7 +57,9 @@ function toggleNavMenu(buttonPressed) {
         $("#black").show();
         $('#black').height($('#navigatie').height());
         $("#black").fadeTo("fast", 1);
-        $('body').css('max-height',$('#navigatie').height()+60+'px');
+        $('body').height($('#navigatie').height() + 60);
+        $('html').height($('#navigatie').height() + 60);
+        $('body').css('overflow','hidden');
         activeNav = !activeNav;
         toggleSettingsMenu(false);
     } else if (activeNav) {
@@ -67,6 +69,9 @@ function toggleNavMenu(buttonPressed) {
         if (buttonPressed) {
             $("#black").fadeTo("fast", 0, function () {
                 $("#black").hide();
+                $('body').css('height', '100%');
+                $('html').css('height', '100%');
+                $('body').css('overflow','');
             });
         }
 
@@ -83,7 +88,9 @@ function toggleSettingsMenu(buttonPressed) {
         $("#black").show();
         $('#black').height($('#settings').height());
         $("#black").fadeTo("fast", 1);
-        $('body').height($('#settings').height()+60);
+        $('body').height($('#settings').height() + 60);
+        $('html').height($('#settings').height() + 60);
+        $('body').css('overflow','hidden');
         toggleNavMenu(false);
         activeSettings = !activeSettings;
     } else if (activeSettings) {
@@ -95,6 +102,9 @@ function toggleSettingsMenu(buttonPressed) {
         if (buttonPressed) {
             $("#black").fadeTo("fast", 0, function () {
                 $("#black").hide();
+                $('body').css('height', '100%');
+                $('html').css('height', '100%');
+                $('body').css('overflow','');
             });
         }
         activeSettings = !activeSettings;

@@ -19,6 +19,10 @@
     padding: 0;
 }
 
+html {
+    overflow:auto;
+}
+
 .hoofdNav {
     background-color: #a33534;
     height: 60px;
