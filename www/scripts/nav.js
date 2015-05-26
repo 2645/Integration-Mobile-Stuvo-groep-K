@@ -15,21 +15,18 @@ function init() {
 
     $("#hamburger").click(function () {
         toggleNavMenu(true);
+        updateNavCss();
         console.log("toggling nav")
     });
 
     $("#tandwiel").click(function () {
         toggleSettingsMenu(true);
+        updateSettingsCss();
     });
 
     $("#black").click(function () {
         if (activeNav) toggleNavMenu(true);
         if (activeSettings) toggleSettingsMenu(true);
-    });
-
-    $(".navigatieNav li").on('click', function () {
-        console.log("appels!");
-        $(this).css("background-color", "blue");
     });
 
     $('.navWrapper').on("swipeleft", function () {
@@ -46,6 +43,12 @@ function init() {
         localStorage.setItem("campusID", $(this).val());
     });
 
+}
+
+function updateNavCss(){
+    var height = $('#navigatie').height();
+    console.log(height);
+    $(body).css('max-height')
 }
 
 
