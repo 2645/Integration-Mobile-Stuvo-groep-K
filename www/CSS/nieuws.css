@@ -7,29 +7,10 @@
     clear: both;
 }
 
-@font-face {
-    font-family: titel;
-    src: url(../Fonts/KlinicSlab_Personal_License_Titel/KlinicSlabBook.otf);
-}
 
 @font-face {
     font-family: Title Light;
     src: url(../Fonts/KlinicSlab_Personal_License_Titel/KlinicSlabLight.otf);
-}
-
-@font-face {
-    font-family: Title;
-    src: url(../Fonts/KlinicSlab_Personal_License_Titel/KlinicSlabBold.otf);
-}
-
-@font-face {
-    font-family: Title Regular;
-    src: url(../Fonts/KlinicSlab_Personal_License_Titel/KlinicSlabMedium.otf);
-}
-
-@font-face {
-    font-family: Tekst;
-    src: url(../Fonts/MissionGothic_Personal_License_Tekst/Mission%20Gothic%20Regular.otf);
 }
 
 @font-face {
@@ -69,7 +50,7 @@ html {
 .navNieuws ul li {
     display: inline;
     color: white;
-    font-size: 1.6em;
+    font-size: 1.2em;
     font-family: Title Regular;
     padding-left: 65px;
     padding-top: 10px;
@@ -134,6 +115,14 @@ html {
 
 .nieuws .selected .readMore {
     display: none;
+}
+
+.nieuws .notSelected .articleLink {
+    display:none;
+}
+
+.nieuws .selected .articleLink a {
+    color : #6f2421;
 }
 
 .nieuws .notSelected {

@@ -101,7 +101,7 @@ function generateEventMonthsHtml(data) {
     var eventMonths = JSON.parse(data).events;
     var htmlString = '';
     for (var eventMonth in eventMonths) {
-        htmlString += "<div class='eventMonth'><h2>" + eventMonth + "</h2>" + generateEventMonthHtml(eventMonths[eventMonth]) + "</div>";
+        htmlString += "<div class='eventMonth'><h2><img src='img/pijltjeLinks_white.png'>" + eventMonth + "<img src='img/pijltjeRechts_white.png'></h2>" + generateEventMonthHtml(eventMonths[eventMonth]) + "</div>";
     }
 
     return htmlString;
