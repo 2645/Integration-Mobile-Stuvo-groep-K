@@ -19,9 +19,16 @@
     padding: 0;
 }
 
+body {
+  padding-top: 60px;
+}
+
 .hoofdNav {
     background-color: #a33534;
     height: 60px;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 .hoofdNav #hamburger {
