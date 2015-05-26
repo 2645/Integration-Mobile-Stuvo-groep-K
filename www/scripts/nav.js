@@ -15,7 +15,6 @@ function init() {
 
     $("#hamburger").click(function () {
         toggleNavMenu(true);
-        console.log("toggling nav")
     });
 
     $("#tandwiel").click(function () {
@@ -56,7 +55,9 @@ function toggleNavMenu(buttonPressed) {
             left: "+=80%"
         }, 300, false);
         $("#black").show();
+        $('#black').height($('#navigatie').height());
         $("#black").fadeTo("fast", 1);
+        $('body').css('max-height',$('#navigatie').height()+60+'px');
         activeNav = !activeNav;
         toggleSettingsMenu(false);
     } else if (activeNav) {
@@ -80,7 +81,9 @@ function toggleSettingsMenu(buttonPressed) {
             right: "+=80%"
         }, 300, false);
         $("#black").show();
+        $('#black').height($('#settings').height());
         $("#black").fadeTo("fast", 1);
+        $('body').height($('#settings').height()+60);
         toggleNavMenu(false);
         activeSettings = !activeSettings;
     } else if (activeSettings) {

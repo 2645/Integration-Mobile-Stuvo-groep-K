@@ -193,7 +193,7 @@
 
 #black {
     position: absolute;
-    bottom: -60px;
+    top:60px;
     left: 0;
     z-index: 2;
     display: none;
