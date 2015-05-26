@@ -27,43 +27,6 @@ html {
 .clearFix {
     clear: both;
 }
-/*****NAV-NIEUWS*****/
-
-.navNieuws {
-    height: 50px;
-    background-color: rgb(105, 103, 101);
-}
-
-.navNieuws ul li img {
-    display: inline-block;
-    width: 12%;
-    margin-top: 13px;
-    padding-left: 10px;
-}
-
-.navNieuws ul {
-    list-style-type: none;
-    margin-left: -40px;
-    width: 100%;
-}
-
-.navNieuws ul li {
-    display: inline;
-    color: white;
-    font-size: 1.2em;
-    font-family: Title Regular;
-    padding-left: 65px;
-    padding-top: 10px;
-}
-
-.navNieuws ul li p {
-    display: inline;
-    margin-top: 0;
-}
-
-.navNieuws .alles {
-  width: 7%;
-}
 
 .nieuws {
     width: 80%;
