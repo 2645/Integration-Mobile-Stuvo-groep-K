@@ -36,7 +36,7 @@ function generateNewsItemHtml(item) {
     var datum = tijd.split("T")[0].split("-");
     var imgSource = item.picture;
     var link = item.link;
-    if (naam === "undefined") {
+    if (naam == "undefined") {
         return "";
     }
     htmlString += "<li class='notSelected'>";
