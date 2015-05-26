@@ -173,6 +173,7 @@
 
 textarea {
     padding: 15px;
+    font-family: Arial;
     resize: none;
     width: 89%;
     height: 100px;
