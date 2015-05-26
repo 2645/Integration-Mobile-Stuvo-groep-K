@@ -95,6 +95,7 @@ p {
 }
 
 .titelHome {
+    font-family: Title;
     font-size: 1.6em;
     text-align: center;
     color: #a33534;
@@ -103,7 +104,7 @@ p {
     padding: 5px 0 2.5px 0;
     width: 80%;
     margin: 15px auto;
-    font-family: Title;
+    
 }
 /*****OVER*ONS*****/
 
