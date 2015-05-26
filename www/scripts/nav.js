@@ -54,7 +54,6 @@ function toggleNavMenu(buttonPressed) {
         activeNav = !activeNav;
         toggleSettingsMenu(false);
         $('.navWrapper').css('z-index', '2');
-        $('.navWrapper').css("display","block");
     } else if (activeNav) {
         $("#navigatie").animate({
             left: "-=80%"
@@ -64,7 +63,7 @@ function toggleNavMenu(buttonPressed) {
         if (buttonPressed) {
             $("#black").fadeTo("fast", 0, function () {
                 $("#black").hide();
-                $('.navWrapper').css("display","none");
+                $('.navWrapper').css('z-index', '0');
             });
         }
         activeNav = !activeNav;
@@ -81,7 +80,6 @@ function toggleSettingsMenu(buttonPressed) {
         $("#black").fadeTo("fast", 1);
         toggleNavMenu(false);
         $('.navWrapper').css('z-index', '2');
-        $('.navWrapper').css("display","block");
         activeSettings = !activeSettings;
     } else if (activeSettings) {
         $("#settings").animate({
@@ -93,7 +91,7 @@ function toggleSettingsMenu(buttonPressed) {
         if (buttonPressed) {
             $("#black").fadeTo("fast", 0, function () {
                 $("#black").hide();
-                $('.navWrapper').css("display","none");
+                $('.navWrapper').css('z-index', '0');
             });
         }
         activeSettings = !activeSettings;
