@@ -62,12 +62,15 @@ body {
     top: 0;
     left: 43%;
 }
-
+nav.nav{
+    z-index:1;
+}
 .navWrapper {
     width: 100%;
     min-height:100%;
     overflow-x: hidden;
     position: fixed;
+    display:none;
 }
 /**********NAVIGATIE**********/
 
