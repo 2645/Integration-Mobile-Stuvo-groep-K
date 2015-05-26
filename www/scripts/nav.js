@@ -28,7 +28,8 @@ function init() {
     });
 
     $(".navigatieNav li").on('mousepressed', function () {
-        $(this).css("background-color", "#a33534");
+        console.log("appels!");
+        $(this).css("background-color", "blue");
     });
 
     $('.navWrapper').on("swipeleft", function () {
