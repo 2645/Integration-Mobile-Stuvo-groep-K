@@ -117,6 +117,14 @@ html {
     display: none;
 }
 
+.nieuws .notSelected .articleLink {
+    display:none;
+}
+
+.nieuws .selected .articleLink a {
+    color : #6f2421;
+}
+
 .nieuws .notSelected {
     float: none;
 }
