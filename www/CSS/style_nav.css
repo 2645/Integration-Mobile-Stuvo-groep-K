@@ -131,6 +131,38 @@
     text-decoration: none;
     color: #a33534;
 }
+
+#navigatie #social ul {
+    
+    padding-top: 15px;
+    
+}
+
+#navigatie #social ul li {
+    
+    padding-bottom: 15px;
+    padding-left: 40px;
+}
+
+#navigatie #social  p {
+    
+    font-family: Title;
+    display: inline;
+    font-size: 24px;
+    text-decoration: none;
+    color: #a33534;
+}
+#navigatie #social  a {
+    
+    text-decoration: none;
+}
+
+#navigatie #social ul li img {
+    padding-top: 0px;
+    width: 22%;
+}
+
+
 /**********SETTINGS**********/
 
 #settings {
