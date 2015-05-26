@@ -55,8 +55,8 @@ html {
 
 .navNieuws ul li img {
     display: inline-block;
-    width: 9%;
-    margin-top: 8px;
+    width: 12%;
+    margin-top: 13px;
     padding-left: 10px;
 }
 
@@ -78,6 +78,10 @@ html {
 .navNieuws ul li p {
     display: inline;
     margin-top: 0;
+}
+
+.navNieuws .alles {
+  width: 7%;
 }
 
 .nieuws {
@@ -166,6 +170,3 @@ html {
     padding-right: 10px;
 }
 
-.nieuws .alles {
-  width: 2%;
-}
