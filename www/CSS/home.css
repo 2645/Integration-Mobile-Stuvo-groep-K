@@ -50,6 +50,7 @@ p {
     float: left;
     display: inline-block;
     width: 33.333333%;
+    margin-bottom: 30px;
 }
 
 .events {
@@ -111,7 +112,7 @@ p {
 
 .overOns p {
     width: 80%;
-    margin: -5px auto auto auto ;
+    margin: 5px auto auto auto ;
     font-family: Tekst;
     font-size: 0.85em;
 }
