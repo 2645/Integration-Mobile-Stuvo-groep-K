@@ -118,6 +118,7 @@ html {
 .selected {
     padding-bottom: 15px;
     border-bottom: #a33534 2px dashed;
+    margin-top: 10px;
 }
 
 .selected h3 {
