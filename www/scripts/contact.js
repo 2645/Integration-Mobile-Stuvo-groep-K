@@ -24,12 +24,12 @@ function addActions() {
         }
     });
     $('.navContact li').click(function (event) {
-        var position = $(this).position().left;
+        var position = Math.round(($(this).position().left)/($(window).width()/7)); 
         $('.dienstSlider').animate({
-            left: position*-7 +"px"
+            left: position*-$(window).width() +"px"
         },100)
         $('#pointer').animate({
-            left: position + "px"
+            left: position*$(window).width()/7  + "px"
         }, 100);
     });
 }
