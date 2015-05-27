@@ -35,6 +35,10 @@ html {
     height: 26px;
 }
 
+.hoofdNav #hamburger img{
+    max-width: 30px;
+}
+
 .hoofdNav #tandwiel {
     position: absolute;
     right: 0%;
