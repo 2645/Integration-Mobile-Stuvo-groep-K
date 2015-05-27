@@ -36,9 +36,9 @@ html {
 }
 
 .hoofdNav #tandwiel {
-    position: absolute;
-    right: 0%;
-    top: 0%;
+    position: relative;
+    left: 83%;
+    top: -208%;
     padding: 17px 17px;
 }
 
