@@ -78,7 +78,6 @@ function getMenus(id) {
         $(".dagSelectieWrapperSlider").html("");
         $(".menuWrapperSlider").html(generateMenusHtml(data));
         changeCss();
-
     });
 }
 
@@ -125,5 +124,4 @@ function generateMenuHtml(dagMenu) {
 function changeCss(){
     $('.menuWrapperSlider').css('width',100 * ($('.menuWrapperSlider .menu').length) + "%")
     $('.menu').css('width', (100 / ($('.menuWrapperSlider .menu').length) - 6) + "%");
-    console.log(($('.menuWrapperSlider .menu').length))
 }

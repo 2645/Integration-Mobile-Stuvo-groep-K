@@ -16,8 +16,8 @@ $(document).ready(function () {
 
 function createMap(adres) {
 
-    var adresToLatLong = new google.maps.Geocoder();
-    var location;
+    var adresToLatLong = new google.maps.Geocoder(),
+        location;
     adresToLatLong.geocode({
         'address': adres
     }, function (data) {
@@ -114,7 +114,7 @@ function getContent() {
                 },
                 "description": "Gelukkig heeft elk slecht ding een einde, examens zitten erop! Veel plezier in de zomer",
                 "id": "sp010cqoa28ke343b08hgkbbj8",
-                "location": "Dansaertstraat 123, Brussel",
+                "location": "Dansaertstraat 123, Brussel"
         }],
             "September": [{
                 "name": "Einde vakantie",
@@ -136,7 +136,7 @@ function getContent() {
                 "location": "België"
         }]
         }
-    }
+    };
 
     $('.eventMonthSlider').html(generateEventMonthsHtml(JSON.stringify(data)) + "<div class='clearfix'></div>");
     $('.event:nth-child(2)').addClass('selected');
@@ -172,8 +172,8 @@ function addListeners() {
 }
 
 function slideLeft(object) {
-    var pos = object.position().left;
-    var width = $(window).width();
+    var pos = object.position().left,
+        width = $(window).width();
     if (pos > -width * (($('.eventMonth').length) - 1)) {
         object.animate({
             left: '-=' + width + 'px'
@@ -182,8 +182,8 @@ function slideLeft(object) {
 }
 
 function slideRight(object) {
-    var pos = object.position().left;
-    var width = $(window).width();
+    var pos = object.position().left,
+        width = $(window).width();
     if (pos < 0) {
         object.animate({
             left: '+=' + width + 'px'
@@ -194,17 +194,17 @@ function slideRight(object) {
 
 
 function generateEventMonthsHtml(data) {
-    var eventMonths = JSON.parse(data).events;
-    var htmlString = '';
-    for (var eventMonth in eventMonths) {
+    var eventMonths = JSON.parse(data).events,
+        htmlString = '';
+    /**for (var eventMonth in eventMonths) {
         htmlString += "<div class='eventMonth'><h2><img class='arrowLeft' src='img/pijltjeLinks_white.png'>" + eventMonth + "<img class='arrowRight' src='img/pijltjeRechts_white.png'></h2>" + generateEventMonthHtml(eventMonths[eventMonth]) + "</div>";
-    }
+    }**/
 
     return htmlString;
 }
 
 function generateEventMonthHtml(eventMonth) {
-    htmlString = '';
+    var htmlString = '';
     for (var event in eventMonth) {
         htmlString += generateEventHtml(eventMonth[event]);
     }
@@ -212,21 +212,20 @@ function generateEventMonthHtml(eventMonth) {
 }
 
 function generateEventHtml(event) {
-    var htmlString = '';
-    var htmlString = "";
-    var dag = event.date.startday
-    var maand = event.date.startmonth;
-    var jaar = event.date.startyear;
-    var tijd = event.date.starthour + ":" + event.date.startminute;
-    var naam = event.name
-    var descr = event.description;
-    var id = event.id;
-    var locatie = event.location;
+    var htmlString = '',
+        dag = event.date.startday,
+        maand = event.date.startmonth,
+        jaar = event.date.startyear,
+        tijd = event.date.starthour + ":" + event.date.startminute,
+        naam = event.name,
+        descr = event.description,
+        id = event.id,
+        locatie = event.location;
 
     htmlString += "<div class='event'><h3>" + naam + "</h3>";
     htmlString += "<img src='img/Agenda_temp.jpg'><p class='description'>" + descr + "</p>";
     htmlString += "<table><tr><td><img src='img/Location_red.png'>" + locatie + "</td>";
-    htmlString += "<td><img src='img/kalender_red.png'>" + dag + "/" + maand + "/" + jaar + "</td>"
+    htmlString += "<td><img src='img/kalender_red.png'>" + dag + "/" + maand + "/" + jaar + "</td>";
     htmlString += "<td><img src='img/Tijd_red.png'>" + tijd + "</td></tr></table><div class='clearfix'></div></div>";
 
     return htmlString;

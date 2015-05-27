@@ -1,7 +1,7 @@
 /**Jan Desmet, Bart Sevenois, Gabriel Deschamps, Lieven Luycks, Cédric Brichau**/
 $(document).ready(function () {
     addContent();
-})
+});
 
 function addContent() {
     $.post("http://dtprojecten.ehb.be/~stuvo/public_html/api/nieuws.php", function (data) {
