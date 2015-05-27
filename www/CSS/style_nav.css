@@ -55,8 +55,8 @@ html {
 }
 
 .hoofdNav #logo {
-    position: absolute;
-    top: 0;
+    position: relative;
+    top: -100%;
     left: 43%;
 }
 
