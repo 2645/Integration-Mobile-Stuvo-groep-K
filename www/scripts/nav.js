@@ -25,12 +25,7 @@ function init() {
         if (activeNav) toggleNavMenu(true);
         if (activeSettings) toggleSettingsMenu(true);
     });
-
-    $(".navigatieNav li").on('click', function () {
-        console.log("appels!");
-        $(this).css("background-color", "blue");
-    });
-
+    
     $('.navWrapper').on("swipeleft", function () {
         if (activeNav) toggleNavMenu(true);
     })
