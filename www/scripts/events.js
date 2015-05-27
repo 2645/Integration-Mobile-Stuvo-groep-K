@@ -1,4 +1,4 @@
-/**Jan Desmet, Bart Sevenois, Gabriel Deschamps, Lieven Luyckx, Cédric Brichau**/
+/**Jan Desmet, Bart Sevenois, Gabriel Deschamps, Lieven Luycks, Cédric Brichau**/
 /* jshint
 devel:true,
 browser: true,
@@ -49,14 +49,14 @@ function updateMap(selected) {
 }
 
 function getContent() {
-    /**    $.post("http://dtprojecten.ehb.be/~stuvo/public_html/api/agenda.php", function (data) {
-            $('.eventMonthSlider').html(generateEventMonthsHtml(data) + "<div class='clearfix'></div>");
-            $('.event:nth-child(2)').addClass('selected');
-            changeCss();
-            addSwapper();
-            addListeners();
-        });
-        **/
+    $.post("http://dtprojecten.ehb.be/~stuvo/public_html/api/agenda.php", function (data) {
+        $('.eventMonthSlider').html(generateEventMonthsHtml(data) + "<div class='clearfix'></div>");
+        $('.event:nth-child(2)').addClass('selected');
+        changeCss();
+        addSwapper();
+        addListeners();
+    });
+
 
     var data = {
         "events": {
