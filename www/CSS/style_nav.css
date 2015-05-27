@@ -36,9 +36,9 @@ html {
 }
 
 .hoofdNav #tandwiel {
-    position: relative;
-    left: 83%;
-    top: -208%;
+    position: absolute;
+    right: 0%;
+    top: 0%;
     padding: 17px 17px;
 }
 
@@ -55,8 +55,8 @@ html {
 }
 
 .hoofdNav #logo {
-    position: relative;
-    top: -100%;
+    position: absolute;
+    top: 0;
     left: 43%;
 }
 

@@ -64,8 +64,8 @@ function toggleNavMenu(buttonPressed) {
         if (buttonPressed) {
             $("#black").fadeTo("fast", 0, function () {
                 $("#black").hide();
-                $('body').css('height', '100%');
-                $('html').css('height', '100%');
+                $('body').css('height', '');
+                $('html').css('height', '');
                 $('body').css('overflow','');
             });
         }
@@ -97,8 +97,8 @@ function toggleSettingsMenu(buttonPressed) {
         if (buttonPressed) {
             $("#black").fadeTo("fast", 0, function () {
                 $("#black").hide();
-                $('body').css('height', '100%');
-                $('html').css('height', '100%');
+                $('body').css('height', '');
+                $('html').css('height', '');
                 $('body').css('overflow','');
             });
         }
