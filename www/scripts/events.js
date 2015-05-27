@@ -49,13 +49,14 @@ function updateMap(selected) {
 }
 
 function getContent() {
+    /**
     $.post("http://dtprojecten.ehb.be/~stuvo/public_html/api/agenda.php", function (data) {
         $('.eventMonthSlider').html(generateEventMonthsHtml(data) + "<div class='clearfix'></div>");
         $('.event:nth-child(2)').addClass('selected');
         changeCss();
         addSwapper();
         addListeners();
-    });
+    });**/
 
 
     var data = {
@@ -196,9 +197,9 @@ function slideRight(object) {
 function generateEventMonthsHtml(data) {
     var eventMonths = JSON.parse(data).events,
         htmlString = '';
-    /**for (var eventMonth in eventMonths) {
+    for (var eventMonth in eventMonths) {
         htmlString += "<div class='eventMonth'><h2><img class='arrowLeft' src='img/pijltjeLinks_white.png'>" + eventMonth + "<img class='arrowRight' src='img/pijltjeRechts_white.png'></h2>" + generateEventMonthHtml(eventMonths[eventMonth]) + "</div>";
-    }**/
+    }
 
     return htmlString;
 }
