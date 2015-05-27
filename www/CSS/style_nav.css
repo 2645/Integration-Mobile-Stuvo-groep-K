@@ -1,4 +1,5 @@
 /** Jan Desmet, Bart Sevenois, Gabriel Deschamps, Lieven Luycks, Cédric Brichau **/
+
 @font-face {
     font-family: Title;
     src: url(../Fonts/KlinicSlab_Personal_License_Titel/KlinicSlabBold.otf);
@@ -20,7 +21,7 @@
 }
 
 html {
-    overflow:auto;
+    overflow: auto;
 }
 
 .hoofdNav {
@@ -41,7 +42,7 @@ html {
     padding: 17px 17px;
 }
 
-.hoofdNav #pageTitle{
+.hoofdNav #pageTitle {
     width: 60%;
     margin-left: 20%;
     margin-right: 20%;
@@ -61,7 +62,7 @@ html {
 
 #navWrapper {
     width: 100%;
-    min-height:100%;
+    min-height: 100%;
     overflow-x: hidden;
     position: fixed;
 }
@@ -123,7 +124,7 @@ html {
     display: inline-block;
 }
 
-#navigatie .navigatieNav a  {
+#navigatie .navigatieNav a {
     font-family: Title Regular;
     font-size: 24px;
     text-decoration: none;
@@ -139,27 +140,23 @@ html {
 }
 
 #navigatie #social ul {
-    
     padding-top: 15px;
-    
 }
 
 #navigatie #social ul li {
-    
     padding-bottom: 15px;
     padding-left: 40px;
 }
 
-#navigatie #social  p {
-    
+#navigatie #social p {
     font-family: Title;
     display: inline;
     font-size: 24px;
     text-decoration: none;
     color: #a33534;
 }
-#navigatie #social  a {
-    
+
+#navigatie #social a {
     text-decoration: none;
 }
 
@@ -167,8 +164,6 @@ html {
     padding-top: 0px;
     width: 22%;
 }
-
-
 /**********SETTINGS**********/
 
 #settings {
@@ -197,7 +192,7 @@ html {
 
 #black {
     position: absolute;
-    top:60px;
+    top: 60px;
     left: 0;
     z-index: 2;
     display: none;
@@ -333,4 +328,12 @@ option {
     position: absolute;
     pointer-events: none;
     display: block;
+}
+
+.placeHolder {
+    width: 80%;
+    font-size:1em;
+    margin:auto;
+    font-family: Tekst;
+    color: rgb(105, 103, 101);
 }
