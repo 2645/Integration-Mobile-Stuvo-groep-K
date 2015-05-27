@@ -1,4 +1,4 @@
-/**Jan Desmet, Bart Sevenois, Gabriel Deschamps, Lieven Luycks, Cédric Brichau**/
+/**Jan Desmet, Bart Sevenois, Gabriel Deschamps, Lieven Luyckx, Cédric Brichau**/
 $(document).ready(function () {
     $(".dienstContent", $(".dienst").first()).css("display", "block");
     $(".dienst").first().attr("shown", "1");
