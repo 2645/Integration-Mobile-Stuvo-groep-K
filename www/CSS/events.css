@@ -129,7 +129,7 @@ html {
 
 .selected .description {
     display: inline;
-    float-right;
+    /*float:right;*/
     font-family: Tekst;
     color: rgb(105, 103, 101);
 }

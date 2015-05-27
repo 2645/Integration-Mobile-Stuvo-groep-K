@@ -167,7 +167,6 @@ html {
 /**********SETTINGS**********/
 
 #settings {
-    display: hidden;
     z-index: 3;
     display: none;
     position: absolute;
@@ -213,7 +212,6 @@ html {
     position: relative;
     cursor: pointer;
     outline: none;
-    user-select: none;
 }
 
 input.cmn-toggle-yes-no + label {
@@ -284,7 +282,7 @@ select {
     display: inline-block;
     -webkit-appearance: none;
     -moz-appearance: none;
-    appearance: none;
+
     cursor: pointer;
 }
 
@@ -315,7 +313,6 @@ option {
     top: 2px;
     padding: 0 0 2px;
     position: absolute;
-    pointer-events: none;
 }
 
 .label:before {
@@ -326,7 +323,6 @@ option {
     height: 20px;
     background: rgba(255, 255, 255, 0);
     position: absolute;
-    pointer-events: none;
     display: block;
 }
 
