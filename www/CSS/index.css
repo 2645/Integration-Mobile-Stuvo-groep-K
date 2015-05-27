@@ -14,6 +14,11 @@ body,html{
     src: url('../Fonts/KlinicSlab_Personal_License_Titel/KlinicSlabLight.otf');
 }
 
+@font-face {
+    font-family: Title Regular;
+    src: url(../Fonts/KlinicSlab_Personal_License_Titel/KlinicSlabMedium.otf);
+}
+
 
 .login-grey-background {
     background-color: #999999;
