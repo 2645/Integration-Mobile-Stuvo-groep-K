@@ -118,6 +118,7 @@ html {
 .nieuws .notSelected .readMore {
     float: right;
     width: 70%;
+    color: #6f2421;
 }
 
 .nieuws .date img {
