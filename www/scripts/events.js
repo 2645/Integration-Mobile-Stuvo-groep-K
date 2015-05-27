@@ -81,7 +81,7 @@ function getContent() {
                 "location": "Nijverheidskaai 170, Anderlecht"
         }],
             "Juni": [{
-                "name": "begin exames",
+                "name": "Begin examens",
                 "date": {
                     "short": "02\/06",
                     "startyear": "2015",
