@@ -49,101 +49,14 @@ function updateMap(selected) {
 }
 
 function getContent() {
-    /**
+    
     $.post("http://dtprojecten.ehb.be/~stuvo/public_html/api/agenda.php", function (data) {
         $('.eventMonthSlider').html(generateEventMonthsHtml(data) + "<div class='clearfix'></div>");
         $('.event:nth-child(2)').addClass('selected');
         changeCss();
         addSwapper();
         addListeners();
-    });**/
-
-
-    var data = {
-        "events": {
-            "Mei": [{
-                "name": "Multec Show",
-                "date": {
-                    "short": "29\/05",
-                    "startyear": "2015",
-                    "startmonth": "5",
-                    "startday": "29",
-                    "starthour": "17",
-                    "startminute": "00",
-                    "endyear": "2015",
-                    "endmonth": "5",
-                    "endday": "29",
-                    "endhour": "13",
-                    "endminute": "00"
-                },
-                "description": "Multec Integration show is een voorstelling van de verschillende integration projecten van het eerste en tweede jaar Multec",
-                "id": "8bb7n8fqm2get72isu0ljeoe9o",
-                "location": "Nijverheidskaai 170, Anderlecht"
-        }],
-            "Juni": [{
-                "name": "Begin examens",
-                "date": {
-                    "short": "02\/06",
-                    "startyear": "2015",
-                    "startmonth": "6",
-                    "startday": "02",
-                    "starthour": "8",
-                    "startminute": "30",
-                    "endyear": "2015",
-                    "endmonth": "6",
-                    "endday": "02",
-                    "endhour": "8",
-                    "endminute": "30"
-                },
-                "description": "Zoals elk jaar zijn er in juni weer eens examens! Veel succes",
-                "id": "aih03e8p6sm7gue8ntgom5lhas",
-                "location": "Brussel"
-        }, {
-                "name": "Einde examens",
-                "date": {
-                    "short": "15\/06",
-                    "startyear": "2015",
-                    "startmonth": "6",
-                    "startday": "15",
-                    "starthour": "11",
-                    "startminute": "30",
-                    "endyear": "2015",
-                    "endmonth": "6",
-                    "endday": "15",
-                    "endhour": "12",
-                    "endminute": "30"
-                },
-                "description": "Gelukkig heeft elk slecht ding een einde, examens zitten erop! Veel plezier in de zomer",
-                "id": "sp010cqoa28ke343b08hgkbbj8",
-                "location": "Dansaertstraat 123, Brussel"
-        }],
-            "September": [{
-                "name": "Einde vakantie",
-                "date": {
-                    "short": "31\/08",
-                    "startyear": "2015",
-                    "startmonth": "8",
-                    "startday": "31",
-                    "starthour": "6",
-                    "startminute": "00",
-                    "endyear": "2015",
-                    "endmonth": "8",
-                    "endday": "31",
-                    "endhour": "7",
-                    "endminute": "00"
-                },
-                "description": "Aan alle mooie dingen komt een einde, terug naar de campus!",
-                "id": "k4623e507qp4t5rda9oet90puk",
-                "location": "België"
-        }]
-        }
-    };
-
-    $('.eventMonthSlider').html(generateEventMonthsHtml(JSON.stringify(data)) + "<div class='clearfix'></div>");
-    $('.event:nth-child(2)').addClass('selected');
-    changeCss();
-    addSwapper();
-    addListeners();
+    });
 }
 
 function addSwapper() {
