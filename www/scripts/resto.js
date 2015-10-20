@@ -1,8 +1,8 @@
 /**Jan Desmet, Bart Sevenois, Gabriel Deschamps, Lieven Luyckx, Cédric Brichau**/
 $(document).ready(function () {
     var campusID = localStorage.getItem("campusID");
-    movePointerToCampus(campusID);
-    getMenus(campusID%3);
+    moveSliderToCampus(campusID);
+    getMenus(campusID);
     addActions();
 });
 
@@ -17,36 +17,65 @@ function addActions() {
         slideRight($(this));
     });
 
-    $('.pijltjeLinks').click(function (event) {
+    $('.dagSelectie .pijltjeLinks').click(function (event) {
         slideRight($(".menuWrapperSlider"));
     });
 
-    $('.pijltjeRechts').click(function (event) {
+    $('.dagSelectie .pijltjeRechts').click(function (event) {
         slideLeft($(".menuWrapperSlider"));
     });
-    $('.navResto li').click(function (event) {
-        var width = $(window).width()/6;
-        var id = Math.round($(this).position().left/width);
-        getMenus(id%3);
-        var position = $(this).position().left;
-        $('#pointer').animate({
-            left: position + "px"
-        }, 100);
+
+    $('.navRestoWrapper').on("swipeleft", function (event) {
+        slideRestoLeft($(this));
+    });
+
+    $('.navRestoWrapper').on("swiperight", function (event) {
+        slideRestoRight($(this));
+    });
+
+    $('.navResto .pijltjeLinks').click(function (event) {
+        slideRestoRight($('.navRestoWrapper ul'));
+    });
+
+    $('.navResto .pijltjeRechts').click(function (event) {
+        slideRestoLeft($('.navRestoWrapper ul'));
     });
 
 }
 
-function movePointerToCampus(id){
-    var leftPos = id*$(window).width()/6
-    $('#pointer').animate({
-        left: leftPos + "px"
-    })
+function moveSliderToCampus(id) {
+    var leftPos = id * $(window).width();
+    $('.navRestoWrapper ul').css("left", -leftPos + "px");
+}
+
+function slideRestoLeft(object) {
+    var pos = object.position().left;
+    var width = $(window).width();
+    if (pos > -width * 5) {
+        object.animate({
+            left: '-=' + width + 'px'
+        }, 100, function () {
+            getMenus(object.position().left / width * -1);
+        });
+    }
+}
+
+function slideRestoRight(object) {
+    var pos = object.position().left;
+    var width = $(window).width();
+    if (pos < 0) {
+        object.animate({
+            left: '+=' + width + 'px'
+        }, 100, function () {
+            getMenus(object.position().left / width * -1);
+        });
+    }
 }
 
 function slideLeft(object) {
     var pos = object.position().left;
     var width = $(window).width();
-    if (pos > -width * (($('.menuWrapperSlider .menu').length)-1)) {
+    if (pos > -width * (($('.menuWrapperSlider .menu').length) - 1)) {
         updateDaySlider(-width);
         object.animate({
             left: '-=' + width + 'px'
@@ -121,7 +150,7 @@ function generateMenuHtml(dagMenu) {
     return htmlString;
 }
 
-function changeCss(){
-    $('.menuWrapperSlider').css('width',100 * ($('.menuWrapperSlider .menu').length) + "%")
+function changeCss() {
+    $('.menuWrapperSlider').css('width', 100 * ($('.menuWrapperSlider .menu').length) + "%")
     $('.menu').css('width', (100 / ($('.menuWrapperSlider .menu').length) - 6) + "%");
 }
