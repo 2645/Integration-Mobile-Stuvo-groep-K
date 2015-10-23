@@ -25,4 +25,10 @@ function addListener() {
         $('.dienstTitel', $(this).parent().parent()).slideDown("slow");
         $(this).parent().parent().attr('shown', 0);
     });
+    
+    $('.imgLogo').click(function (event) {
+        $(this).parent().slideUp("slow");
+        $('.dienstTitel', $(this).parent().parent()).slideDown("slow");
+        $(this).parent().parent().attr('shown', 0);
+    });
 }
