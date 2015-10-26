@@ -37,6 +37,10 @@ function generateNewsItemHtml(item) {
     var datum = tijd.split("T")[0].split("-");
     var imgSource = item.picture;
     var link = item.link;
+
+    if(typeof descr != "undefined" && descr.length > 200){
+        descr = descr.substring(0,200) + "...";
+    }
     
     if (typeof naam === "undefined") {
         return "";
