@@ -14,9 +14,9 @@ function addContent() {
 }
 
 function addListeners() {
-    $('.readMore').click(function(){
+    $('.notSelected').click(function(){
         $('.selected').switchClass('selected','notSelected');
-        $(this).parent().switchClass('notSelected','selected');
+        $(this).switchClass('notSelected','selected');
     });
 }
 
