@@ -3,7 +3,9 @@ var activeNav = false;
 var activeSettings = false;
 
 $(document).ready(function () {
+    
     init();
+    
 });
 
 
@@ -39,8 +41,7 @@ function init() {
     $('.settingsNav select').change(function () {
         localStorage.setItem("campusID", $(this).val());
     });
-
-    document.addEventListener('deviceready', onDeviceReady, false);
+    onDeviceReady();
 }
 
 
