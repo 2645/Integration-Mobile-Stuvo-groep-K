@@ -64,6 +64,12 @@ html {
     margin-bottom: 10px;
     color: rgb(105, 103, 101);
     font-size: 0.9em;
+    
+}
+
+.nieuws .date img{
+    vertical-align: bottom;
+    
 }
 
 .nieuws .selected {
