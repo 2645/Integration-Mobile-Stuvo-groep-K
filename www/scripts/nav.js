@@ -41,7 +41,13 @@ function init() {
     $('.settingsNav select').change(function () {
         localStorage.setItem("campusID", $(this).val());
     });
-    onDeviceReady();
+    
+    if (!window.device) {
+        window.device = { platform: 'Browser' };
+    }
+    console.log(device.platform);
+
+    handleExternalURLs();
 }
 
 
@@ -115,11 +121,7 @@ function toggleSettingsMenu(buttonPressed) {
 function onDeviceReady() {
 
     // Mock device.platform property if not available
-    if (!window.device) {
-        window.device = { platform: 'Browser' };
-    }
-
-    handleExternalURLs();
+    
 }
 
 function handleExternalURLs() {
