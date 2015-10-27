@@ -7,6 +7,4 @@ $(document).ready(function () {
     });
 
     function checkIfValidEmail(em) {}
-
-
 });

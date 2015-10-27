@@ -42,13 +42,13 @@
     
     <!-- android: app install location. 'auto' will choose. 'internalOnly' is device memory. 'preferExternal' is SDCard. -->
     <!-- Plugins -->
-    <gap:plugin name="org.apache.cordova.device" />
 
     <!-- Core plugins -->
     <!--
     <gap:plugin name="org.apache.cordova.camera" />
     <gap:plugin name="org.apache.cordova.splashscreen" />
     <gap:plugin name="org.apache.cordova.media-capture" />
+    <gap:plugin name="org.apache.cordova.device" />
     <gap:plugin name="org.apache.cordova.console" />    
     <gap:plugin name="org.apache.cordova.battery-status" />
     <gap:plugin name="org.apache.cordova.contacts" />

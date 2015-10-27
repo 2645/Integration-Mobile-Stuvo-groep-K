@@ -42,11 +42,6 @@ function init() {
         localStorage.setItem("campusID", $(this).val());
     });
     
-    if (!window.device) {
-        window.device = { platform: 'Browser' };
-    }
-    console.log(device.platform);
-
     handleExternalURLs();
 }
 
@@ -126,14 +121,14 @@ function onDeviceReady() {
 
 function handleExternalURLs() {
     // Handle click events for all external URLs
-    if (device.platform.toUpperCase() === 'ANDROID') {
+    if (/android/i.test(navigator.userAgent)) {
         $(document).on('click', 'a[href^="http"]', function (e) {
             var url = $(this).attr('href');
             navigator.app.loadUrl(url, { openExternal: true });
             e.preventDefault();
         });
     }
-    else if (device.platform.toUpperCase() === 'IOS') {
+    else if (/iPhone|iPad|iPod/i.test(navigator.userAgent)) {
         $(document).on('click', 'a[href^="http"]', function (e) {
             var url = $(this).attr('href');
             window.open(url, '_system');
