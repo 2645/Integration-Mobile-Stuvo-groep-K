@@ -48,11 +48,27 @@ p {
 .events {
     position: relative;
 }
+.events input[type="text"] {
+    padding: 5px;
+    width: 33%;
+    margin-left: 27%;
+    color: rgb(105, 103, 101)
+}
+.events input[type="button"] {
+    padding-top: 4px;
+    padding-bottom: 10px;
+    background-image: url('../img/search_red.png');
+    width: 9%;
+    margin-top: 2%;
+    border: none;
+    
+}
 /**********HOME**********/
 
 .nav {
     background-color: rgb(105, 103, 101);
     height: 50px;
+    
 }
 
 .nav a {
@@ -161,8 +177,24 @@ p {
     padding-left: 20px;
     margin-bottom: 30px;
 }
-/*****ACTUEEL*****/
 
+/*****ACTUEEL*****/
+.actueel input[type="text"] {
+    padding: 5px;
+    width: 33%;
+    margin-left: 27%;
+    margin-bottom: 30px;
+    color: rgb(105, 103, 101)
+}
+.actueel input[type="button"] {
+    padding-top: 4px;
+    padding-bottom: 10px;
+    background-image: url('../img/search_red.png');
+    width: 9%;
+    margin-top: 2%;
+    border: none;
+    
+}
 
 .actueel .info {
     margin-left: 80px;
