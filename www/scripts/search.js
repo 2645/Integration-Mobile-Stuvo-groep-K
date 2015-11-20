@@ -88,7 +88,7 @@ function generateEventsHtml(data) {
             event = maand[event];
             htmlString += generateEventHtml(event);
             counter++;
-            if (counter >= 4) {
+            if (counter >= 200) {
                 return htmlString;
             }
         }
@@ -104,7 +104,7 @@ function generateActuasHtml(data) {
     for (var actua in actuas) {
         htmlString += generateActuaHtml(actuas[actua]);
         counter++;
-        if (counter >= 3) {
+        if (counter >= 100) {
             return htmlString;
         }
     }
