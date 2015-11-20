@@ -77,9 +77,9 @@ p {
 }
 
 #pointer{
-    width:33%;
+    width:50%;
     height:5px;
-    left:33%;
+    left:50%;
     background-color: #a33534;
     margin-top:-5px;
     position:relative;

@@ -36,8 +36,8 @@ function addActions() {
 function slideLeft(object) {
     var pos = object.position().left;
     var width = $(window).width();
-    if (pos > -width * 2) {
-        updatePointer(width / 3);
+    if (pos > -width ) {
+        updatePointer(width / 2);
         object.animate({
             left: '-=' + width + 'px'
         }, 100);
@@ -48,7 +48,7 @@ function slideRight(object) {
     var pos = object.position().left;
     var width = $(window).width();
     if (pos < 0) {
-        updatePointer(-width / 3);
+        updatePointer(-width / 2);
         object.animate({
             left: '+=' + width + 'px'
         }, 100);
