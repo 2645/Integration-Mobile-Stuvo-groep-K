@@ -89,25 +89,15 @@ html {
     background-color: #6f2421;
 }
 
-#navigatie input[type=text] {
-    background-color: rgba(255, 255, 255, 0.75);
-    border: 0;
-    height: 20px;
-    padding: 7px;
-    margin-top: 10px;
-    width: 65%;
-    margin-left: 15%;
-    font-family: Tekst;
-    color: #838081;
-}
 
 #navigatie .searchButton {
-    float: none;
-    background: url(../img/search_red.png) no-repeat;
-    border: 0;
-    margin-left: -13%;
-    padding: 2%;
-    width: 13%;
+    display: block;
+    width: 50%;
+    padding: 3px 0 5px 14%;
+    background-color: #a33534;
+    margin-bottom: 20px;
+    margin-left: 17%;
+    margin-top: 20px;
 }
 
 #navigatie .navigatieNav {
@@ -135,7 +125,7 @@ html {
     display: inline-block;
 }
 
-#navigatie .navigatieNav a {
+#navigatie a {
     font-family: Title Regular;
     font-size: 24px;
     text-decoration: none;
