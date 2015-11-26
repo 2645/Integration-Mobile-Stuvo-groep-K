@@ -154,14 +154,15 @@
         <div class="emailSchrijven">
             <span>Email</span>
             <br>
-            <input type="email" name="email" id="email-contact" class="emailInput" placeholder="ehbever@student.ehb.be">
+            <form method="post" action="mail.php">
+            <input type="email" name="mail" id="email-contact" class="emailInput" placeholder="ehbever@student.ehb.be">
 
             <span>Bericht</span>
             <br>
-            <textarea placeholder="Schrijf hier je bericht"></textarea>
+            <textarea name="message" placeholder="Schrijf hier je bericht"></textarea>
 
             <input type="submit" name="verzenden" id="verzenden" class="verzenden" value="Verzenden">
-
+            </form>
         </div>
     </div>
 
