@@ -13,7 +13,7 @@ function generateSponsorHtml(data) {
     var sponsors = JSON.parse(data).sponser,
         htmlString = "";
     for (var sponsor in sponsors) {
-        htmlString += "<a href='" + sponsors[sponsor].link + "'><li><img src='" + sponsors[sponsor].image + "' alt='" + sponsors[sponsor].naam + "'></li></a>";
+        htmlString += "<a href='" + sponsors[sponsor].link + "'><li><img src='" + sponsors[sponsor].image + "' alt='" + sponsors[sponsor].naam + "'><p>" + sponsors[sponsor].naam + "</p></li></a>";
     }
     return htmlString;
 }

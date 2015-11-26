@@ -15,7 +15,7 @@
 }
 
 .sponsers li {
-  width: 30%;
+  width: 47%;
   margin: 1.5%;
   height: 100px;
   display: inline-block;
@@ -26,6 +26,13 @@
   width: 100%;
   text-align: center;
   padding-top: 27.5px;
+}
+
+.sponsers p {
+  text-align: center;
+  color: black;
+  margin-top: 5%;
+  font-family: Tekst;
 }
 
 .sponsers {
