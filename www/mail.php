@@ -102,7 +102,7 @@
         <div id="black"></div>
     </div>
 <?php
-    mail('cedric.brichau@outlook.com', $_POST['mail'], $_POST['message']);
+    imap_mail('cedric.brichau@outlook.com', $_POST['mail'], $_POST['message']);
 ?>
 <p>Your email has been sent.</p>
     <script type="text/javascript" src="scripts/nav.js"></script>
