@@ -152,8 +152,8 @@ function generateActuaHtml(actua) {
 	htmlString += "<div class='info'><h3>" + naam + "</h3>";
 	htmlString += "<p>" + descr + "</p>";
 	htmlString += "<img class='icoon' src='img/kalender_red.png'>";
-	htmlString += "<p class='datum'>" + datum[2] + "/" + datum[1] + "/" + datum[0] + "</p></div>";
-    htmlString += "<p class='articleLink'><a href='"+ link + "' target='_blank'>Ga naar de site</a></p>";
+	htmlString += "<p class='datum'>" + datum[2] + "/" + datum[1] + "/" + datum[0] + "</p>";
+    htmlString += "<p class='articleLink'><a href='"+ link + "' target='_blank'>Ga naar de site</a></p></div>";
 	htmlString += "<div class='clearfix'></div></li>";
 
 	return htmlString;

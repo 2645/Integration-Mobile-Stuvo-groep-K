@@ -190,6 +190,12 @@ html {
     color: #fff;
 }
 
+#settings .settingsNav ul li h3 {
+    font-family: Tekst;
+    font-size: 14px;
+    padding-bottom: 10px;
+}
+
 #black {
     position: absolute;
     top: 60px;
