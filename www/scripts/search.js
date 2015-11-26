@@ -1,6 +1,5 @@
 /**Jan Desmet, Bart Sevenois, Gabriel Deschamps, Lieven Luyckx, Cédric Brichau**/
-getEvents();
-getNews();
+
 addActions();
 
 function addActions() {
@@ -16,10 +15,10 @@ function addActions() {
         var left = $(event.target).position().left;
         var width = $(window).width();
         var leftPosSlider = 0;
-        if (left < width / 3) {
+        if (left < width / 2) {
             leftPosSlider = 0;
 
-        } else if (left > 2 * width / 3) {
+        } else if (left >  width ) {
             leftPosSlider = -2 * width;
         } else {
             leftPosSlider = -width;
@@ -28,9 +27,15 @@ function addActions() {
             left: leftPosSlider + "px"
         });
         $('#pointer').animate({
-            left: -leftPosSlider / 3 + "px"
+            left: -leftPosSlider / 2 + "px"
         });
-    })
+    });
+	
+	$('.homepageSliderWrapper input[type="button"]').click(function (event) {
+		var query = $(this).parent().find('input[type="text"]').val();
+		getEvents(query);
+		getNews(query);
+	});
 }
 
 function slideLeft(object) {
@@ -66,14 +71,14 @@ function updatePointer(distance) {
 
 // CONTENT JS
 
-function getEvents(amount) {
-    $.post("http://dtprojecten.ehb.be/~stuvo/public_html/api/agenda.php", function (data) {
+function getEvents(query) {
+    $.post("http://dtprojecten.ehb.be/~stuvo/public_html/api/agenda.php?q="+query, function (data) {
         $('.events ul').html(generateEventsHtml(data));
     });
 }
 
-function getNews() {
-    $.post("http://dtprojecten.ehb.be/~stuvo/public_html/api/nieuws.php", function (data) {
+function getNews(query) {
+    $.post("http://dtprojecten.ehb.be/~stuvo/public_html/api/nieuws.php?q="+query, function (data) {
         $('.actueel ul').html(generateActuasHtml(data));
     });
 }

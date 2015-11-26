@@ -33,6 +33,7 @@ p {
 }
 
 .homepageSlider {
+	margin-top: 10px;
     width: 200%;
     position: relative;
     left: -100%;
@@ -48,13 +49,13 @@ p {
 .events {
     position: relative;
 }
-.events input[type="text"] {
+.homepageSliderWrapper input[type="text"] {
     padding: 5px;
     width: 33%;
     margin-left: 27%;
     color: rgb(105, 103, 101)
 }
-.events input[type="button"] {
+.homepageSliderWrapper input[type="button"] {
     padding-top: 4px;
     padding-bottom: 10px;
     background-image: url('../img/search_red.png');
