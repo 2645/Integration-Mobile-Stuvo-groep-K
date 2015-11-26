@@ -89,17 +89,24 @@ html {
     width: 100%;
 }
 
+.event td{
+    padding-right: 0 5px;
+}
 .event td:nth-child(1) {
-    width: 45%;
+    width: 42%;
 }
 
 .event td:nth-child(2) {
     width: 25%;
+    
 }
 
 .event td:nth-child(3) {
     width: 30%;
     display: none;
+}
+.kalenderAgenda{
+    font-size: 1.35em;
 }
 
 .selected {
@@ -154,4 +161,6 @@ html {
 .eventMonth h2 img:nth-child(2){
     float: right;
 }
+
+
 /**color: #a33534;**/

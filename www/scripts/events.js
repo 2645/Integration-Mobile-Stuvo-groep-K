@@ -139,7 +139,7 @@ function generateEventHtml(event) {
     htmlString += "<div class='event'><h3>" + naam + "</h3>";
     htmlString += "<img src='img/Agenda_temp.jpg'><p class='description'>" + descr + "</p>";
     htmlString += "<table><tr><td><img src='img/Location_red.png'>" + locatie + "</td>";
-    htmlString += "<td><img src='img/kalender_red.png'>" + dag + "/" + maand + "/" + jaar + "</td>";
+    htmlString += "<td><img src='img/kalender_red.png'><div class = 'kalenderAgenda'>" + dag + "/" + maand + "/" + jaar + "</div></td>";
     htmlString += "<td><img src='img/Tijd_red.png'>" + tijd + "</td></tr></table><div class='clearfix'></div></div>";
 
     return htmlString;
