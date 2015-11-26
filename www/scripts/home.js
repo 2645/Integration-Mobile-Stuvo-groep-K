@@ -139,6 +139,7 @@ function generateActuaHtml(actua) {
 	var tijd = actua.created_time;
 	var datum = tijd.split("T")[0].split("-");
 	var imgSource = actua.picture;
+    var link = actua.link;
 	
 	if (typeof descr != "undefined" && descr.length > 200) {
 		descr = descr.substring(0, 200) + "...";
@@ -151,8 +152,9 @@ function generateActuaHtml(actua) {
 	htmlString += "<div class='info'><h3>" + naam + "</h3>";
 	htmlString += "<p>" + descr + "</p>";
 	htmlString += "<img class='icoon' src='img/kalender_red.png'>";
-	htmlString += "<p class='datum'>" + datum[2] + "/" + datum[1] + "/" + datum[0] + "</p></div></li>";
-	htmlString += "<div class='clearfix'></div>";
+	htmlString += "<p class='datum'>" + datum[2] + "/" + datum[1] + "/" + datum[0] + "</p></div>";
+    htmlString += "<p class='articleLink'><a href='"+ link + "' target='_blank'>Ga naar de site</a></p>";
+	htmlString += "<div class='clearfix'></div></li>";
 
 	return htmlString;
 }
