@@ -50,7 +50,7 @@ function generateNewsItemHtml(item) {
     htmlString += "<img src='" + imgSource + "'>";
     htmlString += "<p class='date'><img src='img/kalender_red.png'>" + datum[2] + "/" + datum[1] + "/" + datum[0] + "</p>";
     htmlString += "<p class='description'>" + descr + "</p>";
-    htmlString += "<p class='articleLink'><a href='"+ link + "'>Ga naar de site</a></p>";
+    htmlString += "<p class='articleLink'><a href='"+ link + "' target='_blank'>Ga naar de site</a></p>";
     htmlString += "<p class='readMore'>Lees meer...</p>";
     htmlString += "<div class='clearFix'></div></li>";
     return htmlString;
