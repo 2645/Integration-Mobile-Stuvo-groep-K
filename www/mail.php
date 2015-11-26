@@ -24,7 +24,7 @@
         <nav class="hoofdNav">
             <div id="hamburger"><img src="img/hamburger.png" alt="menu">
             </div>
-            <div id="pageTitle">Resto</div>
+            <div id="pageTitle">Contact</div>
             <div id="tandwiel"><img src="img/settings.png"  alt="settings">
             </div>
         </nav>
