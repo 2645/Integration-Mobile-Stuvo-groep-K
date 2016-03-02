@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <widget xmlns     = "http://www.w3.org/ns/widgets"
-        xmlns:gap = "http://phonegap.com/ns/3.7.0"
+        xmlns:gap = "http://phonegap.com/ns/5.2.0"
         id        = "be.erasmushogeschool.stuvo"
         version   = "1.0.0">
 
