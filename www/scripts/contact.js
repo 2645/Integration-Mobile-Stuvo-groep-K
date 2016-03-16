@@ -44,7 +44,7 @@ function updateSlider(distance) {
 }
 
 function getContacts() {
-    $.post("http://dtprojecten.ehb.be/~stuvo/public_html/api/contacts.php", function (data) {
+    $.post("http://app.stuvo.ehb.be/api/contacts.php", function (data) {
         $('.dienstSlider').html(generateContactsHtml(data));
     });
 }

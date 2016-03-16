@@ -67,13 +67,13 @@ function updatePointer(distance) {
 // CONTENT JS
 
 function getEvents(amount) {
-    $.post("http://dtprojecten.ehb.be/~stuvo/public_html/api/agenda.php", function (data) {
+    $.post("http://app.stuvo.ehb.be/api/agenda.php", function (data) {
         $('.events ul').html(generateEventsHtml(data));
     });
 }
 
 function getNews() {
-    $.post("http://dtprojecten.ehb.be/~stuvo/public_html/api/nieuws.php", function (data) {
+    $.post("http://app.stuvo.ehb.be/api/nieuws.php", function (data) {
         $('.actueel ul').html(generateActuasHtml(data));
     });
 }

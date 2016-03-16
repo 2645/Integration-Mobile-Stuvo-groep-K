@@ -4,7 +4,7 @@ $(document).ready(function () {
 });
 
 function getSponsors() {
-    $.post('http://dtprojecten.ehb.be/~stuvo/public_html/api/sponsor.php', function (data) {
+    $.post('http://app.stuvo.ehb.be/api/sponsor.php', function (data) {
         $('.sponsers ul').html(generateSponsorHtml(data));
     });
 }

@@ -4,7 +4,7 @@ $(document).ready(function () {
 });
 
 function addContent() {
-    $.post("http://dtprojecten.ehb.be/~stuvo/public_html/api/nieuws.php", function (data) {
+    $.post("http://app.stuvo.ehb.be/api/nieuws.php", function (data) {
         $('.nieuws ul').html(generateNewsHtml(data));
         $('.nieuws ul li').first().removeClass('notSelected');
         $('.nieuws ul li').first().addClass('selected');

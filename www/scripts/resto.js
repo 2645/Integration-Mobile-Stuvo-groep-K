@@ -103,7 +103,7 @@ function updateDaySlider(distance) {
 }
 
 function getMenus(id) {
-    $.post("http://dtprojecten.ehb.be/~stuvo/public_html/api/resto.php?campus=" + id, function (data) {
+    $.post("http://app.stuvo.ehb.be/api/resto.php?campus=" + id, function (data) {
         $(".dagSelectieWrapperSlider").html("");
         $(".menuWrapperSlider").html(generateMenusHtml(data));
         changeCss();
