@@ -50,7 +50,7 @@ function updateMap(selected) {
 
 function getContent() {
     
-    $.post("http://app.stuvo.ehb.be/api/agenda.php", function (data) {
+    $.post("http://app.stuvo.ehb.be/api/events.php", function (data) {
         $('.eventMonthSlider').html(generateEventMonthsHtml(data) + "<div class='clearfix'></div>");
         $('.event:nth-child(2)').addClass('selected');
         changeCss();
