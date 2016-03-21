@@ -36,7 +36,7 @@
     <preference name="android-minSdkVersion"      value="14" />              <!-- android: MIN SDK version supported on the target device. MAX version is blank by default. -->
     <preference name="android-installLocation"    value="auto" />
     <preference name="fullscreen" value="false" />
-	<gap:plugin name="phonegap-plugin-push" source="npm" />
+	<gap:plugin name="phonegap-plugin-push" source="npm" SENDER_ID="1077268067967" />
     <access origin="*"/>            <!-- a blank access tag denies access to all external resources. -->
 
 </widget>
