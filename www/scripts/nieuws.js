@@ -14,9 +14,9 @@ function addContent() {
 }
 
 function addListeners() {
-    $('.readMore').click(function(){
+    $('.notSelected').click(function(){
         $('.selected').switchClass('selected','notSelected');
-        $(this).parent().switchClass('notSelected','selected');
+        $(this).switchClass('notSelected','selected');
     });
 }
 
@@ -37,6 +37,10 @@ function generateNewsItemHtml(item) {
     var datum = tijd.split("T")[0].split("-");
     var imgSource = item.picture;
     var link = item.link;
+
+    if(typeof descr != "undefined" && descr.length > 200){
+        descr = descr.substring(0,200) + "...";
+    }
     
     if (typeof naam === "undefined") {
         return "";
@@ -46,7 +50,7 @@ function generateNewsItemHtml(item) {
     htmlString += "<img src='" + imgSource + "'>";
     htmlString += "<p class='date'><img src='img/kalender_red.png'>" + datum[2] + "/" + datum[1] + "/" + datum[0] + "</p>";
     htmlString += "<p class='description'>" + descr + "</p>";
-    htmlString += "<p class='articleLink'><a href='"+ link + "'>Ga naar de site</a></p>";
+    htmlString += "<p class='articleLink'><a href='"+ link + "' target='_blank'>Ga naar de site</a></p>";
     htmlString += "<p class='readMore'>Lees meer...</p>";
     htmlString += "<div class='clearFix'></div></li>";
     return htmlString;

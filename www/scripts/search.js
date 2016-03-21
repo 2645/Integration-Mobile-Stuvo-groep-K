@@ -1,6 +1,5 @@
 /**Jan Desmet, Bart Sevenois, Gabriel Deschamps, Lieven Luyckx, Cédric Brichau**/
-getEvents();
-getNews();
+
 addActions();
 
 function addActions() {
@@ -16,10 +15,10 @@ function addActions() {
         var left = $(event.target).position().left;
         var width = $(window).width();
         var leftPosSlider = 0;
-        if (left < width / 3) {
+        if (left < width / 2) {
             leftPosSlider = 0;
 
-        } else if (left > 2 * width / 3) {
+        } else if (left >  width ) {
             leftPosSlider = -2 * width;
         } else {
             leftPosSlider = -width;
@@ -28,16 +27,22 @@ function addActions() {
             left: leftPosSlider + "px"
         });
         $('#pointer').animate({
-            left: -leftPosSlider / 3 + "px"
+            left: -leftPosSlider / 2 + "px"
         });
-    })
+    });
+	
+	$('.homepageSliderWrapper input[type="button"]').click(function (event) {
+		var query = $(this).parent().find('input[type="text"]').val();
+		getEvents(query);
+		getNews(query);
+	});
 }
 
 function slideLeft(object) {
     var pos = object.position().left;
     var width = $(window).width();
-    if (pos > -width * 2) {
-        updatePointer(width / 3);
+    if (pos > -width ) {
+        updatePointer(width / 2);
         object.animate({
             left: '-=' + width + 'px'
         }, 100);
@@ -48,7 +53,7 @@ function slideRight(object) {
     var pos = object.position().left;
     var width = $(window).width();
     if (pos < 0) {
-        updatePointer(-width / 3);
+        updatePointer(-width / 2);
         object.animate({
             left: '+=' + width + 'px'
         }, 100);
@@ -66,14 +71,14 @@ function updatePointer(distance) {
 
 // CONTENT JS
 
-function getEvents(amount) {
-    $.post("http://app.stuvo.ehb.be/api/agenda.php", function (data) {
+function getEvents(query) {
+    $.post("http://dtprojecten.ehb.be/~stuvo/public_html/api/agenda.php?q="+query, function (data) {
         $('.events ul').html(generateEventsHtml(data));
     });
 }
 
-function getNews() {
-    $.post("http://app.stuvo.ehb.be/api/nieuws.php", function (data) {
+function getNews(query) {
+    $.post("http://dtprojecten.ehb.be/~stuvo/public_html/api/nieuws.php?q="+query, function (data) {
         $('.actueel ul').html(generateActuasHtml(data));
     });
 }
@@ -88,7 +93,7 @@ function generateEventsHtml(data) {
             event = maand[event];
             htmlString += generateEventHtml(event);
             counter++;
-            if (counter >= 4) {
+            if (counter >= 200) {
                 return htmlString;
             }
         }
@@ -104,7 +109,7 @@ function generateActuasHtml(data) {
     for (var actua in actuas) {
         htmlString += generateActuaHtml(actuas[actua]);
         counter++;
-        if (counter >= 3) {
+        if (counter >= 100) {
             return htmlString;
         }
     }

@@ -3,7 +3,9 @@ var activeNav = false;
 var activeSettings = false;
 
 $(document).ready(function () {
+    
     init();
+    
 });
 
 
@@ -39,7 +41,8 @@ function init() {
     $('.settingsNav select').change(function () {
         localStorage.setItem("campusID", $(this).val());
     });
-
+    
+    handleExternalURLs();
 }
 
 
@@ -105,3 +108,35 @@ function toggleSettingsMenu(buttonPressed) {
         activeSettings = !activeSettings;
     }
 }
+
+
+
+
+
+function onDeviceReady() {
+
+    // Mock device.platform property if not available
+    
+}
+
+function handleExternalURLs() {
+    // Handle click events for all external URLs
+    if (/android/i.test(navigator.userAgent)) {
+        $(document).on('click', 'a[href^="http"]', function (e) {
+            var url = $(this).attr('href');
+            navigator.app.loadUrl(url, { openExternal: true });
+            e.preventDefault();
+        });
+    }
+    else if (/iPhone|iPad|iPod/i.test(navigator.userAgent)) {
+        $(document).on('click', 'a[href^="http"]', function (e) {
+            var url = $(this).attr('href');
+            window.open(url, '_system');
+            e.preventDefault();
+        });
+    }
+    else {
+        // Leave standard behaviour
+    }
+}
+
