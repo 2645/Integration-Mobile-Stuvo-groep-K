@@ -1,10 +1,10 @@
 /**Jan Desmet, Bart Sevenois, Gabriel Deschamps, Lieven Luyckx, Cédric Brichau**/
     
-    $("#login").click(function (e) {
-        e.preventDefault();
-        window.location.href = 'home.html';
-        checkIfValidEmail();
-    });
 
-    function checkIfValidEmail(em) {}
-});
+window.onload=function(){
+    
+    setTimeout(function(){
+        window.location.href = 'home.html';
+    }, 2500);
+    
+}
