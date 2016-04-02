@@ -67,7 +67,7 @@ function updatePointer(distance) {
 // CONTENT JS
 
 function getEvents(amount) {
-    $.get("http://app.stuvo.ehb.be/api/agenda.php", function (data) {
+    $.post("http://app.stuvo.ehb.be/api/agenda.php", function (data) {
         $('.events ul').html(generateEventsHtml(data));
     });
 }
