@@ -3,7 +3,6 @@ var activeNav = false;
 var activeSettings = false;
 
 $(document).ready(function () {
-    
     init();
     
 });
@@ -11,6 +10,9 @@ $(document).ready(function () {
 
 
 function init() {
+	if(localStorage.getItem('registered') == null){
+		registerGCM();
+	}
     if (localStorage.getItem('campusID') !== null) {
         $('.settingsNav select').val(localStorage.getItem('campusID'));
     }
@@ -43,6 +45,50 @@ function init() {
     });
     
     handleExternalURLs();
+}
+
+function registerGCM(){
+	try{      
+        console.log("Registering push notification plugin!");
+        window.push = PushNotification.init({
+            android: {
+                senderID: window.settings.GCM_SENDERID, // ID is the ID from EIDIO
+                icon: "logonotification"
+            },
+            ios: {
+                alert: "true",
+                sound: "true",
+                clearBadge: "true",
+                senderID: window.settings.GCM_SENDERID // GCM
+            },
+            windows: {}
+        });    
+        push.on('registration', function(data) {
+            var url = "app.stuvo.ehb.be/api/notification_gcm.php?action=register&id=" + data.registrationId + "&os=" + device.platform;
+            console.log("Sending AJAX request to: " + url);
+            $.ajax({
+                url: url,
+                success: function() {
+                    // Device registered
+                    console.log('DEVICE REGISTERED');
+                },
+                error: function() {
+                    // Device registration error
+                    console.log('DEVICE COULD NOT BE REGISTERED');
+                }
+            });
+        });
+ 
+        push.on('notification', function(data){
+            // Niet belangrijk, notificatie tijdens de app open is
+        });
+ 
+        push.on('error', function(e) {
+            console.log(e.message);
+        });
+    }catch (ex){
+        console.log('ERROR_NOTIFICATIONS: ' + ex);
+    }
 }
 
 
