@@ -2,7 +2,6 @@
     
 
 window.onload=function(){
-    $("body").text("FUCK THIS SHIT");    
 	
 	
     setTimeout(function(){

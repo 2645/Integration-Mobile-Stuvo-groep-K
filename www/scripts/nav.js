@@ -49,6 +49,7 @@ function init() {
 function registerGCM(){
 	try{      
         console.log("Registering push notification plugin!");
+		$("body").text(PushNotification);
         window.push = PushNotification.init({
 			
             android: {
