@@ -10,9 +10,8 @@ $(document).ready(function () {
 
 
 function init() {
-	if(localStorage.getItem('registered') == null){
 		registerGCM();
-	}
+
     if (localStorage.getItem('campusID') !== null) {
         $('.settingsNav select').val(localStorage.getItem('campusID'));
     }
