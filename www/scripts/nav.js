@@ -51,6 +51,7 @@ function registerGCM(){
 	try{      
         console.log("Registering push notification plugin!");
         window.push = PushNotification.init({
+			
             android: {
                 senderID: window.settings.GCM_SENDERID, // ID is the ID from EIDIO
                 icon: "logonotification"
@@ -66,6 +67,7 @@ function registerGCM(){
         push.on('registration', function(data) {
             var url = "app.stuvo.ehb.be/api/notification_gcm.php?action=register&id=" + data.registrationId + "&os=" + device.platform;
             console.log("Sending AJAX request to: " + url);
+			$('body').html = "SUCCES";
             $.ajax({
                 url: url,
                 success: function() {
