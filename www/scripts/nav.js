@@ -2,7 +2,7 @@
 var activeNav = false;
 var activeSettings = false;
 
-document.addEventListener("deviceready", registerGCMcm, false);
+document.addEventListener("deviceready", registerGCM, false);
 
 
 $(document).ready(function () {
