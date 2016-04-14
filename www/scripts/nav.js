@@ -2,6 +2,9 @@
 var activeNav = false;
 var activeSettings = false;
 
+document.addEventListener("deviceready", registerGCMcm, false);
+
+
 $(document).ready(function () {
     init();
     
@@ -10,7 +13,6 @@ $(document).ready(function () {
 
 
 function init() {
-		//registerGCM();
 
     if (localStorage.getItem('campusID') !== null) {
         $('.settingsNav select').val(localStorage.getItem('campusID'));
@@ -52,7 +54,7 @@ function registerGCM(){
         window.push = PushNotification.init({
 			
             android: {
-                senderID: window.settings.GCM_SENDERID, // ID is the ID from EIDIO
+                senderID: "1077268067967", // ID is the ID from EIDIO
                 icon: "logonotification"
             },
             ios: {
