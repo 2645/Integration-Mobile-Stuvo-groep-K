@@ -6,8 +6,8 @@ function addActions() {
     $('.dienstSlider').on("swipeleft", function (event) {
         var pos = $(this).position().left,
             width = $(window).width();
-        if (pos > -width * 6) {
-            updateSlider(width / 7);
+        if (pos > -width * 5) {
+            updateSlider(width / 6);
             $(this).animate({
                 left: '-=' + width + 'px'
             }, 100);
@@ -18,19 +18,19 @@ function addActions() {
         var pos = $(this).position().left,
             width = $(window).width();
         if (pos < 0) {
-            updateSlider(-width / 7);
+            updateSlider(-width / 6);
             $(this).animate({
                 left: '+=' + width + 'px'
             }, 100);
         }
     });
     $('.navContact li').click(function (event) {
-        var position = Math.round(($(this).position().left) / ($(window).width() / 7));
+        var position = Math.round(($(this).position().left) / ($(window).width() / 6));
         $('.dienstSlider').animate({
             left: position * -$(window).width() + "px"
         }, 100);
         $('#pointer').animate({
-            left: position * $(window).width() / 7 + "px"
+            left: position * $(window).width() / 6 + "px"
         }, 100);
     });
 }
